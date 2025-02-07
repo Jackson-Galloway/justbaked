@@ -1,0 +1,43 @@
+[0.028s] Invoking command in '/home/jack/ASUIEEE25/ros2_ws/build/News': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jack/ASUIEEE25/ros2_ws/src/News -DCMAKE_INSTALL_PREFIX=/home/jack/ASUIEEE25/ros2_ws/install/News
+[0.124s] -- The C compiler identification is GNU 13.3.0
+[0.249s] -- The CXX compiler identification is GNU 13.3.0
+[0.280s] -- Detecting C compiler ABI info
+[0.464s] -- Detecting C compiler ABI info - done
+[0.494s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.494s] -- Detecting C compile features
+[0.495s] -- Detecting C compile features - done
+[0.514s] -- Detecting CXX compiler ABI info
+[0.682s] -- Detecting CXX compiler ABI info - done
+[0.713s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.714s] -- Detecting CXX compile features
+[0.715s] -- Detecting CXX compile features - done
+[0.722s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.962s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.135s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.263s] WARNING: Package name "News" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.320s] -- Added test 'lint_cmake' to check CMake code style
+[1.322s] -- Added test 'xmllint' to check XML markup files
+[1.324s] -- Configuring done (1.3s)
+[1.330s] -- Generating done (0.0s)
+[1.335s] -- Build files have been written to: /home/jack/ASUIEEE25/ros2_ws/build/News
+[1.343s] Invoked command in '/home/jack/ASUIEEE25/ros2_ws/build/News' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jack/ASUIEEE25/ros2_ws/src/News -DCMAKE_INSTALL_PREFIX=/home/jack/ASUIEEE25/ros2_ws/install/News
+[1.344s] Invoking command in '/home/jack/ASUIEEE25/ros2_ws/build/News': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/ros2_ws/build/News -- -j4 -l4
+[1.397s] Invoked command in '/home/jack/ASUIEEE25/ros2_ws/build/News' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/ros2_ws/build/News -- -j4 -l4
+[1.398s] Invoking command in '/home/jack/ASUIEEE25/ros2_ws/build/News': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/ros2_ws/build/News
+[1.408s] -- Install configuration: ""
+[1.408s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/ament_index/resource_index/package_run_dependencies/News
+[1.408s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/ament_index/resource_index/parent_prefix_path/News
+[1.408s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/environment/ament_prefix_path.sh
+[1.409s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/environment/ament_prefix_path.dsv
+[1.409s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/environment/path.sh
+[1.409s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/environment/path.dsv
+[1.409s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/local_setup.bash
+[1.410s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/local_setup.sh
+[1.410s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/local_setup.zsh
+[1.410s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/local_setup.dsv
+[1.410s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/package.dsv
+[1.410s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/ament_index/resource_index/packages/News
+[1.411s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/cmake/NewsConfig.cmake
+[1.411s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/cmake/NewsConfig-version.cmake
+[1.411s] -- Installing: /home/jack/ASUIEEE25/ros2_ws/install/News/share/News/package.xml
+[1.415s] Invoked command in '/home/jack/ASUIEEE25/ros2_ws/build/News' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/ros2_ws/build/News

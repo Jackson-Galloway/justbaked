@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+05de3293ed0ef808f366801061e2e3a6 CMakeFiles/News_uninstall

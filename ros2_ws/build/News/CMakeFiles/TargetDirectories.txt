@@ -1,0 +1,9 @@
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/uninstall.dir
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/News_uninstall.dir
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/test.dir
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/edit_cache.dir
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/rebuild_cache.dir
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/list_install_components.dir
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/install.dir
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/install/local.dir
+/home/jack/ASUIEEE25/ros2_ws/build/News/CMakeFiles/install/strip.dir
