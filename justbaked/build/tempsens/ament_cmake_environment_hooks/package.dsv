@@ -1,0 +1,4 @@
+source;share/tempsens/local_setup.bash
+source;share/tempsens/local_setup.dsv
+source;share/tempsens/local_setup.sh
+source;share/tempsens/local_setup.zsh
