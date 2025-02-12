@@ -1,0 +1,33 @@
+[  0%] Built target ament_cmake_python_copy_ros_gz_bridge_setup
+[  0%] Built target ament_cmake_python_copy_ros_gz_bridge
+[  2%] Built target bridge_node
+[  4%] Built target gtest_main
+[  6%] Built target gtest
+[  9%] Built target test_rcl_interfaces
+[ 13%] Built target test_utils
+[ 14%] [32mBuilding CXX object CMakeFiles/test_ros_publisher.dir/generated/test/ros_publisher.cpp.o[0m
+[ 17%] Built target test_gz_publisher
+running egg_info
+writing ros_gz_bridge.egg-info/PKG-INFO
+writing dependency_links to ros_gz_bridge.egg-info/dependency_links.txt
+writing entry points to ros_gz_bridge.egg-info/entry_points.txt
+writing top-level names to ros_gz_bridge.egg-info/top_level.txt
+[ 18%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/geometry_msgs.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/test_gz_subscriber.dir/generated/test/gz_subscriber.cpp.o[0m
+reading manifest file 'ros_gz_bridge.egg-info/SOURCES.txt'
+writing manifest file 'ros_gz_bridge.egg-info/SOURCES.txt'
+[ 19%] Built target ament_cmake_python_build_ros_gz_bridge_egg
+[ 20%] [32mBuilding CXX object CMakeFiles/test_gz_server.dir/test/serverclient/gz_server.cpp.o[0m
+[ 21%] [32m[1mLinking CXX executable test_gz_server[0m
+[ 21%] Built target test_gz_server
+[ 23%] [32mBuilding CXX object CMakeFiles/test_ros_client.dir/test/serverclient/ros_client.cpp.o[0m
+[ 24%] [32m[1mLinking CXX executable test_ros_client[0m
+[ 24%] Built target test_ros_client
+[ 25%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/test/subscribers/ros_subscriber.cpp.o[0m
+[ 26%] [32m[1mLinking CXX executable test_gz_subscriber[0m
+[ 27%] Built target test_gz_subscriber
+[ 28%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/builtin_interfaces_subscriber.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/rcl_interfaces.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/actuator_msgs_subscriber.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/geometry_msgs_subscriber.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/gps_msgs_subscriber.cpp.o[0m

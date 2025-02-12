@@ -1,0 +1,1002 @@
+[0.030s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jack/ASUIEEE25/justbaked/src/ros_gz/ros_gz_interfaces -DCMAKE_INSTALL_PREFIX=/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces
+[0.388s] -- The C compiler identification is GNU 13.3.0
+[0.536s] -- The CXX compiler identification is GNU 13.3.0
+[0.563s] -- Detecting C compiler ABI info
+[0.732s] -- Detecting C compiler ABI info - done
+[0.755s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.755s] -- Detecting C compile features
+[0.756s] -- Detecting C compile features - done
+[0.772s] -- Detecting CXX compiler ABI info
+[0.941s] -- Detecting CXX compiler ABI info - done
+[0.969s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.969s] -- Detecting CXX compile features
+[0.971s] -- Detecting CXX compile features - done
+[1.132s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.448s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.985s] -- Found builtin_interfaces: 2.0.2 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[2.282s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.362s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.481s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.593s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.755s] -- Found rcl_interfaces: 2.0.2 (/opt/ros/jazzy/share/rcl_interfaces/cmake)
+[3.303s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[3.539s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[3.647s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[3.683s] -- Found rosidl_adapter: 4.6.5 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.345s] -- Found ament_cmake_cppcheck: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cppcheck/cmake)
+[5.363s] -- Found ament_cmake_cpplint: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_cpplint/cmake)
+[5.401s] -- Found ament_cmake_uncrustify: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_uncrustify/cmake)
+[5.408s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[7.298s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.019s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.032s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[8.278s] -- Found PythonExtra: /usr/bin/python3  
+[10.415s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[10.598s] -- Found ament_cmake_flake8: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_flake8/cmake)
+[10.605s] -- Found ament_cmake_pep257: 0.17.1 (/opt/ros/jazzy/share/ament_cmake_pep257/cmake)
+[10.729s] -- Configuring done (10.6s)
+[10.938s] -- Generating done (0.2s)
+[10.982s] -- Build files have been written to: /home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces
+[11.004s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jack/ASUIEEE25/justbaked/src/ros_gz/ros_gz_interfaces -DCMAKE_INSTALL_PREFIX=/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces
+[11.004s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces -- -j4 -l4
+[11.108s] [  0%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[11.122s] [  0%] Built target ament_cmake_python_copy_ros_gz_interfaces
+[12.051s] running egg_info
+[12.052s] creating ros_gz_interfaces.egg-info
+[12.103s] writing ros_gz_interfaces.egg-info/PKG-INFO
+[12.103s] writing dependency_links to ros_gz_interfaces.egg-info/dependency_links.txt
+[12.104s] writing top-level names to ros_gz_interfaces.egg-info/top_level.txt
+[12.104s] writing manifest file 'ros_gz_interfaces.egg-info/SOURCES.txt'
+[12.271s] reading manifest file 'ros_gz_interfaces.egg-info/SOURCES.txt'
+[12.271s] writing manifest file 'ros_gz_interfaces.egg-info/SOURCES.txt'
+[12.327s] [  0%] Built target ament_cmake_python_build_ros_gz_interfaces_egg
+[17.282s] [  0%] Built target ros_gz_interfaces__rosidl_generator_type_description
+[17.340s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[17.402s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[41.174s] [  1%] Built target ros_gz_interfaces__cpp
+[42.634s] [  1%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/altimeter__description.c.o[0m
+[42.948s] [  1%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/contact__description.c.o[0m
+[43.181s] [  2%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/contact__functions.c.o[0m
+[43.344s] [  2%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/contact__type_support.c.o[0m
+[43.526s] [  2%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/contacts__description.c.o[0m
+[43.661s] [  3%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/contacts__functions.c.o[0m
+[43.810s] [  3%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/contacts__type_support.c.o[0m
+[43.910s] [  4%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/dataframe__description.c.o[0m
+[44.012s] [  4%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/dataframe__functions.c.o[0m
+[44.173s] [  4%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/dataframe__type_support.c.o[0m
+[44.311s] [  5%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity__description.c.o[0m
+[44.453s] [  5%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity__functions.c.o[0m
+[44.600s] [  6%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity__type_support.c.o[0m
+[44.685s] [  6%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity_factory__description.c.o[0m
+[44.913s] [  6%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity_factory__functions.c.o[0m
+[45.066s] [  7%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity_factory__type_support.c.o[0m
+[45.146s] [  7%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity_wrench__description.c.o[0m
+[45.290s] [  8%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity_wrench__functions.c.o[0m
+[45.430s] [  8%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/entity_wrench__type_support.c.o[0m
+[45.530s] [  8%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/float32_array__description.c.o[0m
+[45.631s] [  9%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/float32_array__functions.c.o[0m
+[45.779s] [  9%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/float32_array__type_support.c.o[0m
+[45.875s] [ 10%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/gui_camera__description.c.o[0m
+[46.001s] [ 10%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/gui_camera__functions.c.o[0m
+[46.164s] [ 10%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/gui_camera__type_support.c.o[0m
+[46.248s] [ 11%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/joint_wrench__description.c.o[0m
+[46.360s] [ 11%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/joint_wrench__functions.c.o[0m
+[46.522s] [ 11%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/joint_wrench__type_support.c.o[0m
+[46.600s] [ 12%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/light__description.c.o[0m
+[46.737s] [ 12%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/light__functions.c.o[0m
+[46.865s] [ 13%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/light__type_support.c.o[0m
+[46.963s] [ 13%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/material_color__description.c.o[0m
+[47.085s] [ 13%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/material_color__functions.c.o[0m
+[47.247s] [ 14%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/material_color__type_support.c.o[0m
+[47.343s] [ 14%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/param_vec__description.c.o[0m
+[47.567s] [ 15%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/param_vec__functions.c.o[0m
+[47.691s] [ 15%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/param_vec__type_support.c.o[0m
+[47.764s] [ 15%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/sensor_noise__description.c.o[0m
+[47.859s] [ 16%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/sensor_noise__functions.c.o[0m
+[47.998s] [ 16%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/sensor_noise__type_support.c.o[0m
+[48.092s] [ 17%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/string_vec__description.c.o[0m
+[48.222s] [ 17%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/string_vec__functions.c.o[0m
+[48.368s] [ 17%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/string_vec__type_support.c.o[0m
+[48.450s] [ 18%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/track_visual__description.c.o[0m
+[48.580s] [ 18%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/track_visual__functions.c.o[0m
+[48.726s] [ 19%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/track_visual__type_support.c.o[0m
+[49.165s] [ 19%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/video_record__description.c.o[0m
+[49.569s] [ 19%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/video_record__functions.c.o[0m
+[49.705s] [ 20%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/video_record__type_support.c.o[0m
+[49.787s] [ 20%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/world_control__description.c.o[0m
+[49.871s] [ 21%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/world_control__functions.c.o[0m
+[50.015s] [ 21%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/world_control__type_support.c.o[0m
+[50.085s] [ 21%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/world_reset__description.c.o[0m
+[50.197s] [ 22%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/world_reset__functions.c.o[0m
+[50.351s] [ 22%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/world_reset__type_support.c.o[0m
+[50.435s] [ 23%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/control_world__description.c.o[0m
+[50.601s] [ 23%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/control_world__functions.c.o[0m
+[50.824s] [ 23%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/control_world__type_support.c.o[0m
+[50.947s] [ 24%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/delete_entity__description.c.o[0m
+[51.098s] [ 24%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/delete_entity__functions.c.o[0m
+[51.324s] [ 24%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/delete_entity__type_support.c.o[0m
+[51.452s] [ 25%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/set_entity_pose__description.c.o[0m
+[51.571s] [ 25%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/set_entity_pose__functions.c.o[0m
+[51.786s] [ 26%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.c.o[0m
+[51.880s] [ 26%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/spawn_entity__description.c.o[0m
+[52.110s] [ 26%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/spawn_entity__functions.c.o[0m
+[52.317s] [ 27%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/srv/detail/spawn_entity__type_support.c.o[0m
+[52.424s] [ 28%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/altimeter__type_support.c.o[0m
+[52.497s] [ 28%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ros_gz_interfaces/msg/detail/altimeter__functions.c.o[0m
+[52.616s] [ 28%] [32m[1mLinking C shared library libros_gz_interfaces__rosidl_generator_c.so[0m
+[52.826s] [ 28%] Built target ros_gz_interfaces__rosidl_generator_c
+[52.847s] [ 28%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[59.287s] [ 29%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/altimeter__type_support.cpp.o[0m
+[59.948s] [ 29%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/contact__type_support.cpp.o[0m
+[60.695s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/contacts__type_support.cpp.o[0m
+[61.820s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/dataframe__type_support.cpp.o[0m
+[63.110s] [ 30%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/entity__type_support.cpp.o[0m
+[63.857s] [ 31%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/entity_factory__type_support.cpp.o[0m
+[64.703s] [ 31%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/entity_wrench__type_support.cpp.o[0m
+[65.648s] [ 31%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/float32_array__type_support.cpp.o[0m
+[66.496s] [ 32%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/gui_camera__type_support.cpp.o[0m
+[67.285s] [ 32%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/joint_wrench__type_support.cpp.o[0m
+[68.309s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/light__type_support.cpp.o[0m
+[69.534s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/material_color__type_support.cpp.o[0m
+[70.297s] [ 33%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/param_vec__type_support.cpp.o[0m
+[71.002s] [ 34%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/sensor_noise__type_support.cpp.o[0m
+[71.739s] [ 34%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/string_vec__type_support.cpp.o[0m
+[72.596s] [ 35%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/track_visual__type_support.cpp.o[0m
+[73.352s] [ 35%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/video_record__type_support.cpp.o[0m
+[73.926s] [ 35%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/world_control__type_support.cpp.o[0m
+[74.534s] [ 36%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/msg/world_reset__type_support.cpp.o[0m
+[75.300s] [ 36%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/srv/control_world__type_support.cpp.o[0m
+[76.160s] [ 37%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/srv/delete_entity__type_support.cpp.o[0m
+[77.005s] [ 37%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/srv/set_entity_pose__type_support.cpp.o[0m
+[77.752s] [ 37%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros_gz_interfaces/srv/spawn_entity__type_support.cpp.o[0m
+[78.789s] [ 38%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_cpp.so[0m
+[79.167s] [ 38%] Built target ros_gz_interfaces__rosidl_typesupport_cpp
+[79.212s] [ 39%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[88.565s] [ 39%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/altimeter__type_support.c.o[0m
+[88.742s] [ 40%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/contact__type_support.c.o[0m
+[88.899s] [ 40%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/contacts__type_support.c.o[0m
+[88.997s] [ 40%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/dataframe__type_support.c.o[0m
+[89.111s] [ 41%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/entity__type_support.c.o[0m
+[89.249s] [ 41%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/entity_factory__type_support.c.o[0m
+[89.424s] [ 42%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/entity_wrench__type_support.c.o[0m
+[89.580s] [ 42%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/float32_array__type_support.c.o[0m
+[89.710s] [ 42%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/gui_camera__type_support.c.o[0m
+[89.805s] [ 43%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/joint_wrench__type_support.c.o[0m
+[89.979s] [ 43%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/light__type_support.c.o[0m
+[90.096s] [ 44%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/material_color__type_support.c.o[0m
+[90.180s] [ 44%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/param_vec__type_support.c.o[0m
+[90.318s] [ 44%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/sensor_noise__type_support.c.o[0m
+[90.429s] [ 45%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/string_vec__type_support.c.o[0m
+[90.625s] [ 45%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/track_visual__type_support.c.o[0m
+[90.814s] [ 46%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/video_record__type_support.c.o[0m
+[90.925s] [ 46%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/world_control__type_support.c.o[0m
+[91.097s] [ 46%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/msg/detail/world_reset__type_support.c.o[0m
+[91.212s] [ 47%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/srv/detail/control_world__type_support.c.o[0m
+[91.348s] [ 47%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/srv/detail/delete_entity__type_support.c.o[0m
+[91.516s] [ 48%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.c.o[0m
+[91.706s] [ 48%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros_gz_interfaces/srv/detail/spawn_entity__type_support.c.o[0m
+[91.820s] [ 48%] [32m[1mLinking C shared library libros_gz_interfaces__rosidl_typesupport_introspection_c.so[0m
+[91.938s] [ 48%] Built target ros_gz_interfaces__rosidl_typesupport_introspection_c
+[91.968s] [ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[97.638s] [ 49%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/altimeter__type_support.cpp.o[0m
+[97.710s] [ 49%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/contact__type_support.cpp.o[0m
+[97.782s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/contacts__type_support.cpp.o[0m
+[97.855s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/dataframe__type_support.cpp.o[0m
+[97.927s] [ 50%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/entity__type_support.cpp.o[0m
+[97.998s] [ 51%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/entity_factory__type_support.cpp.o[0m
+[98.070s] [ 51%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/entity_wrench__type_support.cpp.o[0m
+[98.144s] [ 52%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/float32_array__type_support.cpp.o[0m
+[98.227s] [ 52%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/gui_camera__type_support.cpp.o[0m
+[98.300s] [ 52%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/joint_wrench__type_support.cpp.o[0m
+[98.422s] [ 53%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/light__type_support.cpp.o[0m
+[98.530s] [ 53%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/material_color__type_support.cpp.o[0m
+[98.609s] [ 54%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/param_vec__type_support.cpp.o[0m
+[98.699s] [ 54%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/sensor_noise__type_support.cpp.o[0m
+[98.785s] [ 54%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/string_vec__type_support.cpp.o[0m
+[98.880s] [ 55%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/track_visual__type_support.cpp.o[0m
+[98.953s] [ 55%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/video_record__type_support.cpp.o[0m
+[99.043s] [ 56%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/world_control__type_support.cpp.o[0m
+[99.118s] [ 56%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/msg/world_reset__type_support.cpp.o[0m
+[99.195s] [ 56%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/srv/control_world__type_support.cpp.o[0m
+[99.283s] [ 57%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/srv/delete_entity__type_support.cpp.o[0m
+[99.390s] [ 57%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/srv/set_entity_pose__type_support.cpp.o[0m
+[99.519s] [ 58%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros_gz_interfaces/srv/spawn_entity__type_support.cpp.o[0m
+[99.604s] [ 58%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_c.so[0m
+[99.703s] [ 58%] Built target ros_gz_interfaces__rosidl_typesupport_c
+[99.736s] [ 59%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[106.343s] [ 59%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/altimeter__type_support.cpp.o[0m
+[107.091s] [ 59%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/contact__type_support.cpp.o[0m
+[107.967s] [ 60%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/contacts__type_support.cpp.o[0m
+[108.882s] [ 60%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/dataframe__type_support.cpp.o[0m
+[109.478s] [ 61%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/entity__type_support.cpp.o[0m
+[109.945s] [ 61%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/entity_factory__type_support.cpp.o[0m
+[110.476s] [ 61%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/entity_wrench__type_support.cpp.o[0m
+[111.002s] [ 62%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/float32_array__type_support.cpp.o[0m
+[111.593s] [ 62%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/gui_camera__type_support.cpp.o[0m
+[112.124s] [ 63%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/joint_wrench__type_support.cpp.o[0m
+[112.623s] [ 63%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/light__type_support.cpp.o[0m
+[113.116s] [ 63%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/material_color__type_support.cpp.o[0m
+[113.647s] [ 64%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/param_vec__type_support.cpp.o[0m
+[114.597s] [ 64%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/sensor_noise__type_support.cpp.o[0m
+[115.068s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/string_vec__type_support.cpp.o[0m
+[115.631s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/track_visual__type_support.cpp.o[0m
+[116.105s] [ 65%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/video_record__type_support.cpp.o[0m
+[116.582s] [ 66%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/world_control__type_support.cpp.o[0m
+[117.057s] [ 66%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/msg/detail/world_reset__type_support.cpp.o[0m
+[117.528s] [ 67%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/srv/detail/control_world__type_support.cpp.o[0m
+[118.153s] [ 67%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/srv/detail/delete_entity__type_support.cpp.o[0m
+[118.929s] [ 67%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.cpp.o[0m
+[120.003s] [ 68%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros_gz_interfaces/srv/detail/spawn_entity__type_support.cpp.o[0m
+[120.940s] [ 68%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[121.178s] [ 68%] Built target ros_gz_interfaces__rosidl_typesupport_introspection_cpp
+[121.216s] [ 68%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[128.623s] [ 68%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/altimeter__type_support.cpp.o[0m
+[129.520s] [ 68%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/contacts__type_support.cpp.o[0m
+[130.705s] [ 69%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/dataframe__type_support.cpp.o[0m
+[131.931s] [ 69%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/entity__type_support.cpp.o[0m
+[133.069s] [ 69%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/entity_factory__type_support.cpp.o[0m
+[134.484s] [ 70%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/entity_wrench__type_support.cpp.o[0m
+[135.380s] [ 70%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/float32_array__type_support.cpp.o[0m
+[136.277s] [ 71%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/gui_camera__type_support.cpp.o[0m
+[137.358s] [ 71%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/joint_wrench__type_support.cpp.o[0m
+[138.105s] [ 71%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/light__type_support.cpp.o[0m
+[138.904s] [ 72%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/material_color__type_support.cpp.o[0m
+[139.740s] [ 72%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/param_vec__type_support.cpp.o[0m
+[140.680s] [ 73%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/sensor_noise__type_support.cpp.o[0m
+[141.531s] [ 73%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/string_vec__type_support.cpp.o[0m
+[142.303s] [ 73%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/track_visual__type_support.cpp.o[0m
+[143.071s] [ 74%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/video_record__type_support.cpp.o[0m
+[143.806s] [ 74%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/world_control__type_support.cpp.o[0m
+[144.529s] [ 74%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/world_reset__type_support.cpp.o[0m
+[145.236s] [ 75%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/srv/detail/dds_fastrtps/control_world__type_support.cpp.o[0m
+[146.118s] [ 75%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/srv/detail/dds_fastrtps/delete_entity__type_support.cpp.o[0m
+[147.054s] [ 76%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/srv/detail/dds_fastrtps/set_entity_pose__type_support.cpp.o[0m
+[147.978s] [ 76%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/srv/detail/dds_fastrtps/spawn_entity__type_support.cpp.o[0m
+[148.912s] [ 77%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros_gz_interfaces/msg/detail/dds_fastrtps/contact__type_support.cpp.o[0m
+[149.791s] [ 77%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[149.982s] [ 77%] Built target ros_gz_interfaces__rosidl_typesupport_fastrtps_cpp
+[149.998s] [ 77%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[157.133s] [ 78%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/altimeter__type_support_c.cpp.o[0m
+[157.806s] [ 79%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/dataframe__type_support_c.cpp.o[0m
+[158.506s] [ 79%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/entity__type_support_c.cpp.o[0m
+[159.189s] [ 80%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/entity_factory__type_support_c.cpp.o[0m
+[159.884s] [ 80%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/entity_wrench__type_support_c.cpp.o[0m
+[160.578s] [ 80%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/float32_array__type_support_c.cpp.o[0m
+[161.247s] [ 81%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/gui_camera__type_support_c.cpp.o[0m
+[161.934s] [ 81%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/joint_wrench__type_support_c.cpp.o[0m
+[162.655s] [ 81%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/light__type_support_c.cpp.o[0m
+[163.401s] [ 82%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/material_color__type_support_c.cpp.o[0m
+[164.085s] [ 82%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/param_vec__type_support_c.cpp.o[0m
+[164.774s] [ 83%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/sensor_noise__type_support_c.cpp.o[0m
+[165.485s] [ 83%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/string_vec__type_support_c.cpp.o[0m
+[166.189s] [ 83%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/track_visual__type_support_c.cpp.o[0m
+[166.923s] [ 84%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/video_record__type_support_c.cpp.o[0m
+[167.621s] [ 84%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/world_control__type_support_c.cpp.o[0m
+[168.320s] [ 85%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/world_reset__type_support_c.cpp.o[0m
+[169.039s] [ 85%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/srv/detail/control_world__type_support_c.cpp.o[0m
+[169.761s] [ 85%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/srv/detail/delete_entity__type_support_c.cpp.o[0m
+[170.481s] [ 86%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/srv/detail/set_entity_pose__type_support_c.cpp.o[0m
+[171.230s] [ 86%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/srv/detail/spawn_entity__type_support_c.cpp.o[0m
+[171.978s] [ 86%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/contact__type_support_c.cpp.o[0m
+[171.979s] [ 86%] [32mBuilding CXX object CMakeFiles/ros_gz_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros_gz_interfaces/msg/detail/contacts__type_support_c.cpp.o[0m
+[172.710s] [ 87%] [32m[1mLinking CXX shared library libros_gz_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[172.858s] [ 87%] Built target ros_gz_interfaces__rosidl_typesupport_fastrtps_c
+[172.890s] [ 87%] Built target ros_gz_interfaces
+[172.926s] [ 87%] [34m[1mGenerating Python code for ROS interfaces[0m
+[183.968s] [ 87%] Built target ros_gz_interfaces__py
+[184.000s] [ 89%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_altimeter_s.c.o[0m
+[184.000s] [ 89%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_dataframe_s.c.o[0m
+[184.003s] [ 89%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_contact_s.c.o[0m
+[184.003s] [ 89%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_contacts_s.c.o[0m
+[184.378s] [ 89%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_entity_s.c.o[0m
+[184.394s] [ 90%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_entity_factory_s.c.o[0m
+[184.397s] [ 90%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_entity_wrench_s.c.o[0m
+[184.475s] [ 90%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_float32_array_s.c.o[0m
+[184.600s] [ 91%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_gui_camera_s.c.o[0m
+[184.603s] [ 91%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_joint_wrench_s.c.o[0m
+[184.643s] [ 92%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_light_s.c.o[0m
+[184.716s] [ 92%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_material_color_s.c.o[0m
+[184.816s] [ 92%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_param_vec_s.c.o[0m
+[184.821s] [ 93%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_sensor_noise_s.c.o[0m
+[184.903s] [ 93%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_string_vec_s.c.o[0m
+[184.955s] [ 94%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_track_visual_s.c.o[0m
+[185.053s] [ 94%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_video_record_s.c.o[0m
+[185.055s] [ 94%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_world_control_s.c.o[0m
+[185.153s] [ 95%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/msg/_world_reset_s.c.o[0m
+[185.192s] [ 95%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/srv/_control_world_s.c.o[0m
+[185.295s] [ 96%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/srv/_delete_entity_s.c.o[0m
+[185.303s] [ 96%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/srv/_set_entity_pose_s.c.o[0m
+[185.374s] [ 96%] [32mBuilding C object CMakeFiles/ros_gz_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ros_gz_interfaces/srv/_spawn_entity_s.c.o[0m
+[185.615s] [ 97%] [32m[1mLinking C shared library libros_gz_interfaces__rosidl_generator_py.so[0m
+[185.730s] [ 97%] Built target ros_gz_interfaces__rosidl_generator_py
+[185.763s] [ 97%] [32mBuilding C object CMakeFiles/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[185.813s] [ 98%] [32mBuilding C object CMakeFiles/ros_gz_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[185.815s] [ 98%] [32mBuilding C object CMakeFiles/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[186.118s] [ 99%] [32m[1mLinking C shared module rosidl_generator_py/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[186.130s] [100%] [32m[1mLinking C shared module rosidl_generator_py/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[186.156s] [100%] [32m[1mLinking C shared module rosidl_generator_py/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_c.so[0m
+[186.182s] [100%] Built target ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c
+[186.193s] [100%] Built target ros_gz_interfaces_s__rosidl_typesupport_introspection_c
+[186.211s] [100%] Built target ros_gz_interfaces_s__rosidl_typesupport_c
+[186.231s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces -- -j4 -l4
+[186.232s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces
+[186.246s] -- Install configuration: ""
+[186.246s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ament_index/resource_index/rosidl_interfaces/ros_gz_interfaces
+[186.247s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Altimeter.json
+[186.247s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contact.json
+[186.247s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contacts.json
+[186.247s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Dataframe.json
+[186.248s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Entity.json
+[186.248s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/EntityFactory.json
+[186.248s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/EntityWrench.json
+[186.248s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Float32Array.json
+[186.250s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/GuiCamera.json
+[186.250s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/JointWrench.json
+[186.250s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Light.json
+[186.250s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/MaterialColor.json
+[186.250s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/ParamVec.json
+[186.250s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/SensorNoise.json
+[186.250s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/StringVec.json
+[186.251s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/TrackVisual.json
+[186.251s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/VideoRecord.json
+[186.251s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldControl.json
+[186.251s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldReset.json
+[186.251s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/ControlWorld.json
+[186.251s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/DeleteEntity.json
+[186.252s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SetEntityPose.json
+[186.252s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SpawnEntity.json
+[186.252s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[186.252s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[186.252s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/joint_wrench.h
+[186.253s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/float32_array.h
+[186.253s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/contact.h
+[186.253s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/material_color.h
+[186.253s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/contacts.h
+[186.253s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/sensor_noise.h
+[186.253s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/altimeter.h
+[186.253s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/video_record.h
+[186.254s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/param_vec.h
+[186.254s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[186.254s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__struct.h
+[186.254s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__struct.h
+[186.254s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__type_support.h
+[186.254s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__functions.h
+[186.255s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__functions.c
+[186.255s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__functions.c
+[186.255s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__type_support.c
+[186.255s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__functions.c
+[186.256s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__struct.h
+[186.256s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__type_support.h
+[186.256s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__description.c
+[186.256s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__description.c
+[186.256s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__type_support.h
+[186.257s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__type_support.c
+[186.257s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__description.c
+[186.257s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__description.c
+[186.257s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__description.c
+[186.257s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__description.c
+[186.258s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__description.c
+[186.258s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__functions.c
+[186.258s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__functions.h
+[186.258s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__type_support.h
+[186.258s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__functions.c
+[186.258s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__functions.h
+[186.259s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__type_support.c
+[186.259s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__struct.h
+[186.259s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__description.c
+[186.259s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__type_support.h
+[186.259s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__functions.h
+[186.260s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__functions.c
+[186.260s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__functions.h
+[186.260s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__struct.h
+[186.260s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__type_support.c
+[186.260s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__struct.h
+[186.260s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__functions.h
+[186.261s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__type_support.c
+[186.261s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__functions.h
+[186.261s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__description.c
+[186.261s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__type_support.c
+[186.261s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__functions.c
+[186.262s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__functions.c
+[186.262s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__description.c
+[186.262s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__struct.h
+[186.262s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__type_support.h
+[186.262s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__struct.h
+[186.262s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__type_support.c
+[186.263s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__description.c
+[186.263s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__struct.h
+[186.263s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__type_support.h
+[186.263s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__struct.h
+[186.263s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__struct.h
+[186.263s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__description.c
+[186.264s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__description.c
+[186.264s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__functions.c
+[186.264s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__type_support.c
+[186.264s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__struct.h
+[186.264s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__struct.h
+[186.264s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__functions.c
+[186.265s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__functions.h
+[186.265s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__functions.h
+[186.265s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__struct.h
+[186.265s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__struct.h
+[186.265s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__type_support.c
+[186.266s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__functions.c
+[186.266s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__struct.h
+[186.266s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__functions.c
+[186.266s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__type_support.h
+[186.266s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__type_support.h
+[186.266s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__type_support.h
+[186.267s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__type_support.c
+[186.267s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__functions.h
+[186.267s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__type_support.c
+[186.267s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__struct.h
+[186.268s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__description.c
+[186.268s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__type_support.c
+[186.268s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__functions.h
+[186.268s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__functions.c
+[186.268s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__type_support.h
+[186.268s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__struct.h
+[186.268s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__description.c
+[186.268s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__type_support.c
+[186.269s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__type_support.h
+[186.269s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__description.c
+[186.269s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__functions.h
+[186.269s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__type_support.h
+[186.269s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__functions.c
+[186.270s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__functions.h
+[186.270s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__type_support.h
+[186.270s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__functions.c
+[186.270s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__type_support.h
+[186.272s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__description.c
+[186.272s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__type_support.h
+[186.272s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__type_support.c
+[186.272s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__functions.c
+[186.272s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__functions.h
+[186.273s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__type_support.h
+[186.273s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__functions.h
+[186.273s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__functions.c
+[186.274s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__functions.h
+[186.274s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__type_support.c
+[186.275s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__functions.c
+[186.275s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__type_support.h
+[186.275s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__type_support.c
+[186.276s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__functions.h
+[186.276s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__description.c
+[186.276s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__functions.c
+[186.277s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__type_support.h
+[186.277s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__description.c
+[186.277s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__type_support.c
+[186.278s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__functions.h
+[186.278s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__type_support.c
+[186.278s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__type_support.c
+[186.279s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__struct.h
+[186.279s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__functions.h
+[186.279s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/track_visual.h
+[186.280s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity.h
+[186.280s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/dataframe.h
+[186.280s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity_wrench.h
+[186.280s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/world_reset.h
+[186.281s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/light.h
+[186.281s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_generator_c__visibility_control.h
+[186.281s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/world_control.h
+[186.281s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/string_vec.h
+[186.282s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/gui_camera.h
+[186.282s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity_factory.h
+[186.282s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[186.282s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/spawn_entity.h
+[186.283s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/set_entity_pose.h
+[186.283s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[186.283s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__functions.h
+[186.284s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__type_support.c
+[186.284s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__functions.c
+[186.284s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__struct.h
+[186.284s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__type_support.c
+[186.285s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__functions.c
+[186.285s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__description.c
+[186.285s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__description.c
+[186.286s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__functions.c
+[186.286s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__type_support.c
+[186.286s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.h
+[186.287s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__struct.h
+[186.287s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__type_support.h
+[186.287s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__functions.c
+[186.287s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__type_support.h
+[186.288s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__struct.h
+[186.288s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__functions.h
+[186.288s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.c
+[186.289s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__functions.h
+[186.289s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__type_support.h
+[186.289s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__description.c
+[186.289s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__description.c
+[186.289s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__struct.h
+[186.290s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__functions.h
+[186.290s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/control_world.h
+[186.290s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/delete_entity.h
+[186.290s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/library_path.sh
+[186.291s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/library_path.dsv
+[186.291s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_generator_c.so
+[186.291s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_generator_c.so" to ""
+[186.291s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[186.292s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[186.292s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[186.292s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__rosidl_typesupport_fastrtps_c.h
+[186.292s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__rosidl_typesupport_fastrtps_c.h
+[186.293s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__rosidl_typesupport_fastrtps_c.h
+[186.293s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__rosidl_typesupport_fastrtps_c.h
+[186.293s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__rosidl_typesupport_fastrtps_c.h
+[186.294s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__rosidl_typesupport_fastrtps_c.h
+[186.294s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__rosidl_typesupport_fastrtps_c.h
+[186.294s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__rosidl_typesupport_fastrtps_c.h
+[186.294s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__rosidl_typesupport_fastrtps_c.h
+[186.295s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__rosidl_typesupport_fastrtps_c.h
+[186.295s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__rosidl_typesupport_fastrtps_c.h
+[186.295s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__rosidl_typesupport_fastrtps_c.h
+[186.295s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__rosidl_typesupport_fastrtps_c.h
+[186.296s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__rosidl_typesupport_fastrtps_c.h
+[186.296s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__rosidl_typesupport_fastrtps_c.h
+[186.296s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__rosidl_typesupport_fastrtps_c.h
+[186.296s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__rosidl_typesupport_fastrtps_c.h
+[186.296s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__rosidl_typesupport_fastrtps_c.h
+[186.296s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__rosidl_typesupport_fastrtps_c.h
+[186.297s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[186.297s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[186.297s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[186.297s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__rosidl_typesupport_fastrtps_c.h
+[186.297s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__rosidl_typesupport_fastrtps_c.h
+[186.297s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__rosidl_typesupport_fastrtps_c.h
+[186.298s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_fastrtps_c.h
+[186.298s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_fastrtps_c.so
+[186.298s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[186.298s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[186.298s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[186.299s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/contact.hpp
+[186.299s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity_factory.hpp
+[186.300s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/float32_array.hpp
+[186.300s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[186.300s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__traits.hpp
+[186.300s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__struct.hpp
+[186.301s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__builder.hpp
+[186.301s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__type_support.hpp
+[186.301s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__struct.hpp
+[186.301s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__traits.hpp
+[186.301s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__struct.hpp
+[186.301s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__type_support.hpp
+[186.302s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__type_support.hpp
+[186.302s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__builder.hpp
+[186.302s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__struct.hpp
+[186.302s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__traits.hpp
+[186.302s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__traits.hpp
+[186.302s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__struct.hpp
+[186.303s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__builder.hpp
+[186.303s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__builder.hpp
+[186.303s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__builder.hpp
+[186.303s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__builder.hpp
+[186.303s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__builder.hpp
+[186.304s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__struct.hpp
+[186.304s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__type_support.hpp
+[186.304s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__struct.hpp
+[186.304s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__builder.hpp
+[186.304s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__type_support.hpp
+[186.304s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__builder.hpp
+[186.305s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__type_support.hpp
+[186.305s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__type_support.hpp
+[186.305s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__type_support.hpp
+[186.305s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__builder.hpp
+[186.305s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__type_support.hpp
+[186.305s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__struct.hpp
+[186.306s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__struct.hpp
+[186.306s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__traits.hpp
+[186.306s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__traits.hpp
+[186.307s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__traits.hpp
+[186.307s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__type_support.hpp
+[186.307s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__traits.hpp
+[186.307s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__type_support.hpp
+[186.307s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__traits.hpp
+[186.308s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__builder.hpp
+[186.308s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__type_support.hpp
+[186.308s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__builder.hpp
+[186.308s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__struct.hpp
+[186.308s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__builder.hpp
+[186.308s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__traits.hpp
+[186.308s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__type_support.hpp
+[186.308s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__struct.hpp
+[186.309s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__traits.hpp
+[186.309s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__builder.hpp
+[186.309s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__traits.hpp
+[186.309s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__type_support.hpp
+[186.309s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__traits.hpp
+[186.310s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__traits.hpp
+[186.310s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__type_support.hpp
+[186.310s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__struct.hpp
+[186.310s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__type_support.hpp
+[186.310s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__traits.hpp
+[186.311s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__builder.hpp
+[186.311s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__traits.hpp
+[186.311s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__builder.hpp
+[186.311s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__struct.hpp
+[186.311s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__traits.hpp
+[186.311s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__struct.hpp
+[186.312s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__struct.hpp
+[186.312s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__traits.hpp
+[186.312s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__builder.hpp
+[186.312s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__struct.hpp
+[186.312s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__traits.hpp
+[186.312s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__struct.hpp
+[186.312s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__struct.hpp
+[186.313s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__type_support.hpp
+[186.313s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__builder.hpp
+[186.313s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__type_support.hpp
+[186.314s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__struct.hpp
+[186.314s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__type_support.hpp
+[186.314s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__builder.hpp
+[186.314s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/joint_wrench.hpp
+[186.314s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/video_record.hpp
+[186.315s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/dataframe.hpp
+[186.315s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/gui_camera.hpp
+[186.315s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/string_vec.hpp
+[186.315s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/track_visual.hpp
+[186.315s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity_wrench.hpp
+[186.315s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/altimeter.hpp
+[186.316s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[186.316s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/sensor_noise.hpp
+[186.316s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/entity.hpp
+[186.316s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/param_vec.hpp
+[186.316s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/material_color.hpp
+[186.316s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/light.hpp
+[186.317s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/world_control.hpp
+[186.317s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/world_reset.hpp
+[186.317s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/contacts.hpp
+[186.317s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[186.317s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/control_world.hpp
+[186.317s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[186.317s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__struct.hpp
+[186.317s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__struct.hpp
+[186.318s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__traits.hpp
+[186.318s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__type_support.hpp
+[186.318s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__struct.hpp
+[186.318s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__struct.hpp
+[186.318s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__type_support.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__builder.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__traits.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__type_support.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__traits.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__builder.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__traits.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__builder.hpp
+[186.319s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__builder.hpp
+[186.320s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/set_entity_pose.hpp
+[186.320s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/spawn_entity.hpp
+[186.320s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/delete_entity.hpp
+[186.320s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[186.321s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[186.321s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[186.321s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[186.321s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__rosidl_typesupport_fastrtps_cpp.hpp
+[186.321s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dds_fastrtps
+[186.321s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__rosidl_typesupport_fastrtps_cpp.hpp
+[186.322s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__rosidl_typesupport_fastrtps_cpp.hpp
+[186.322s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp
+[186.322s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__rosidl_typesupport_fastrtps_cpp.hpp
+[186.322s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__rosidl_typesupport_fastrtps_cpp.hpp
+[186.322s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__rosidl_typesupport_fastrtps_cpp.hpp
+[186.323s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__rosidl_typesupport_fastrtps_cpp.hpp
+[186.323s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__rosidl_typesupport_fastrtps_cpp.hpp
+[186.323s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__rosidl_typesupport_fastrtps_cpp.hpp
+[186.323s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__rosidl_typesupport_fastrtps_cpp.hpp
+[186.323s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__rosidl_typesupport_fastrtps_cpp.hpp
+[186.323s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__rosidl_typesupport_fastrtps_cpp.hpp
+[186.324s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__rosidl_typesupport_fastrtps_cpp.hpp
+[186.324s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__rosidl_typesupport_fastrtps_cpp.hpp
+[186.324s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__rosidl_typesupport_fastrtps_cpp.hpp
+[186.324s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__rosidl_typesupport_fastrtps_cpp.hpp
+[186.324s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__rosidl_typesupport_fastrtps_cpp.hpp
+[186.325s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__rosidl_typesupport_fastrtps_cpp.hpp
+[186.325s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[186.325s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[186.325s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/dds_fastrtps
+[186.325s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[186.325s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__rosidl_typesupport_fastrtps_cpp.hpp
+[186.326s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__rosidl_typesupport_fastrtps_cpp.hpp
+[186.326s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__rosidl_typesupport_fastrtps_cpp.hpp
+[186.326s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[186.326s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[186.326s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[186.327s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[186.327s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[186.327s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__type_support.c
+[186.327s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__rosidl_typesupport_introspection_c.h
+[186.327s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__rosidl_typesupport_introspection_c.h
+[186.328s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__type_support.c
+[186.328s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__rosidl_typesupport_introspection_c.h
+[186.328s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__rosidl_typesupport_introspection_c.h
+[186.328s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__rosidl_typesupport_introspection_c.h
+[186.328s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__type_support.c
+[186.328s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__rosidl_typesupport_introspection_c.h
+[186.328s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__rosidl_typesupport_introspection_c.h
+[186.329s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__rosidl_typesupport_introspection_c.h
+[186.329s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__type_support.c
+[186.329s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__type_support.c
+[186.329s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__rosidl_typesupport_introspection_c.h
+[186.329s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__type_support.c
+[186.329s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__type_support.c
+[186.330s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__rosidl_typesupport_introspection_c.h
+[186.330s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__rosidl_typesupport_introspection_c.h
+[186.330s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__type_support.c
+[186.330s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__type_support.c
+[186.330s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__rosidl_typesupport_introspection_c.h
+[186.330s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__type_support.c
+[186.331s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__type_support.c
+[186.331s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__rosidl_typesupport_introspection_c.h
+[186.331s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__type_support.c
+[186.331s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__type_support.c
+[186.331s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__rosidl_typesupport_introspection_c.h
+[186.331s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__rosidl_typesupport_introspection_c.h
+[186.332s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__rosidl_typesupport_introspection_c.h
+[186.332s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__rosidl_typesupport_introspection_c.h
+[186.332s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__type_support.c
+[186.332s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__type_support.c
+[186.332s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__rosidl_typesupport_introspection_c.h
+[186.332s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__type_support.c
+[186.333s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__rosidl_typesupport_introspection_c.h
+[186.333s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__type_support.c
+[186.333s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__type_support.c
+[186.333s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__type_support.c
+[186.333s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[186.333s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[186.333s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[186.334s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__type_support.c
+[186.334s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__type_support.c
+[186.334s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_introspection_c.h
+[186.334s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__type_support.c
+[186.334s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__rosidl_typesupport_introspection_c.h
+[186.335s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__rosidl_typesupport_introspection_c.h
+[186.335s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.c
+[186.335s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__rosidl_typesupport_introspection_c.h
+[186.335s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_introspection_c.so
+[186.335s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[186.335s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_c.so
+[186.336s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_c.so" to ""
+[186.336s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces
+[186.336s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg
+[186.336s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail
+[186.336s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__type_support.cpp
+[186.336s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__type_support.cpp
+[186.336s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__type_support.cpp
+[186.337s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__type_support.cpp
+[186.337s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__type_support.cpp
+[186.337s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__type_support.cpp
+[186.337s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__type_support.cpp
+[186.337s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/dataframe__rosidl_typesupport_introspection_cpp.hpp
+[186.337s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__rosidl_typesupport_introspection_cpp.hpp
+[186.338s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__rosidl_typesupport_introspection_cpp.hpp
+[186.338s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__rosidl_typesupport_introspection_cpp.hpp
+[186.338s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__type_support.cpp
+[186.338s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/param_vec__type_support.cpp
+[186.338s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/material_color__rosidl_typesupport_introspection_cpp.hpp
+[186.339s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__type_support.cpp
+[186.339s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__type_support.cpp
+[186.339s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__type_support.cpp
+[186.339s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__type_support.cpp
+[186.339s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__rosidl_typesupport_introspection_cpp.hpp
+[186.339s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/track_visual__rosidl_typesupport_introspection_cpp.hpp
+[186.340s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/float32_array__rosidl_typesupport_introspection_cpp.hpp
+[186.340s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/gui_camera__rosidl_typesupport_introspection_cpp.hpp
+[186.340s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_wrench__type_support.cpp
+[186.340s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/video_record__rosidl_typesupport_introspection_cpp.hpp
+[186.340s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__type_support.cpp
+[186.340s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_reset__rosidl_typesupport_introspection_cpp.hpp
+[186.341s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__type_support.cpp
+[186.341s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contact__rosidl_typesupport_introspection_cpp.hpp
+[186.341s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity_factory__rosidl_typesupport_introspection_cpp.hpp
+[186.341s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/string_vec__rosidl_typesupport_introspection_cpp.hpp
+[186.341s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__type_support.cpp
+[186.342s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/contacts__type_support.cpp
+[186.342s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/altimeter__rosidl_typesupport_introspection_cpp.hpp
+[186.342s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/sensor_noise__type_support.cpp
+[186.342s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp
+[186.342s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/joint_wrench__rosidl_typesupport_introspection_cpp.hpp
+[186.343s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/world_control__rosidl_typesupport_introspection_cpp.hpp
+[186.343s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/msg/detail/light__rosidl_typesupport_introspection_cpp.hpp
+[186.343s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv
+[186.343s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail
+[186.343s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__rosidl_typesupport_introspection_cpp.hpp
+[186.344s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__rosidl_typesupport_introspection_cpp.hpp
+[186.344s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/delete_entity__type_support.cpp
+[186.344s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__type_support.cpp
+[186.344s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/control_world__rosidl_typesupport_introspection_cpp.hpp
+[186.344s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__rosidl_typesupport_introspection_cpp.hpp
+[186.344s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/set_entity_pose__type_support.cpp
+[186.344s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/include/ros_gz_interfaces/ros_gz_interfaces/srv/detail/spawn_entity__type_support.cpp
+[186.344s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_introspection_cpp.so
+[186.344s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[186.345s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_cpp.so
+[186.345s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_typesupport_cpp.so" to ""
+[186.345s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/pythonpath.sh
+[186.345s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/pythonpath.dsv
+[186.345s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces-1.0.8-py3.12.egg-info
+[186.345s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces-1.0.8-py3.12.egg-info/PKG-INFO
+[186.345s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces-1.0.8-py3.12.egg-info/top_level.txt
+[186.346s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces-1.0.8-py3.12.egg-info/dependency_links.txt
+[186.346s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces-1.0.8-py3.12.egg-info/SOURCES.txt
+[186.346s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces
+[186.346s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[186.346s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.so
+[186.347s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg
+[186.347s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_contact.py
+[186.347s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_world_control_s.c
+[186.347s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_contact_s.c
+[186.347s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_light_s.c
+[186.348s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_sensor_noise_s.c
+[186.348s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_light.py
+[186.348s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_joint_wrench_s.c
+[186.348s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_string_vec_s.c
+[186.348s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_param_vec_s.c
+[186.349s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_gui_camera_s.c
+[186.349s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity_factory.py
+[186.349s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_contacts_s.c
+[186.349s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_track_visual_s.c
+[186.349s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_contacts.py
+[186.349s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_altimeter_s.c
+[186.350s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_material_color.py
+[186.350s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_sensor_noise.py
+[186.350s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_dataframe_s.c
+[186.350s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_world_control.py
+[186.350s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity_factory_s.c
+[186.351s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_string_vec.py
+[186.351s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity_wrench_s.c
+[186.351s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_gui_camera.py
+[186.351s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_float32_array.py
+[186.351s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity_s.c
+[186.351s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_dataframe.py
+[186.352s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_float32_array_s.c
+[186.352s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_altimeter.py
+[186.352s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity_wrench.py
+[186.352s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_joint_wrench.py
+[186.352s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_world_reset_s.c
+[186.352s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_track_visual.py
+[186.353s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_video_record.py
+[186.353s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_param_vec.py
+[186.353s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity.py
+[186.353s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_world_reset.py
+[186.353s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/__init__.py
+[186.353s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_video_record_s.c
+[186.354s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_material_color_s.c
+[186.354s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv
+[186.354s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_spawn_entity_s.c
+[186.354s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_spawn_entity.py
+[186.354s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_control_world.py
+[186.354s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_set_entity_pose.py
+[186.354s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_control_world_s.c
+[186.355s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_delete_entity.py
+[186.355s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_delete_entity_s.c
+[186.355s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_set_entity_pose_s.c
+[186.355s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/__init__.py
+[186.355s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_c.c
+[186.355s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/_ros_gz_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[186.356s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[186.356s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_c.so
+[186.356s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/__init__.py
+[186.493s] Listing '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces'...
+[186.493s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/__init__.py'...
+[186.493s] Listing '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg'...
+[186.493s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/__init__.py'...
+[186.493s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_altimeter.py'...
+[186.494s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_contact.py'...
+[186.494s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_contacts.py'...
+[186.494s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_dataframe.py'...
+[186.494s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity.py'...
+[186.494s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity_factory.py'...
+[186.495s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_entity_wrench.py'...
+[186.495s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_float32_array.py'...
+[186.495s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_gui_camera.py'...
+[186.495s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_joint_wrench.py'...
+[186.495s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_light.py'...
+[186.495s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_material_color.py'...
+[186.496s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_param_vec.py'...
+[186.496s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_sensor_noise.py'...
+[186.496s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_string_vec.py'...
+[186.496s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_track_visual.py'...
+[186.497s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_video_record.py'...
+[186.497s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_world_control.py'...
+[186.497s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/msg/_world_reset.py'...
+[186.497s] Listing '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv'...
+[186.497s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/__init__.py'...
+[186.497s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_control_world.py'...
+[186.497s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_delete_entity.py'...
+[186.498s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_set_entity_pose.py'...
+[186.498s] Compiling '/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/srv/_spawn_entity.py'...
+[186.506s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[186.506s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[186.506s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.so
+[186.508s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[186.508s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_c.so
+[186.508s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/python3.12/site-packages/ros_gz_interfaces/ros_gz_interfaces_s__rosidl_typesupport_c.so" to ""
+[186.509s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_generator_py.so
+[186.509s] -- Set non-toolchain portion of runtime path of "/home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/lib/libros_gz_interfaces__rosidl_generator_py.so" to ""
+[186.509s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Altimeter.idl
+[186.509s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contact.idl
+[186.509s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contacts.idl
+[186.510s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Dataframe.idl
+[186.510s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Entity.idl
+[186.510s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/EntityFactory.idl
+[186.510s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/EntityWrench.idl
+[186.511s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Float32Array.idl
+[186.511s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/GuiCamera.idl
+[186.511s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/JointWrench.idl
+[186.511s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Light.idl
+[186.512s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/MaterialColor.idl
+[186.512s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/ParamVec.idl
+[186.512s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/SensorNoise.idl
+[186.512s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/StringVec.idl
+[186.512s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/TrackVisual.idl
+[186.513s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/VideoRecord.idl
+[186.513s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldControl.idl
+[186.513s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldReset.idl
+[186.516s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/ControlWorld.idl
+[186.516s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/DeleteEntity.idl
+[186.516s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SetEntityPose.idl
+[186.516s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SpawnEntity.idl
+[186.517s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Altimeter.msg
+[186.517s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contact.msg
+[186.517s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Contacts.msg
+[186.517s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Dataframe.msg
+[186.517s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Entity.msg
+[186.518s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/EntityFactory.msg
+[186.518s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/EntityWrench.msg
+[186.518s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Float32Array.msg
+[186.518s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/GuiCamera.msg
+[186.518s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/JointWrench.msg
+[186.519s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/Light.msg
+[186.519s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/MaterialColor.msg
+[186.519s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/ParamVec.msg
+[186.519s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/SensorNoise.msg
+[186.519s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/StringVec.msg
+[186.520s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/TrackVisual.msg
+[186.520s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/VideoRecord.msg
+[186.520s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldControl.msg
+[186.520s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/msg/WorldReset.msg
+[186.520s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/ControlWorld.srv
+[186.520s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/DeleteEntity.srv
+[186.521s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SetEntityPose.srv
+[186.521s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/srv/SpawnEntity.srv
+[186.521s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ament_index/resource_index/package_run_dependencies/ros_gz_interfaces
+[186.522s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ament_index/resource_index/parent_prefix_path/ros_gz_interfaces
+[186.522s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/ament_prefix_path.sh
+[186.522s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/ament_prefix_path.dsv
+[186.522s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/path.sh
+[186.522s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/environment/path.dsv
+[186.523s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/local_setup.bash
+[186.523s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/local_setup.sh
+[186.523s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/local_setup.zsh
+[186.523s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/local_setup.dsv
+[186.524s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/package.dsv
+[186.524s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ament_index/resource_index/packages/ros_gz_interfaces
+[186.524s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_cExport.cmake
+[186.525s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_cExport-noconfig.cmake
+[186.525s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[186.526s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[186.526s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_cppExport.cmake
+[186.526s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[186.527s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[186.527s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[186.527s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[186.528s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_cExport.cmake
+[186.528s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[186.528s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[186.528s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[186.529s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_cppExport.cmake
+[186.529s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[186.529s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_pyExport.cmake
+[186.529s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/export_ros_gz_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[186.530s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/rosidl_cmake-extras.cmake
+[186.530s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[186.530s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[186.530s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[186.531s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[186.531s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[186.531s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[186.531s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfacesConfig.cmake
+[186.532s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/cmake/ros_gz_interfacesConfig-version.cmake
+[186.532s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_interfaces/share/ros_gz_interfaces/package.xml
+[186.536s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/ros_gz_interfaces

@@ -1,0 +1,20 @@
+[0.319s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/tempsens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/tempsens -- -j4 -l4
+[2.354s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/tempsens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/tempsens -- -j4 -l4
+[2.393s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/tempsens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/tempsens
+[2.436s] -- Install configuration: ""
+[2.598s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/ament_index/resource_index/package_run_dependencies/tempsens
+[2.651s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/ament_index/resource_index/parent_prefix_path/tempsens
+[2.658s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/environment/ament_prefix_path.sh
+[2.659s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/environment/ament_prefix_path.dsv
+[2.659s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/environment/path.sh
+[2.659s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/environment/path.dsv
+[2.659s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/local_setup.bash
+[2.659s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/local_setup.sh
+[2.660s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/local_setup.zsh
+[2.660s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/local_setup.dsv
+[2.660s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/package.dsv
+[2.662s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/ament_index/resource_index/packages/tempsens
+[2.666s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/cmake/tempsensConfig.cmake
+[2.666s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/cmake/tempsensConfig-version.cmake
+[2.666s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/tempsens/share/tempsens/package.xml
+[2.668s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/tempsens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/tempsens

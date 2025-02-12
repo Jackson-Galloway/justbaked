@@ -1,0 +1,220 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-fa15106dbdadd672750f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-0908a8c91ddba5d6c989.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/jazzy/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ros_gz_sim",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ros_gz_sim_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ros_gz_sim_egg-a5d6a955d815d5868e3f.json",
+					"name" : "ament_cmake_python_build_ros_gz_sim_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ros_gz_sim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ros_gz_sim-9784b08010b9d2fd870d.json",
+					"name" : "ament_cmake_python_copy_ros_gz_sim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ros_gz_sim_setup::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ros_gz_sim_setup-f9114f003c447ad08749.json",
+					"name" : "ament_cmake_python_copy_ros_gz_sim_setup",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "create::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-create-bd3fbfbf3fa81d5b697d.json",
+					"name" : "create",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-07a667987522cfad63cb.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-8a7f95e2bb9f059a1ff6.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gzserver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gzserver-d1a1e124ab6d9fdb0646.json",
+					"name" : "gzserver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gzserver_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gzserver_component-7908dd40d9763ed560af.json",
+					"name" : "gzserver_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "remove::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-remove-f8aef96f6fbac662a2dc.json",
+					"name" : "remove",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_gz_sim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_gz_sim-a72e67afa63a33846c84.json",
+					"name" : "ros_gz_sim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_gz_sim_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_gz_sim_uninstall-8e3cf1502cb01b933268.json",
+					"name" : "ros_gz_sim_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_create::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_create-d51cf369d50bac8a29e5.json",
+					"name" : "test_create",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_remove::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_remove-2949f92e3ee6ca05d4fc.json",
+					"name" : "test_remove",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_stopwatch::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_stopwatch-1a28e4169475c31f3e3e.json",
+					"name" : "test_stopwatch",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-09508a709a4859c7fa11.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jack/ASUIEEE25/justbaked/build/ros_gz_sim",
+		"source" : "/home/jack/ASUIEEE25/justbaked/src/ros_gz/ros_gz_sim"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,23 @@
+[  0%] Built target ament_cmake_python_copy_ros_gz_bridge_setup
+[  2%] Built target bridge_node
+[  4%] Built target gtest_main
+[  4%] Built target ament_cmake_python_copy_ros_gz_bridge
+[  6%] Built target gtest
+[  9%] Built target test_rcl_interfaces
+[ 13%] Built target test_utils
+[ 14%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/geometry_msgs.cpp.o[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/ros_gz_bridge.dir/generated/factories/ros_gz_interfaces.cpp.o[0m
+running egg_info
+writing ros_gz_bridge.egg-info/PKG-INFO
+writing dependency_links to ros_gz_bridge.egg-info/dependency_links.txt
+writing entry points to ros_gz_bridge.egg-info/entry_points.txt
+writing top-level names to ros_gz_bridge.egg-info/top_level.txt
+[ 18%] Built target test_gz_publisher
+reading manifest file 'ros_gz_bridge.egg-info/SOURCES.txt'
+[ 19%] [32mBuilding CXX object CMakeFiles/test_ros_publisher.dir/generated/test/ros_publisher.cpp.o[0m
+writing manifest file 'ros_gz_bridge.egg-info/SOURCES.txt'
+[ 19%] Built target ament_cmake_python_build_ros_gz_bridge_egg
+[ 23%] Built target test_gz_subscriber
+[ 25%] Built target test_gz_server
+[ 27%] Built target test_ros_client
+[ 28%] [32mBuilding CXX object CMakeFiles/test_ros_subscriber.dir/generated/test/geometry_msgs_subscriber.cpp.o[0m

@@ -1,0 +1,83 @@
+[0.234s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/ros_gz_sim -- -j4 -l4
+[4.001s] [  0%] Built target ament_cmake_python_copy_ros_gz_sim_setup
+[4.140s] [  0%] Built target ament_cmake_python_copy_ros_gz_sim
+[5.629s] [ 10%] Built target ros_gz_sim
+[5.810s] [ 20%] Built target remove
+[5.810s] [ 30%] Built target create
+[6.041s] [ 40%] Built target gzserver_component
+[6.129s] [ 50%] Built target gzserver
+[6.393s] [ 60%] Built target gtest_main
+[6.416s] [ 70%] Built target gtest
+[6.721s] running egg_info
+[6.771s] writing ros_gz_sim.egg-info/PKG-INFO
+[6.771s] writing dependency_links to ros_gz_sim.egg-info/dependency_links.txt
+[6.771s] writing entry points to ros_gz_sim.egg-info/entry_points.txt
+[6.772s] writing top-level names to ros_gz_sim.egg-info/top_level.txt
+[6.796s] [ 80%] Built target test_remove
+[6.809s] [ 90%] Built target test_create
+[6.814s] [100%] Built target test_stopwatch
+[6.912s] reading manifest file 'ros_gz_sim.egg-info/SOURCES.txt'
+[6.949s] writing manifest file 'ros_gz_sim.egg-info/SOURCES.txt'
+[6.996s] [100%] Built target ament_cmake_python_build_ros_gz_sim_egg
+[7.012s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/ros_gz_sim -- -j4 -l4
+[7.136s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/ros_gz_sim
+[7.170s] -- Install configuration: ""
+[7.175s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/environment/pythonpath.sh
+[7.175s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/environment/pythonpath.dsv
+[7.178s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim-1.0.8-py3.12.egg-info
+[7.179s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim-1.0.8-py3.12.egg-info/PKG-INFO
+[7.179s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim-1.0.8-py3.12.egg-info/top_level.txt
+[7.180s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim-1.0.8-py3.12.egg-info/dependency_links.txt
+[7.180s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim-1.0.8-py3.12.egg-info/entry_points.txt
+[7.180s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim-1.0.8-py3.12.egg-info/SOURCES.txt
+[7.181s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim
+[7.192s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim/actions
+[7.193s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim/actions/gzserver.py
+[7.193s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim/actions/__init__.py
+[7.193s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim/actions/gz_spawn_model.py
+[7.194s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim/__init__.py
+[7.379s] Listing '/home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim'...
+[7.379s] Listing '/home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/python3.12/site-packages/ros_gz_sim/actions'...
+[7.390s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/include/ros_gz_sim
+[7.390s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/include/ros_gz_sim/Stopwatch.hpp
+[7.445s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/ros_gz_sim/gzserver
+[7.446s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/gz_sim.launch.py
+[7.446s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/gz_server.launch
+[7.446s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/gz_server.launch.py
+[7.446s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/gz_spawn_model.launch
+[7.447s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/gz_spawn_model.launch.py
+[7.447s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/ros_gz_sim.launch
+[7.447s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/ros_gz_sim.launch.py
+[7.448s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/ros_gz_spawn_model.launch.py
+[7.448s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/launch/gz_remove_model.launch.py
+[7.477s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/ros_gz_sim/create
+[7.502s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/ros_gz_sim/remove
+[7.503s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/ros_gz_sim/gzserver
+[7.520s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/libgzserver_component.so
+[7.527s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/libros_gz_sim.so
+[7.571s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/ros_gz_sim/test_stopwatch
+[7.590s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/ros_gz_sim/test_create
+[7.604s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/lib/ros_gz_sim/test_remove
+[7.607s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ament_index/resource_index/package_run_dependencies/ros_gz_sim
+[7.608s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ament_index/resource_index/parent_prefix_path/ros_gz_sim
+[7.608s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/environment/ament_prefix_path.sh
+[7.609s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/environment/ament_prefix_path.dsv
+[7.609s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/environment/path.sh
+[7.609s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/environment/path.dsv
+[7.609s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/local_setup.bash
+[7.609s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/local_setup.sh
+[7.609s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/local_setup.zsh
+[7.609s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/local_setup.dsv
+[7.610s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/package.dsv
+[7.617s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ament_index/resource_index/packages/ros_gz_sim
+[7.618s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ament_index/resource_index/rclcpp_components/ros_gz_sim
+[7.622s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/cmake/export_gzserver_componentExport.cmake
+[7.622s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/cmake/export_gzserver_componentExport-noconfig.cmake
+[7.624s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/cmake/ros_gz_simExport.cmake
+[7.624s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/cmake/ros_gz_simExport-noconfig.cmake
+[7.624s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/cmake/ament_cmake_export_targets-extras.cmake
+[7.624s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.625s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/cmake/ros_gz_simConfig.cmake
+[7.625s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/cmake/ros_gz_simConfig-version.cmake
+[7.625s] -- Up-to-date: /home/jack/ASUIEEE25/justbaked/install/ros_gz_sim/share/ros_gz_sim/package.xml
+[7.629s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/ros_gz_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/ros_gz_sim
