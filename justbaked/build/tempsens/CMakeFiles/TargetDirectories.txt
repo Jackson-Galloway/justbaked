@@ -1,9 +1,0 @@
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/uninstall.dir
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/tempsens_uninstall.dir
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/test.dir
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/edit_cache.dir
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/rebuild_cache.dir
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/list_install_components.dir
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/install.dir
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/install/local.dir
-/home/jack/ASUIEEE25/justbaked/build/tempsens/CMakeFiles/install/strip.dir

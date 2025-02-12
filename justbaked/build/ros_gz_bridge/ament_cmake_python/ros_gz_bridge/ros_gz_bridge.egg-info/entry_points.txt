@@ -1,2 +1,0 @@
-[launch.frontend.launch_extension]
-ros_gz_bridge = ros_gz_bridge
