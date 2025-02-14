@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/trackrobot/trackrobot.egg-info
+writing ../../build/trackrobot/trackrobot.egg-info/PKG-INFO
+writing dependency_links to ../../build/trackrobot/trackrobot.egg-info/dependency_links.txt
+writing requirements to ../../build/trackrobot/trackrobot.egg-info/requires.txt
+writing top-level names to ../../build/trackrobot/trackrobot.egg-info/top_level.txt
+writing manifest file '../../build/trackrobot/trackrobot.egg-info/SOURCES.txt'
+reading manifest file '../../build/trackrobot/trackrobot.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/trackrobot/trackrobot.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jack/ASUIEEE25/justbaked/build/trackrobot/build
+creating /home/jack/ASUIEEE25/justbaked/build/trackrobot/build/lib
+creating /home/jack/ASUIEEE25/justbaked/build/trackrobot/build/lib/trackrobot
+copying trackrobot/__init__.py -> /home/jack/ASUIEEE25/justbaked/build/trackrobot/build/lib/trackrobot
+running install
+running install_lib
+creating /home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages/trackrobot
+copying /home/jack/ASUIEEE25/justbaked/build/trackrobot/build/lib/trackrobot/__init__.py -> /home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages/trackrobot
+byte-compiling /home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages/trackrobot/__init__.py to __init__.cpython-312.pyc
+running install_data
+creating /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/ament_index
+creating /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/ament_index/resource_index
+creating /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/ament_index/resource_index/packages
+copying resource/trackrobot -> /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/ament_index/resource_index/packages
+copying package.xml -> /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot
+running install_egg_info
+Copying ../../build/trackrobot/trackrobot.egg-info to /home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages/trackrobot-0.0.0-py3.12.egg-info
+running install_scripts
+writing list of installed files to '/home/jack/ASUIEEE25/justbaked/build/trackrobot/install.log'

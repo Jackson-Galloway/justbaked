@@ -1,0 +1,5 @@
+[0.060s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/RPLidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/RPLidar -- -j4 -l4
+[0.117s] [0mCMake Error: The source directory "/home/jack/ASUIEEE25/justbaked/src/RPLidar" does not exist.
+[0.117s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.126s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.650s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/RPLidar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/RPLidar -- -j4 -l4

@@ -1,0 +1,2 @@
+Invoking command in '/home/jack/ASUIEEE25/justbaked/build/RPLidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/RPLidar -- -j4 -l4
+Invoked command in '/home/jack/ASUIEEE25/justbaked/build/RPLidar' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/RPLidar -- -j4 -l4

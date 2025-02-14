@@ -1,0 +1,33 @@
+[3.387s] Invoking command in '/home/jack/ASUIEEE25/justbaked/src/trackrobot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jack/ASUIEEE25/justbaked/build/trackrobot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/trackrobot build --build-base /home/jack/ASUIEEE25/justbaked/build/trackrobot/build install --record /home/jack/ASUIEEE25/justbaked/build/trackrobot/install.log --single-version-externally-managed install_data
+[3.991s] running egg_info
+[3.993s] creating ../../build/trackrobot/trackrobot.egg-info
+[4.040s] writing ../../build/trackrobot/trackrobot.egg-info/PKG-INFO
+[4.040s] writing dependency_links to ../../build/trackrobot/trackrobot.egg-info/dependency_links.txt
+[4.040s] writing requirements to ../../build/trackrobot/trackrobot.egg-info/requires.txt
+[4.041s] writing top-level names to ../../build/trackrobot/trackrobot.egg-info/top_level.txt
+[4.041s] writing manifest file '../../build/trackrobot/trackrobot.egg-info/SOURCES.txt'
+[4.138s] reading manifest file '../../build/trackrobot/trackrobot.egg-info/SOURCES.txt'
+[4.138s] adding license file 'LICENSE'
+[4.139s] writing manifest file '../../build/trackrobot/trackrobot.egg-info/SOURCES.txt'
+[4.140s] running build
+[4.140s] running build_py
+[4.140s] creating /home/jack/ASUIEEE25/justbaked/build/trackrobot/build
+[4.140s] creating /home/jack/ASUIEEE25/justbaked/build/trackrobot/build/lib
+[4.141s] creating /home/jack/ASUIEEE25/justbaked/build/trackrobot/build/lib/trackrobot
+[4.141s] copying trackrobot/__init__.py -> /home/jack/ASUIEEE25/justbaked/build/trackrobot/build/lib/trackrobot
+[4.141s] running install
+[4.159s] running install_lib
+[4.206s] creating /home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages/trackrobot
+[4.206s] copying /home/jack/ASUIEEE25/justbaked/build/trackrobot/build/lib/trackrobot/__init__.py -> /home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages/trackrobot
+[4.207s] byte-compiling /home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages/trackrobot/__init__.py to __init__.cpython-312.pyc
+[4.207s] running install_data
+[4.207s] creating /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/ament_index
+[4.208s] creating /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/ament_index/resource_index
+[4.208s] creating /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/ament_index/resource_index/packages
+[4.208s] copying resource/trackrobot -> /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/ament_index/resource_index/packages
+[4.208s] copying package.xml -> /home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot
+[4.209s] running install_egg_info
+[4.260s] Copying ../../build/trackrobot/trackrobot.egg-info to /home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages/trackrobot-0.0.0-py3.12.egg-info
+[4.262s] running install_scripts
+[4.577s] writing list of installed files to '/home/jack/ASUIEEE25/justbaked/build/trackrobot/install.log'
+[4.633s] Invoked command in '/home/jack/ASUIEEE25/justbaked/src/trackrobot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jack/ASUIEEE25/justbaked/build/trackrobot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/trackrobot build --build-base /home/jack/ASUIEEE25/justbaked/build/trackrobot/build install --record /home/jack/ASUIEEE25/justbaked/build/trackrobot/install.log --single-version-externally-managed install_data

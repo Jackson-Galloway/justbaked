@@ -1,0 +1,250 @@
+[0.213s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.213s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x743a5d6b4140>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x743a5d693bf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x743a5d693bf0>>, mixin_verb=('build',))
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.285s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jack/ASUIEEE25/justbaked'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/slam) by extension 'ros'
+[0.343s] DEBUG:colcon.colcon_core.package_identification:Package 'src/slam' with type 'ros.ament_cmake' and name 'slam'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsense) by extension 'ros'
+[0.344s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tempsense' with type 'ros.ament_cmake' and name 'tempsense'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/trackrobot) by extension 'ros'
+[0.346s] DEBUG:colcon.colcon_core.package_identification:Package 'src/trackrobot' with type 'ros.ament_python' and name 'trackrobot'
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.347s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.381s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.387s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 351 installed packages in /opt/ros/jazzy
+[0.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_args' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_target' from command line to 'None'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.523s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.524s] DEBUG:colcon.colcon_core.verb:Building package 'slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jack/ASUIEEE25/justbaked/build/slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jack/ASUIEEE25/justbaked/install/slam', 'merge_install': False, 'path': '/home/jack/ASUIEEE25/justbaked/src/slam', 'symlink_install': False, 'test_result_base': None}
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'cmake_args' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'cmake_target' from command line to 'None'
+[0.524s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'cmake_clean_cache' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'cmake_clean_first' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'cmake_force_configure' from command line to 'False'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'ament_cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'catkin_cmake_args' from command line to 'None'
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'tempsense' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.525s] DEBUG:colcon.colcon_core.verb:Building package 'tempsense' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jack/ASUIEEE25/justbaked/build/tempsense', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jack/ASUIEEE25/justbaked/install/tempsense', 'merge_install': False, 'path': '/home/jack/ASUIEEE25/justbaked/src/tempsense', 'symlink_install': False, 'test_result_base': None}
+[0.525s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'cmake_args' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'cmake_target' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'cmake_clean_first' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'cmake_force_configure' from command line to 'False'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'ament_cmake_args' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.526s] Level 5:colcon.colcon_core.verb:set package 'trackrobot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.526s] DEBUG:colcon.colcon_core.verb:Building package 'trackrobot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jack/ASUIEEE25/justbaked/build/trackrobot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jack/ASUIEEE25/justbaked/install/trackrobot', 'merge_install': False, 'path': '/home/jack/ASUIEEE25/justbaked/src/trackrobot', 'symlink_install': False, 'test_result_base': None}
+[0.526s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.527s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.528s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jack/ASUIEEE25/justbaked/src/slam' with build type 'ament_cmake'
+[0.528s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jack/ASUIEEE25/justbaked/src/slam'
+[0.532s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.532s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.541s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jack/ASUIEEE25/justbaked/src/tempsense' with build type 'ament_cmake'
+[0.541s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jack/ASUIEEE25/justbaked/src/tempsense'
+[0.541s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.541s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.549s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jack/ASUIEEE25/justbaked/src/trackrobot' with build type 'ament_python'
+[0.550s] Level 1:colcon.colcon_core.shell:create_environment_hook('trackrobot', 'ament_prefix_path')
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/hook/ament_prefix_path.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/hook/ament_prefix_path.dsv'
+[0.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/hook/ament_prefix_path.sh'
+[0.554s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.554s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/ASUIEEE25/justbaked/build/slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/slam -- -j4 -l4
+[0.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/ASUIEEE25/justbaked/build/tempsense': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/tempsense -- -j4 -l4
+[1.050s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jack/ASUIEEE25/justbaked/src/trackrobot'
+[1.051s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.051s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/ASUIEEE25/justbaked/build/slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/slam -- -j4 -l4
+[1.076s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/ASUIEEE25/justbaked/build/slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/slam
+[1.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/ASUIEEE25/justbaked/build/tempsense' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/tempsense -- -j4 -l4
+[1.079s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/ASUIEEE25/justbaked/build/tempsense': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/tempsense
+[1.100s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tempsense)
+[1.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/ASUIEEE25/justbaked/build/tempsense' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/tempsense
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense' for CMake module files
+[1.114s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense' for CMake config files
+[1.114s] Level 1:colcon.colcon_core.shell:create_environment_hook('tempsense', 'cmake_prefix_path')
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/hook/cmake_prefix_path.ps1'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/hook/cmake_prefix_path.dsv'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/hook/cmake_prefix_path.sh'
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense/bin'
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense/lib/pkgconfig/tempsense.pc'
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense/lib/python3.12/site-packages'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense/bin'
+[1.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.ps1'
+[1.119s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.dsv'
+[1.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.sh'
+[1.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.bash'
+[1.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.zsh'
+[1.124s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/ASUIEEE25/justbaked/install/tempsense/share/colcon-core/packages/tempsense)
+[1.124s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tempsense)
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense' for CMake module files
+[1.126s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense' for CMake config files
+[1.126s] Level 1:colcon.colcon_core.shell:create_environment_hook('tempsense', 'cmake_prefix_path')
+[1.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/hook/cmake_prefix_path.ps1'
+[1.127s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/hook/cmake_prefix_path.dsv'
+[1.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/hook/cmake_prefix_path.sh'
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense/bin'
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense/lib/pkgconfig/tempsense.pc'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense/lib/python3.12/site-packages'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/tempsense/bin'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.ps1'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.dsv'
+[1.131s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.sh'
+[1.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.bash'
+[1.133s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.zsh'
+[1.134s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/ASUIEEE25/justbaked/install/tempsense/share/colcon-core/packages/tempsense)
+[1.136s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam)
+[1.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/ASUIEEE25/justbaked/build/slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/slam
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam' for CMake module files
+[1.137s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam' for CMake config files
+[1.138s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam', 'cmake_prefix_path')
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/hook/cmake_prefix_path.ps1'
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/hook/cmake_prefix_path.dsv'
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/hook/cmake_prefix_path.sh'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam/bin'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam/lib/pkgconfig/slam.pc'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam/lib/python3.12/site-packages'
+[1.141s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam/bin'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.ps1'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.dsv'
+[1.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.sh'
+[1.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.bash'
+[1.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.zsh'
+[1.144s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/ASUIEEE25/justbaked/install/slam/share/colcon-core/packages/slam)
+[1.145s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(slam)
+[1.145s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam' for CMake module files
+[1.146s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam' for CMake config files
+[1.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('slam', 'cmake_prefix_path')
+[1.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/hook/cmake_prefix_path.ps1'
+[1.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/hook/cmake_prefix_path.dsv'
+[1.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/hook/cmake_prefix_path.sh'
+[1.149s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam/bin'
+[1.150s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam/lib/pkgconfig/slam.pc'
+[1.150s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam/lib/python3.12/site-packages'
+[1.151s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/slam/bin'
+[1.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.ps1'
+[1.152s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.dsv'
+[1.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.sh'
+[1.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.bash'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/slam/share/slam/package.zsh'
+[1.157s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/ASUIEEE25/justbaked/install/slam/share/colcon-core/packages/slam)
+[3.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/ASUIEEE25/justbaked/src/trackrobot': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jack/ASUIEEE25/justbaked/build/trackrobot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/trackrobot build --build-base /home/jack/ASUIEEE25/justbaked/build/trackrobot/build install --record /home/jack/ASUIEEE25/justbaked/build/trackrobot/install.log --single-version-externally-managed install_data
+[5.182s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/trackrobot' for CMake module files
+[5.184s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/trackrobot' for CMake config files
+[5.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/ASUIEEE25/justbaked/src/trackrobot' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/jack/ASUIEEE25/justbaked/build/trackrobot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/trackrobot build --build-base /home/jack/ASUIEEE25/justbaked/build/trackrobot/build install --record /home/jack/ASUIEEE25/justbaked/build/trackrobot/install.log --single-version-externally-managed install_data
+[5.185s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/trackrobot/lib'
+[5.185s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/trackrobot/bin'
+[5.185s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/pkgconfig/trackrobot.pc'
+[5.186s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/trackrobot/lib/python3.12/site-packages'
+[5.186s] Level 1:colcon.colcon_core.shell:create_environment_hook('trackrobot', 'pythonpath')
+[5.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/hook/pythonpath.ps1'
+[5.187s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/hook/pythonpath.dsv'
+[5.187s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/hook/pythonpath.sh'
+[5.188s] Level 1:colcon.colcon_core.environment:checking '/home/jack/ASUIEEE25/justbaked/install/trackrobot/bin'
+[5.188s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(trackrobot)
+[5.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/package.ps1'
+[5.189s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/package.dsv'
+[5.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/package.sh'
+[5.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/package.bash'
+[5.191s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/trackrobot/package.zsh'
+[5.192s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/ASUIEEE25/justbaked/install/trackrobot/share/colcon-core/packages/trackrobot)
+[5.192s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.193s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.194s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.194s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.203s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.203s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.203s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.229s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.230s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jack/ASUIEEE25/justbaked/install/local_setup.ps1'
+[5.231s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jack/ASUIEEE25/justbaked/install/_local_setup_util_ps1.py'
+[5.234s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jack/ASUIEEE25/justbaked/install/setup.ps1'
+[5.236s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jack/ASUIEEE25/justbaked/install/local_setup.sh'
+[5.237s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jack/ASUIEEE25/justbaked/install/_local_setup_util_sh.py'
+[5.238s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jack/ASUIEEE25/justbaked/install/setup.sh'
+[5.240s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jack/ASUIEEE25/justbaked/install/local_setup.bash'
+[5.241s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jack/ASUIEEE25/justbaked/install/setup.bash'
+[5.243s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jack/ASUIEEE25/justbaked/install/local_setup.zsh'
+[5.244s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jack/ASUIEEE25/justbaked/install/setup.zsh'
