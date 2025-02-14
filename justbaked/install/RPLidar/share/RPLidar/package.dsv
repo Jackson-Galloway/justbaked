@@ -1,0 +1,8 @@
+source;share/RPLidar/hook/cmake_prefix_path.ps1
+source;share/RPLidar/hook/cmake_prefix_path.dsv
+source;share/RPLidar/hook/cmake_prefix_path.sh
+source;share/RPLidar/local_setup.bash
+source;share/RPLidar/local_setup.dsv
+source;share/RPLidar/local_setup.ps1
+source;share/RPLidar/local_setup.sh
+source;share/RPLidar/local_setup.zsh

@@ -1,0 +1,15 @@
+LICENSE
+package.xml
+setup.cfg
+setup.py
+../../build/trackRobot/trackRobot.egg-info/PKG-INFO
+../../build/trackRobot/trackRobot.egg-info/SOURCES.txt
+../../build/trackRobot/trackRobot.egg-info/dependency_links.txt
+../../build/trackRobot/trackRobot.egg-info/requires.txt
+../../build/trackRobot/trackRobot.egg-info/top_level.txt
+../../build/trackRobot/trackRobot.egg-info/zip-safe
+resource/trackRobot
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
+trackRobot/__init__.py

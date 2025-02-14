@@ -1,0 +1,8 @@
+source;share/tempsense/hook/cmake_prefix_path.ps1
+source;share/tempsense/hook/cmake_prefix_path.dsv
+source;share/tempsense/hook/cmake_prefix_path.sh
+source;share/tempsense/local_setup.bash
+source;share/tempsense/local_setup.dsv
+source;share/tempsense/local_setup.ps1
+source;share/tempsense/local_setup.sh
+source;share/tempsense/local_setup.zsh

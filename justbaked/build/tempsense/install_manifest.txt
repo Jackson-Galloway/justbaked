@@ -1,0 +1,15 @@
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/ament_index/resource_index/package_run_dependencies/tempsense
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/ament_index/resource_index/parent_prefix_path/tempsense
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/environment/ament_prefix_path.sh
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/environment/ament_prefix_path.dsv
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/environment/path.sh
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/environment/path.dsv
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/local_setup.bash
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/local_setup.sh
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/local_setup.zsh
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/local_setup.dsv
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.dsv
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/ament_index/resource_index/packages/tempsense
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/cmake/tempsenseConfig.cmake
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/cmake/tempsenseConfig-version.cmake
+/home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.xml

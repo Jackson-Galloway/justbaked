@@ -1,0 +1,42 @@
+[0.037s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/tempsense': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jack/ASUIEEE25/justbaked/src/tempsense -DCMAKE_INSTALL_PREFIX=/home/jack/ASUIEEE25/justbaked/install/tempsense
+[1.804s] -- The C compiler identification is GNU 13.3.0
+[2.989s] -- The CXX compiler identification is GNU 13.3.0
+[3.151s] -- Detecting C compiler ABI info
+[3.531s] -- Detecting C compiler ABI info - done
+[3.558s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.559s] -- Detecting C compile features
+[3.562s] -- Detecting C compile features - done
+[3.585s] -- Detecting CXX compiler ABI info
+[3.835s] -- Detecting CXX compiler ABI info - done
+[3.863s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.863s] -- Detecting CXX compile features
+[3.863s] -- Detecting CXX compile features - done
+[4.497s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[5.431s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[6.651s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[7.442s] -- Added test 'lint_cmake' to check CMake code style
+[7.457s] -- Added test 'xmllint' to check XML markup files
+[7.466s] -- Configuring done (7.4s)
+[7.469s] -- Generating done (0.0s)
+[7.478s] -- Build files have been written to: /home/jack/ASUIEEE25/justbaked/build/tempsense
+[7.489s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/tempsense' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jack/ASUIEEE25/justbaked/src/tempsense -DCMAKE_INSTALL_PREFIX=/home/jack/ASUIEEE25/justbaked/install/tempsense
+[7.492s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/tempsense': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/tempsense -- -j4 -l4
+[7.571s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/tempsense' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/ASUIEEE25/justbaked/build/tempsense -- -j4 -l4
+[7.589s] Invoking command in '/home/jack/ASUIEEE25/justbaked/build/tempsense': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/tempsense
+[7.607s] -- Install configuration: ""
+[7.608s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/ament_index/resource_index/package_run_dependencies/tempsense
+[7.608s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/ament_index/resource_index/parent_prefix_path/tempsense
+[7.608s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/environment/ament_prefix_path.sh
+[7.608s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/environment/ament_prefix_path.dsv
+[7.608s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/environment/path.sh
+[7.608s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/environment/path.dsv
+[7.608s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/local_setup.bash
+[7.609s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/local_setup.sh
+[7.609s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/local_setup.zsh
+[7.609s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/local_setup.dsv
+[7.609s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.dsv
+[7.609s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/ament_index/resource_index/packages/tempsense
+[7.609s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/cmake/tempsenseConfig.cmake
+[7.609s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/cmake/tempsenseConfig-version.cmake
+[7.610s] -- Installing: /home/jack/ASUIEEE25/justbaked/install/tempsense/share/tempsense/package.xml
+[7.613s] Invoked command in '/home/jack/ASUIEEE25/justbaked/build/tempsense' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/ASUIEEE25/justbaked/build/tempsense

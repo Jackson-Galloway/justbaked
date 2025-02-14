@@ -1,0 +1,6 @@
+source;share/trackRobot/hook/pythonpath.ps1
+source;share/trackRobot/hook/pythonpath.dsv
+source;share/trackRobot/hook/pythonpath.sh
+source;share/trackRobot/hook/ament_prefix_path.ps1
+source;share/trackRobot/hook/ament_prefix_path.dsv
+source;share/trackRobot/hook/ament_prefix_path.sh

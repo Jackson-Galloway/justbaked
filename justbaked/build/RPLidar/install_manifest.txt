@@ -1,0 +1,15 @@
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/ament_index/resource_index/package_run_dependencies/RPLidar
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/ament_index/resource_index/parent_prefix_path/RPLidar
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/environment/ament_prefix_path.sh
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/environment/ament_prefix_path.dsv
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/environment/path.sh
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/environment/path.dsv
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/local_setup.bash
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/local_setup.sh
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/local_setup.zsh
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/local_setup.dsv
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/package.dsv
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/ament_index/resource_index/packages/RPLidar
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/cmake/RPLidarConfig.cmake
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/cmake/RPLidarConfig-version.cmake
+/home/jack/ASUIEEE25/justbaked/install/RPLidar/share/RPLidar/package.xml
