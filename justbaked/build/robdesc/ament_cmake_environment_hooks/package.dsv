@@ -1,0 +1,4 @@
+source;share/robdesc/local_setup.bash
+source;share/robdesc/local_setup.dsv
+source;share/robdesc/local_setup.sh
+source;share/robdesc/local_setup.zsh

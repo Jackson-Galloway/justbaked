@@ -1,0 +1,8 @@
+source;share/robdesc/hook/cmake_prefix_path.ps1
+source;share/robdesc/hook/cmake_prefix_path.dsv
+source;share/robdesc/hook/cmake_prefix_path.sh
+source;share/robdesc/local_setup.bash
+source;share/robdesc/local_setup.dsv
+source;share/robdesc/local_setup.ps1
+source;share/robdesc/local_setup.sh
+source;share/robdesc/local_setup.zsh
