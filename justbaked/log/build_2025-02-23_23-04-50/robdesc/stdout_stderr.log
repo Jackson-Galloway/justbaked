@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/config
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/config/empty.yaml
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/rviz
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/rviz/description.rviz
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/robot.urdf.xacro
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/robotcore.xacro
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/launch
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/launch/rsp.launch.py
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/ament_index/resource_index/package_run_dependencies/robdesc
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/ament_index/resource_index/parent_prefix_path/robdesc
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/environment/ament_prefix_path.sh
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/environment/ament_prefix_path.dsv
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/environment/path.sh
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/environment/path.dsv
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/local_setup.bash
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/local_setup.sh
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/local_setup.zsh
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/local_setup.dsv
+-- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.dsv
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/ament_index/resource_index/packages/robdesc
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/cmake/robdescConfig.cmake
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/cmake/robdescConfig-version.cmake
+-- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.xml

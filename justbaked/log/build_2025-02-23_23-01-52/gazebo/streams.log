@@ -1,0 +1,45 @@
+[0.084s] Invoking command in '/home/jack/justbaked/justbaked/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jack/justbaked/justbaked/src/gazebo -DCMAKE_INSTALL_PREFIX=/home/jack/justbaked/justbaked/install/gazebo
+[0.812s] -- The C compiler identification is GNU 13.3.0
+[1.786s] -- The CXX compiler identification is GNU 13.3.0
+[1.884s] -- Detecting C compiler ABI info
+[2.206s] -- Detecting C compiler ABI info - done
+[2.227s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.228s] -- Detecting C compile features
+[2.231s] -- Detecting C compile features - done
+[2.250s] -- Detecting CXX compiler ABI info
+[2.442s] -- Detecting CXX compiler ABI info - done
+[2.468s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.469s] -- Detecting CXX compile features
+[2.470s] -- Detecting CXX compile features - done
+[2.679s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.968s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.208s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.435s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.438s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.438s] -- Added test 'lint_cmake' to check CMake code style
+[3.439s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.442s] -- Added test 'xmllint' to check XML markup files
+[3.446s] -- Configuring done (3.3s)
+[3.453s] -- Generating done (0.0s)
+[3.458s] -- Build files have been written to: /home/jack/justbaked/justbaked/build/gazebo
+[3.466s] Invoked command in '/home/jack/justbaked/justbaked/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jack/justbaked/justbaked/src/gazebo -DCMAKE_INSTALL_PREFIX=/home/jack/justbaked/justbaked/install/gazebo
+[3.470s] Invoking command in '/home/jack/justbaked/justbaked/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/gazebo -- -j4 -l4
+[3.531s] Invoked command in '/home/jack/justbaked/justbaked/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/gazebo -- -j4 -l4
+[3.548s] Invoking command in '/home/jack/justbaked/justbaked/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/gazebo
+[3.563s] -- Install configuration: ""
+[3.563s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/package_run_dependencies/gazebo
+[3.563s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/parent_prefix_path/gazebo
+[3.564s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/environment/ament_prefix_path.sh
+[3.568s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/environment/ament_prefix_path.dsv
+[3.568s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/environment/path.sh
+[3.568s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/environment/path.dsv
+[3.568s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.bash
+[3.568s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.sh
+[3.569s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.zsh
+[3.569s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.dsv
+[3.569s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.dsv
+[3.571s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/packages/gazebo
+[3.571s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/cmake/gazeboConfig.cmake
+[3.571s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/cmake/gazeboConfig-version.cmake
+[3.572s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.xml
+[3.574s] Invoked command in '/home/jack/justbaked/justbaked/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/gazebo

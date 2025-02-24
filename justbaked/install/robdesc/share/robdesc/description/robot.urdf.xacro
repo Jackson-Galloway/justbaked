@@ -1,1 +1,7 @@
-/home/jack/justbaked/justbaked/src/robdesc/description/robot.urdf.xacro
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="justbaked">
+
+    <xacro:include filename="robotcore.xacro"/>
+    <xacro:include filename="mobile.gazebo"/>
+
+</robot>

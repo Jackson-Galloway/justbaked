@@ -1,0 +1,2 @@
+Invoking command in '/home/jack/justbaked/justbaked/build/robdesc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/robdesc -- -j4 -l4
+Invoked command in '/home/jack/justbaked/justbaked/build/robdesc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/robdesc -- -j4 -l4
