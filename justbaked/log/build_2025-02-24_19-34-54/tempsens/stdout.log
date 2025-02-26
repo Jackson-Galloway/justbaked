@@ -1,0 +1,39 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (5.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jack/justbaked/justbaked/build/tempsens
+-- Install configuration: ""
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/include
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/include/tempsens
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/src
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/ament_index/resource_index/package_run_dependencies/tempsens
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/ament_index/resource_index/parent_prefix_path/tempsens
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/environment/ament_prefix_path.sh
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/environment/ament_prefix_path.dsv
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/environment/path.sh
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/environment/path.dsv
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/local_setup.bash
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/local_setup.sh
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/local_setup.zsh
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/local_setup.dsv
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.dsv
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/ament_index/resource_index/packages/tempsens
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/cmake/tempsensConfig.cmake
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/cmake/tempsensConfig-version.cmake
+-- Installing: /home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.xml
