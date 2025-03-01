@@ -87,9 +87,22 @@ def generate_launch_description():
         ]
     )
 
-    joint_state_publisher_gui_node = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
+    # Node to bridge messages like /cmd_vel and /odom
+    gz_bridge_node = Node(
+        package="ros_gz_bridge",
+        executable="parameter_bridge",
+        arguments=[
+            "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+            "/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist",
+            "/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry",
+            "/joint_states@sensor_msgs/msg/JointState@gz.msgs.Model",
+            "/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V"
+            "/scan@sensor_msgs /msg/LaserScan@gz.msgs.LaserScan"
+        ],
+        output="screen",
+        parameters=[
+            {'use_sim_time': True},
+        ]
     )
 
     launchDescriptionObject = LaunchDescription()
@@ -101,6 +114,6 @@ def generate_launch_description():
     launchDescriptionObject.add_action(rviz_node)
     launchDescriptionObject.add_action(spawn_urdf_node)
     launchDescriptionObject.add_action(robot_state_publisher_node)
-    launchDescriptionObject.add_action(joint_state_publisher_gui_node)
+    launchDescriptionObject.add_action(gz_bridge_node)
 
     return launchDescriptionObject

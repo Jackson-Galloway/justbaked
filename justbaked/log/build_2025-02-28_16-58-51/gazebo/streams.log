@@ -1,0 +1,29 @@
+[0.253s] Invoking command in '/home/jack/justbaked/justbaked/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/gazebo -- -j4 -l4
+[1.314s] Invoked command in '/home/jack/justbaked/justbaked/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/gazebo -- -j4 -l4
+[1.318s] Invoking command in '/home/jack/justbaked/justbaked/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/gazebo
+[1.356s] -- Install configuration: ""
+[1.356s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/include
+[1.356s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/include/gazebo
+[1.356s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/launch
+[1.356s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/launch/world.launch.py
+[1.357s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/launch/spawn_robot.launch.py
+[1.357s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/launch/__pycache__
+[1.357s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/launch/__pycache__/spawn_robot.launch.cpython-312.pyc
+[1.357s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/worlds
+[1.358s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/worlds/firearena.sdf
+[1.358s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/package_run_dependencies/gazebo
+[1.358s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/parent_prefix_path/gazebo
+[1.358s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/environment/ament_prefix_path.sh
+[1.358s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/environment/ament_prefix_path.dsv
+[1.358s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/environment/path.sh
+[1.359s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/environment/path.dsv
+[1.359s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.bash
+[1.359s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.sh
+[1.359s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.zsh
+[1.359s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.dsv
+[1.359s] -- Installing: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.dsv
+[1.383s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/packages/gazebo
+[1.383s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/cmake/gazeboConfig.cmake
+[1.383s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/cmake/gazeboConfig-version.cmake
+[1.383s] -- Up-to-date: /home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.xml
+[1.386s] Invoked command in '/home/jack/justbaked/justbaked/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/gazebo

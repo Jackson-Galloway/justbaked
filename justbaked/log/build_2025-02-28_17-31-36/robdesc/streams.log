@@ -1,0 +1,37 @@
+[0.416s] Invoking command in '/home/jack/justbaked/justbaked/build/robdesc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/robdesc -- -j4 -l4
+[1.946s] Invoked command in '/home/jack/justbaked/justbaked/build/robdesc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/robdesc -- -j4 -l4
+[1.948s] Invoking command in '/home/jack/justbaked/justbaked/build/robdesc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/robdesc
+[1.973s] -- Install configuration: ""
+[1.973s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/config
+[1.973s] -- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/config/slam_toolbox_params.yaml
+[1.973s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/config/empty.yaml
+[1.974s] -- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/config/nav2_params.yaml
+[1.974s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description
+[1.974s] -- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/rplidar.xacro
+[2.196s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/mobile.gazebo
+[2.197s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/rviz
+[2.197s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/rviz/description.rviz
+[2.197s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/robot.urdf.xacro
+[2.197s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/robotcore.xacro
+[2.197s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/launch
+[2.197s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/launch/rsp.launch.py
+[2.197s] -- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/launch/rplidar.launch
+[2.197s] -- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/launch/nav2_bringup.launch
+[2.198s] -- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/launch/robot_bringup.launch
+[2.198s] -- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/launch/slam_toolbox.launch
+[2.198s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/ament_index/resource_index/package_run_dependencies/robdesc
+[2.198s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/ament_index/resource_index/parent_prefix_path/robdesc
+[2.198s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/environment/ament_prefix_path.sh
+[2.198s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/environment/ament_prefix_path.dsv
+[2.198s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/environment/path.sh
+[2.199s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/environment/path.dsv
+[2.199s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/local_setup.bash
+[2.199s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/local_setup.sh
+[2.199s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/local_setup.zsh
+[2.199s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/local_setup.dsv
+[2.199s] -- Installing: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.dsv
+[2.228s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/ament_index/resource_index/packages/robdesc
+[2.228s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/cmake/robdescConfig.cmake
+[2.228s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/cmake/robdescConfig-version.cmake
+[2.228s] -- Up-to-date: /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.xml
+[2.319s] Invoked command in '/home/jack/justbaked/justbaked/build/robdesc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/robdesc

@@ -95,12 +95,12 @@ def generate_launch_description():
         condition=UnlessCondition(jsp_gui))
  
     # Depending on gui parameter, either launch joint_state_publisher or joint_state_publisher_gui
-    start_joint_state_publisher_gui_cmd = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
-        name='joint_state_publisher_gui',
-        parameters=[{'use_sim_time': use_sim_time}],
-        condition=IfCondition(jsp_gui))
+   # start_joint_state_publisher_gui_cmd = Node(
+   #     package='joint_state_publisher_gui',
+   #     executable='joint_state_publisher_gui',
+   #     name='joint_state_publisher_gui',
+   #     parameters=[{'use_sim_time': use_sim_time}],
+   #     condition=IfCondition(jsp_gui))
  
     # Launch RViz
     start_rviz_cmd = Node(
@@ -123,7 +123,7 @@ def generate_launch_description():
  
     # Add any actions
     ld.add_action(start_joint_state_publisher_cmd)
-    ld.add_action(start_joint_state_publisher_gui_cmd)
+  # ld.add_action(start_joint_state_publisher_gui_cmd)
     ld.add_action(start_robot_state_publisher_cmd)
     ld.add_action(start_rviz_cmd)
  

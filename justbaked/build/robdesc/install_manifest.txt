@@ -1,4 +1,5 @@
 /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/config/empty.yaml
+/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/rplidar.xacro
 /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/mobile.gazebo
 /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/rviz/description.rviz
 /home/jack/justbaked/justbaked/install/robdesc/share/robdesc/description/robot.urdf.xacro

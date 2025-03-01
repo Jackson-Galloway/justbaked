@@ -1,0 +1,263 @@
+[2.905s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.905s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7b5e963eb3e0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b5e95483fb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b5e95483fb0>>, mixin_verb=('build',))
+[3.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[3.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.251s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jack/justbaked/justbaked'
+[3.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[3.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[3.251s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[3.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[3.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[3.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[3.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[3.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[3.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[3.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[3.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[3.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[3.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[3.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[3.447s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[3.449s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extensions ['ignore', 'ignore_ament_install']
+[3.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'ignore'
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'ignore_ament_install'
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extensions ['colcon_pkg']
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'colcon_pkg'
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extensions ['colcon_meta']
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'colcon_meta'
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extensions ['ros']
+[3.451s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo) by extension 'ros'
+[3.458s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gazebo' with type 'ros.ament_cmake' and name 'gazebo'
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extensions ['ignore', 'ignore_ament_install']
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extension 'ignore'
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extension 'ignore_ament_install'
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extensions ['colcon_pkg']
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extension 'colcon_pkg'
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extensions ['colcon_meta']
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extension 'colcon_meta'
+[3.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extensions ['ros']
+[3.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/robdesc) by extension 'ros'
+[3.460s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robdesc' with type 'ros.ament_cmake' and name 'robdesc'
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extensions ['ignore', 'ignore_ament_install']
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extension 'ignore'
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extension 'ignore_ament_install'
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extensions ['colcon_pkg']
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extension 'colcon_pkg'
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extensions ['colcon_meta']
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extension 'colcon_meta'
+[3.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extensions ['ros']
+[3.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/tempsens) by extension 'ros'
+[3.461s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tempsens' with type 'ros.ament_cmake' and name 'tempsens'
+[3.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[3.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[3.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[3.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[3.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[3.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[3.621s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[3.625s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/jack/justbaked/justbaked/install
+[3.670s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 403 installed packages in /opt/ros/jazzy
+[3.674s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.805s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_args' from command line to 'None'
+[3.805s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_target' from command line to 'None'
+[3.805s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.805s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[3.805s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[3.805s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[3.805s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[3.805s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[3.806s] Level 5:colcon.colcon_core.verb:set package 'gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.806s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jack/justbaked/justbaked/build/gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jack/justbaked/justbaked/install/gazebo', 'merge_install': False, 'path': '/home/jack/justbaked/justbaked/src/gazebo', 'symlink_install': False, 'test_result_base': None}
+[3.806s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'cmake_args' from command line to 'None'
+[3.806s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'cmake_target' from command line to 'None'
+[3.806s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.807s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'cmake_clean_cache' from command line to 'False'
+[3.807s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'cmake_clean_first' from command line to 'False'
+[3.807s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'cmake_force_configure' from command line to 'False'
+[3.807s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'ament_cmake_args' from command line to 'None'
+[3.807s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'catkin_cmake_args' from command line to 'None'
+[3.807s] Level 5:colcon.colcon_core.verb:set package 'robdesc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.807s] DEBUG:colcon.colcon_core.verb:Building package 'robdesc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jack/justbaked/justbaked/build/robdesc', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jack/justbaked/justbaked/install/robdesc', 'merge_install': False, 'path': '/home/jack/justbaked/justbaked/src/robdesc', 'symlink_install': False, 'test_result_base': None}
+[3.807s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'cmake_args' from command line to 'None'
+[3.807s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'cmake_target' from command line to 'None'
+[3.808s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.808s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'cmake_clean_cache' from command line to 'False'
+[3.808s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'cmake_clean_first' from command line to 'False'
+[3.808s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'cmake_force_configure' from command line to 'False'
+[3.808s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'ament_cmake_args' from command line to 'None'
+[3.808s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'catkin_cmake_args' from command line to 'None'
+[3.808s] Level 5:colcon.colcon_core.verb:set package 'tempsens' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.808s] DEBUG:colcon.colcon_core.verb:Building package 'tempsens' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jack/justbaked/justbaked/build/tempsens', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jack/justbaked/justbaked/install/tempsens', 'merge_install': False, 'path': '/home/jack/justbaked/justbaked/src/tempsens', 'symlink_install': False, 'test_result_base': None}
+[3.808s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.810s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.810s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jack/justbaked/justbaked/src/gazebo' with build type 'ament_cmake'
+[3.810s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jack/justbaked/justbaked/src/gazebo'
+[3.813s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.814s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.814s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.823s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jack/justbaked/justbaked/src/robdesc' with build type 'ament_cmake'
+[3.824s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jack/justbaked/justbaked/src/robdesc'
+[3.824s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.824s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.834s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jack/justbaked/justbaked/src/tempsens' with build type 'ament_cmake'
+[3.834s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jack/justbaked/justbaked/src/tempsens'
+[3.834s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.835s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.855s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/justbaked/justbaked/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/gazebo -- -j4 -l4
+[3.896s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/justbaked/justbaked/build/robdesc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/robdesc -- -j4 -l4
+[3.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/justbaked/justbaked/build/tempsens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/tempsens -- -j4 -l4
+[4.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/justbaked/justbaked/build/robdesc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/robdesc -- -j4 -l4
+[4.306s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/justbaked/justbaked/build/robdesc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/robdesc
+[4.308s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/justbaked/justbaked/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/gazebo -- -j4 -l4
+[4.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/justbaked/justbaked/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/gazebo
+[4.311s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/justbaked/justbaked/build/tempsens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jack/justbaked/justbaked/build/tempsens -- -j4 -l4
+[4.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jack/justbaked/justbaked/build/tempsens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/tempsens
+[4.323s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robdesc)
+[4.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/justbaked/justbaked/build/robdesc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/robdesc
+[4.331s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc' for CMake module files
+[4.341s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc' for CMake config files
+[4.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('robdesc', 'cmake_prefix_path')
+[4.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/hook/cmake_prefix_path.ps1'
+[4.343s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/hook/cmake_prefix_path.dsv'
+[4.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/hook/cmake_prefix_path.sh'
+[4.346s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc/bin'
+[4.346s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc/lib/pkgconfig/robdesc.pc'
+[4.347s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc/lib/python3.12/site-packages'
+[4.347s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc/bin'
+[4.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.ps1'
+[4.349s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.dsv'
+[4.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.sh'
+[4.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.bash'
+[4.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.zsh'
+[4.353s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/justbaked/justbaked/install/robdesc/share/colcon-core/packages/robdesc)
+[4.353s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robdesc)
+[4.354s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc' for CMake module files
+[4.355s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc' for CMake config files
+[4.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('robdesc', 'cmake_prefix_path')
+[4.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/hook/cmake_prefix_path.ps1'
+[4.356s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/hook/cmake_prefix_path.dsv'
+[4.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/hook/cmake_prefix_path.sh'
+[4.360s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc/bin'
+[4.360s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc/lib/pkgconfig/robdesc.pc'
+[4.360s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc/lib/python3.12/site-packages'
+[4.361s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/robdesc/bin'
+[4.361s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.ps1'
+[4.362s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.dsv'
+[4.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.sh'
+[4.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.bash'
+[4.364s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/robdesc/share/robdesc/package.zsh'
+[4.365s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/justbaked/justbaked/install/robdesc/share/colcon-core/packages/robdesc)
+[4.367s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tempsens)
+[4.367s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens' for CMake module files
+[4.369s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens' for CMake config files
+[4.372s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/justbaked/justbaked/build/tempsens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/tempsens
+[4.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('tempsens', 'cmake_prefix_path')
+[4.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/hook/cmake_prefix_path.ps1'
+[4.373s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/hook/cmake_prefix_path.dsv'
+[4.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/hook/cmake_prefix_path.sh'
+[4.375s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens/bin'
+[4.375s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens/lib/pkgconfig/tempsens.pc'
+[4.376s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens/lib/python3.12/site-packages'
+[4.376s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens/bin'
+[4.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.ps1'
+[4.377s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.dsv'
+[4.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.sh'
+[4.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.bash'
+[4.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.zsh'
+[4.379s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/justbaked/justbaked/install/tempsens/share/colcon-core/packages/tempsens)
+[4.380s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tempsens)
+[4.380s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens' for CMake module files
+[4.381s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens' for CMake config files
+[4.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('tempsens', 'cmake_prefix_path')
+[4.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/hook/cmake_prefix_path.ps1'
+[4.383s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/hook/cmake_prefix_path.dsv'
+[4.383s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/hook/cmake_prefix_path.sh'
+[4.384s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens/bin'
+[4.384s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens/lib/pkgconfig/tempsens.pc'
+[4.385s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens/lib/python3.12/site-packages'
+[4.385s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/tempsens/bin'
+[4.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.ps1'
+[4.387s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.dsv'
+[4.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.sh'
+[4.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.bash'
+[4.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/tempsens/share/tempsens/package.zsh'
+[4.390s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/justbaked/justbaked/install/tempsens/share/colcon-core/packages/tempsens)
+[4.391s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo)
+[4.391s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo' for CMake module files
+[4.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jack/justbaked/justbaked/build/gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jack/justbaked/justbaked/build/gazebo
+[4.393s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo' for CMake config files
+[4.394s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo', 'cmake_prefix_path')
+[4.394s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/hook/cmake_prefix_path.ps1'
+[4.395s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/hook/cmake_prefix_path.dsv'
+[4.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/hook/cmake_prefix_path.sh'
+[4.397s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo/bin'
+[4.397s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo/lib/pkgconfig/gazebo.pc'
+[4.398s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo/lib/python3.12/site-packages'
+[4.398s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo/bin'
+[4.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.ps1'
+[4.399s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.dsv'
+[4.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.sh'
+[4.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.bash'
+[4.401s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.zsh'
+[4.402s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/justbaked/justbaked/install/gazebo/share/colcon-core/packages/gazebo)
+[4.403s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo)
+[4.403s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo' for CMake module files
+[4.404s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo' for CMake config files
+[4.405s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo', 'cmake_prefix_path')
+[4.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/hook/cmake_prefix_path.ps1'
+[4.406s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/hook/cmake_prefix_path.dsv'
+[4.406s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/hook/cmake_prefix_path.sh'
+[4.407s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo/bin'
+[4.407s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo/lib/pkgconfig/gazebo.pc'
+[4.409s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo/lib/python3.12/site-packages'
+[4.409s] Level 1:colcon.colcon_core.environment:checking '/home/jack/justbaked/justbaked/install/gazebo/bin'
+[4.409s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.ps1'
+[4.410s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.dsv'
+[4.411s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.sh'
+[4.412s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.bash'
+[4.413s] INFO:colcon.colcon_core.shell:Creating package script '/home/jack/justbaked/justbaked/install/gazebo/share/gazebo/package.zsh'
+[4.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jack/justbaked/justbaked/install/gazebo/share/colcon-core/packages/gazebo)
+[4.415s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.416s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.416s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.416s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.452s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.452s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.475s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.476s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jack/justbaked/justbaked/install/local_setup.ps1'
+[4.478s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jack/justbaked/justbaked/install/_local_setup_util_ps1.py'
+[4.481s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jack/justbaked/justbaked/install/setup.ps1'
+[4.483s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jack/justbaked/justbaked/install/local_setup.sh'
+[4.484s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jack/justbaked/justbaked/install/_local_setup_util_sh.py'
+[4.489s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jack/justbaked/justbaked/install/setup.sh'
+[4.490s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jack/justbaked/justbaked/install/local_setup.bash'
+[4.491s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jack/justbaked/justbaked/install/setup.bash'
+[4.495s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jack/justbaked/justbaked/install/local_setup.zsh'
+[4.496s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jack/justbaked/justbaked/install/setup.zsh'
