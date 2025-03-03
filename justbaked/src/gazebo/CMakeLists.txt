@@ -33,7 +33,7 @@ find_package(ament_lint_auto REQUIRED)
 endif()
 
 install(
-  DIRECTORY include launch worlds
+  DIRECTORY launch worlds
   DESTINATION share/${PROJECT_NAME}
 )
 

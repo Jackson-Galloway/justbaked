@@ -1,0 +1,4 @@
+Invoking command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lsw155linuxbox/justbaked/justbaked/build/tempsens -- -j8 -l8
+Invoked command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lsw155linuxbox/justbaked/justbaked/build/tempsens -- -j8 -l8
+Invoking command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lsw155linuxbox/justbaked/justbaked/build/tempsens
+Invoked command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lsw155linuxbox/justbaked/justbaked/build/tempsens

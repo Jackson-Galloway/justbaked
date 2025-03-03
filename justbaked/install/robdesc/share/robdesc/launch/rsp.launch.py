@@ -28,6 +28,7 @@ def generate_launch_description():
     urdf_package = 'robdesc'
     urdf_filename = 'robot.urdf.xacro'
     rviz_config_filename = 'description.rviz'
+   
 
     # Set paths to important files
     pkg_share_description = FindPackageShare(urdf_package)
@@ -35,20 +36,14 @@ def generate_launch_description():
         [pkg_share_description, 'description', urdf_filename])
     default_rviz_config_path = PathJoinSubstitution(
         [pkg_share_description, 'description', 'rviz', rviz_config_filename])
+    diff_drive_config = PathJoinSubstitution([pkg_share_description, 'config', 'diff_drive.yaml'])
 
     # Launch configuration variables
-    jsp_gui = LaunchConfiguration('jsp_gui')
     rviz_config_file = LaunchConfiguration('rviz_config_file')
     urdf_model = LaunchConfiguration('urdf_model')
     use_rviz = LaunchConfiguration('use_rviz')
     use_sim_time = LaunchConfiguration('use_sim_time')
  
-    # Declare the launch arguments
-    declare_jsp_gui_cmd = DeclareLaunchArgument(
-        name='jsp_gui',
-        default_value='true',
-        choices=['true', 'false'],
-        description='Flag to enable joint_state_publisher_gui')
  
     declare_rviz_config_file_cmd = DeclareLaunchArgument(
         name='rviz_config_file',
@@ -92,16 +87,6 @@ def generate_launch_description():
         executable='joint_state_publisher',
         name='joint_state_publisher',
         parameters=[{'use_sim_time': use_sim_time}],
-        condition=UnlessCondition(jsp_gui))
- 
-    # Depending on gui parameter, either launch joint_state_publisher or joint_state_publisher_gui
-   # start_joint_state_publisher_gui_cmd = Node(
-   #     package='joint_state_publisher_gui',
-   #     executable='joint_state_publisher_gui',
-   #     name='joint_state_publisher_gui',
-   #     parameters=[{'use_sim_time': use_sim_time}],
-   #     condition=IfCondition(jsp_gui))
- 
     # Launch RViz
     start_rviz_cmd = Node(
         condition=IfCondition(use_rviz),
@@ -110,12 +95,19 @@ def generate_launch_description():
         output='screen',
         arguments=['-d', rviz_config_file],
         parameters=[{'use_sim_time': use_sim_time}])
+
+    # Differential drive controller
+    diff_drive_controller_cmd = Node(
+        package='diff_drive_controller',
+        executable='ros2_control_node',
+        name='diff_drive_controller',
+        parameters=[diff_drive_config],
+        output='screen')
  
     # Create the launch description and populate
     ld = LaunchDescription(ARGUMENTS)
  
     # Declare the launch options
-    ld.add_action(declare_jsp_gui_cmd)
     ld.add_action(declare_rviz_config_file_cmd)
     ld.add_action(declare_urdf_model_path_cmd)
     ld.add_action(declare_use_rviz_cmd)
@@ -123,10 +115,9 @@ def generate_launch_description():
  
     # Add any actions
     ld.add_action(start_joint_state_publisher_cmd)
-  # ld.add_action(start_joint_state_publisher_gui_cmd)
     ld.add_action(start_robot_state_publisher_cmd)
     ld.add_action(start_rviz_cmd)
+    ld.add_action(diff_drive_controller_cmd)
  
     return ld
 
-    

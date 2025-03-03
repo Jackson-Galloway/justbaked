@@ -1,0 +1,21 @@
+[0.023s] Invoking command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lsw155linuxbox/justbaked/justbaked/build/tempsens -- -j8 -l8
+[0.080s] Invoked command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lsw155linuxbox/justbaked/justbaked/build/tempsens -- -j8 -l8
+[0.081s] Invoking command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lsw155linuxbox/justbaked/justbaked/build/tempsens
+[0.102s] -- Install configuration: ""
+[0.102s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens
+[0.102s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/ament_index/resource_index/package_run_dependencies/tempsens
+[0.102s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/ament_index/resource_index/parent_prefix_path/tempsens
+[0.103s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/environment/ament_prefix_path.sh
+[0.103s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/environment/ament_prefix_path.dsv
+[0.103s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/environment/path.sh
+[0.103s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/environment/path.dsv
+[0.103s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/local_setup.bash
+[0.103s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/local_setup.sh
+[0.104s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/local_setup.zsh
+[0.104s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/local_setup.dsv
+[0.104s] -- Installing: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/package.dsv
+[0.105s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/ament_index/resource_index/packages/tempsens
+[0.105s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/cmake/tempsensConfig.cmake
+[0.106s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/cmake/tempsensConfig-version.cmake
+[0.106s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/tempsens/share/tempsens/package.xml
+[0.147s] Invoked command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lsw155linuxbox/justbaked/justbaked/build/tempsens

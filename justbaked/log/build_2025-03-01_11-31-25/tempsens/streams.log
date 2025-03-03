@@ -1,0 +1,4 @@
+[0.016s] Invoking command in '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lsw155linuxbox/justbaked/justbaked/build/tempsens -- -j8 -l8
+[0.034s] [0mCMake Error: The source directory "/home/jack/justbaked/justbaked/src/tempsens" does not exist.
+[0.034s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.035s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1

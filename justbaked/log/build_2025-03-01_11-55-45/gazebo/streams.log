@@ -1,0 +1,25 @@
+[0.012s] Invoking command in '/home/lsw155linuxbox/justbaked/justbaked/build/gazebo': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lsw155linuxbox/justbaked/justbaked/build/gazebo -- -j8 -l8
+[0.053s] Invoked command in '/home/lsw155linuxbox/justbaked/justbaked/build/gazebo' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lsw155linuxbox/justbaked/justbaked/build/gazebo -- -j8 -l8
+[0.063s] Invoking command in '/home/lsw155linuxbox/justbaked/justbaked/build/gazebo': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lsw155linuxbox/justbaked/justbaked/build/gazebo
+[0.071s] -- Install configuration: ""
+[0.071s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/launch
+[0.072s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/launch/world.launch.py
+[0.072s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/launch/spawn_robot.launch.py
+[0.072s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/worlds
+[0.072s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/worlds/firearena.sdf
+[0.072s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/package_run_dependencies/gazebo
+[0.072s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/parent_prefix_path/gazebo
+[0.072s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/environment/ament_prefix_path.sh
+[0.073s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/environment/ament_prefix_path.dsv
+[0.073s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/environment/path.sh
+[0.073s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/environment/path.dsv
+[0.073s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.bash
+[0.076s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.sh
+[0.076s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.zsh
+[0.076s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/local_setup.dsv
+[0.077s] -- Installing: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/package.dsv
+[0.077s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/ament_index/resource_index/packages/gazebo
+[0.077s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/cmake/gazeboConfig.cmake
+[0.078s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/cmake/gazeboConfig-version.cmake
+[0.078s] -- Up-to-date: /home/lsw155linuxbox/justbaked/justbaked/install/gazebo/share/gazebo/package.xml
+[0.083s] Invoked command in '/home/lsw155linuxbox/justbaked/justbaked/build/gazebo' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/lsw155linuxbox/justbaked/justbaked/build/gazebo

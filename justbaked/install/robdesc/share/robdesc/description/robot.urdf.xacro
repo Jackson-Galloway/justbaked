@@ -2,7 +2,6 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="justbaked">
 
     <xacro:include filename="robotcore.xacro"/>
-    <xacro:include filename="mobile.gazebo"/>
     <xacro:include filename="rplidar.xacro"/>
-
+	
 </robot>

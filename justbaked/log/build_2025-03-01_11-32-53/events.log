@@ -1,0 +1,448 @@
+[0.000000] (-) TimerEvent: {}
+[0.000324] (gazebo) JobQueued: {'identifier': 'gazebo', 'dependencies': OrderedDict()}
+[0.000636] (robdesc) JobQueued: {'identifier': 'robdesc', 'dependencies': OrderedDict()}
+[0.000732] (tempsens) JobQueued: {'identifier': 'tempsens', 'dependencies': OrderedDict()}
+[0.000866] (gazebo) JobStarted: {'identifier': 'gazebo'}
+[0.005086] (robdesc) JobStarted: {'identifier': 'robdesc'}
+[0.007801] (tempsens) JobStarted: {'identifier': 'tempsens'}
+[0.013139] (gazebo) JobProgress: {'identifier': 'gazebo', 'progress': 'cmake'}
+[0.014267] (gazebo) JobProgress: {'identifier': 'gazebo', 'progress': 'build'}
+[0.015516] (gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lsw155linuxbox/justbaked/justbaked/build/gazebo', '--', '-j8', '-l8'], 'cwd': '/home/lsw155linuxbox/justbaked/justbaked/build/gazebo', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lsw155linuxbox', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'HOME': '/home/lsw155linuxbox', 'OLDPWD': '/home/lsw155linuxbox', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2077', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'lsw155linuxbox', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lsw155linuxbox', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jack:@/tmp/.ICE-unix/2043,unix/jack:/tmp/.ICE-unix/2043', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/db8ff308_0a08_4dbc_b188_616cc4fdc864', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.CB3M22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:64e5eb48-53a5-47d9-9d99-d0933e41f5c5', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lsw155linuxbox/justbaked/justbaked/build/gazebo', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600'}), 'shell': False}
+[0.018918] (robdesc) JobProgress: {'identifier': 'robdesc', 'progress': 'cmake'}
+[0.019635] (robdesc) JobProgress: {'identifier': 'robdesc', 'progress': 'build'}
+[0.019916] (robdesc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lsw155linuxbox/justbaked/justbaked/build/robdesc', '--', '-j8', '-l8'], 'cwd': '/home/lsw155linuxbox/justbaked/justbaked/build/robdesc', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lsw155linuxbox', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'HOME': '/home/lsw155linuxbox', 'OLDPWD': '/home/lsw155linuxbox', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2077', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'lsw155linuxbox', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lsw155linuxbox', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jack:@/tmp/.ICE-unix/2043,unix/jack:/tmp/.ICE-unix/2043', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/db8ff308_0a08_4dbc_b188_616cc4fdc864', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.CB3M22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:64e5eb48-53a5-47d9-9d99-d0933e41f5c5', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lsw155linuxbox/justbaked/justbaked/build/robdesc', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600'}), 'shell': False}
+[0.022051] (tempsens) JobProgress: {'identifier': 'tempsens', 'progress': 'cmake'}
+[0.022946] (tempsens) JobProgress: {'identifier': 'tempsens', 'progress': 'build'}
+[0.023619] (tempsens) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens', '--', '-j8', '-l8'], 'cwd': '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lsw155linuxbox', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '2', 'HOME': '/home/lsw155linuxbox', 'OLDPWD': '/home/lsw155linuxbox', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2077', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'lsw155linuxbox', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lsw155linuxbox', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/jack:@/tmp/.ICE-unix/2043,unix/jack:/tmp/.ICE-unix/2043', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/db8ff308_0a08_4dbc_b188_616cc4fdc864', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.CB3M22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:64e5eb48-53a5-47d9-9d99-d0933e41f5c5', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lsw155linuxbox/justbaked/justbaked/build/tempsens', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600'}), 'shell': False}
+[0.099289] (-) TimerEvent: {}
+[0.199757] (-) TimerEvent: {}
+[0.237439] (robdesc) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.238531] (gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.238872] (tempsens) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.299872] (-) TimerEvent: {}
+[0.400240] (-) TimerEvent: {}
+[0.500529] (-) TimerEvent: {}
+[0.600811] (-) TimerEvent: {}
+[0.701111] (-) TimerEvent: {}
+[0.801581] (-) TimerEvent: {}
+[0.901906] (-) TimerEvent: {}
+[1.002393] (-) TimerEvent: {}
+[1.102876] (-) TimerEvent: {}
+[1.203369] (-) TimerEvent: {}
+[1.303854] (-) TimerEvent: {}
+[1.404366] (-) TimerEvent: {}
+[1.504855] (-) TimerEvent: {}
+[1.605384] (-) TimerEvent: {}
+[1.705935] (-) TimerEvent: {}
+[1.806459] (-) TimerEvent: {}
+[1.906964] (-) TimerEvent: {}
+[2.007482] (-) TimerEvent: {}
+[2.107974] (-) TimerEvent: {}
+[2.208458] (-) TimerEvent: {}
+[2.308920] (-) TimerEvent: {}
+[2.409444] (-) TimerEvent: {}
+[2.509932] (-) TimerEvent: {}
+[2.610447] (-) TimerEvent: {}
+[2.710964] (-) TimerEvent: {}
+[2.811474] (-) TimerEvent: {}
+[2.911974] (-) TimerEvent: {}
+[3.012507] (-) TimerEvent: {}
+[3.113002] (-) TimerEvent: {}
+[3.213513] (-) TimerEvent: {}
+[3.314011] (-) TimerEvent: {}
+[3.414527] (-) TimerEvent: {}
+[3.515007] (-) TimerEvent: {}
+[3.615578] (-) TimerEvent: {}
+[3.716083] (-) TimerEvent: {}
+[3.816626] (-) TimerEvent: {}
+[3.917153] (-) TimerEvent: {}
+[4.017666] (-) TimerEvent: {}
+[4.118162] (-) TimerEvent: {}
+[4.218671] (-) TimerEvent: {}
+[4.319244] (-) TimerEvent: {}
+[4.419734] (-) TimerEvent: {}
+[4.520258] (-) TimerEvent: {}
+[4.620755] (-) TimerEvent: {}
+[4.721279] (-) TimerEvent: {}
+[4.821784] (-) TimerEvent: {}
+[4.922278] (-) TimerEvent: {}
+[5.022767] (-) TimerEvent: {}
+[5.123269] (-) TimerEvent: {}
+[5.223763] (-) TimerEvent: {}
+[5.324276] (-) TimerEvent: {}
+[5.424762] (-) TimerEvent: {}
+[5.525275] (-) TimerEvent: {}
+[5.625771] (-) TimerEvent: {}
+[5.726278] (-) TimerEvent: {}
+[5.826765] (-) TimerEvent: {}
+[5.927247] (-) TimerEvent: {}
+[6.027704] (-) TimerEvent: {}
+[6.128222] (-) TimerEvent: {}
+[6.228693] (-) TimerEvent: {}
+[6.329216] (-) TimerEvent: {}
+[6.429688] (-) TimerEvent: {}
+[6.530188] (-) TimerEvent: {}
+[6.630674] (-) TimerEvent: {}
+[6.731201] (-) TimerEvent: {}
+[6.831761] (-) TimerEvent: {}
+[6.932266] (-) TimerEvent: {}
+[7.032758] (-) TimerEvent: {}
+[7.133267] (-) TimerEvent: {}
+[7.233751] (-) TimerEvent: {}
+[7.334261] (-) TimerEvent: {}
+[7.434749] (-) TimerEvent: {}
+[7.535255] (-) TimerEvent: {}
+[7.635754] (-) TimerEvent: {}
+[7.736265] (-) TimerEvent: {}
+[7.836752] (-) TimerEvent: {}
+[7.937264] (-) TimerEvent: {}
+[8.037752] (-) TimerEvent: {}
+[8.138252] (-) TimerEvent: {}
+[8.238758] (-) TimerEvent: {}
+[8.339258] (-) TimerEvent: {}
+[8.439744] (-) TimerEvent: {}
+[8.540248] (-) TimerEvent: {}
+[8.640732] (-) TimerEvent: {}
+[8.741254] (-) TimerEvent: {}
+[8.841740] (-) TimerEvent: {}
+[8.942249] (-) TimerEvent: {}
+[9.042773] (-) TimerEvent: {}
+[9.143279] (-) TimerEvent: {}
+[9.243747] (-) TimerEvent: {}
+[9.344248] (-) TimerEvent: {}
+[9.444681] (-) TimerEvent: {}
+[9.545166] (-) TimerEvent: {}
+[9.645679] (-) TimerEvent: {}
+[9.746191] (-) TimerEvent: {}
+[9.846699] (-) TimerEvent: {}
+[9.947316] (-) TimerEvent: {}
+[10.047810] (-) TimerEvent: {}
+[10.148346] (-) TimerEvent: {}
+[10.248826] (-) TimerEvent: {}
+[10.349299] (-) TimerEvent: {}
+[10.449785] (-) TimerEvent: {}
+[10.550282] (-) TimerEvent: {}
+[10.650755] (-) TimerEvent: {}
+[10.751284] (-) TimerEvent: {}
+[10.851762] (-) TimerEvent: {}
+[10.952264] (-) TimerEvent: {}
+[11.052739] (-) TimerEvent: {}
+[11.153246] (-) TimerEvent: {}
+[11.253737] (-) TimerEvent: {}
+[11.354253] (-) TimerEvent: {}
+[11.454750] (-) TimerEvent: {}
+[11.555275] (-) TimerEvent: {}
+[11.655791] (-) TimerEvent: {}
+[11.756291] (-) TimerEvent: {}
+[11.856775] (-) TimerEvent: {}
+[11.957281] (-) TimerEvent: {}
+[12.057770] (-) TimerEvent: {}
+[12.158277] (-) TimerEvent: {}
+[12.258763] (-) TimerEvent: {}
+[12.359256] (-) TimerEvent: {}
+[12.459739] (-) TimerEvent: {}
+[12.560237] (-) TimerEvent: {}
+[12.660710] (-) TimerEvent: {}
+[12.761210] (-) TimerEvent: {}
+[12.861704] (-) TimerEvent: {}
+[12.962209] (-) TimerEvent: {}
+[13.062689] (-) TimerEvent: {}
+[13.163139] (-) TimerEvent: {}
+[13.263546] (-) TimerEvent: {}
+[13.364031] (-) TimerEvent: {}
+[13.464538] (-) TimerEvent: {}
+[13.565023] (-) TimerEvent: {}
+[13.665534] (-) TimerEvent: {}
+[13.766025] (-) TimerEvent: {}
+[13.866538] (-) TimerEvent: {}
+[13.967027] (-) TimerEvent: {}
+[14.067530] (-) TimerEvent: {}
+[14.168018] (-) TimerEvent: {}
+[14.268522] (-) TimerEvent: {}
+[14.369012] (-) TimerEvent: {}
+[14.469518] (-) TimerEvent: {}
+[14.569998] (-) TimerEvent: {}
+[14.670494] (-) TimerEvent: {}
+[14.770983] (-) TimerEvent: {}
+[14.871488] (-) TimerEvent: {}
+[14.971983] (-) TimerEvent: {}
+[15.072520] (-) TimerEvent: {}
+[15.173037] (-) TimerEvent: {}
+[15.273532] (-) TimerEvent: {}
+[15.374020] (-) TimerEvent: {}
+[15.474550] (-) TimerEvent: {}
+[15.575045] (-) TimerEvent: {}
+[15.675576] (-) TimerEvent: {}
+[15.776073] (-) TimerEvent: {}
+[15.876511] (-) TimerEvent: {}
+[15.977000] (-) TimerEvent: {}
+[16.077514] (-) TimerEvent: {}
+[16.178008] (-) TimerEvent: {}
+[16.278522] (-) TimerEvent: {}
+[16.379008] (-) TimerEvent: {}
+[16.479536] (-) TimerEvent: {}
+[16.580072] (-) TimerEvent: {}
+[16.680629] (-) TimerEvent: {}
+[16.781136] (-) TimerEvent: {}
+[16.881658] (-) TimerEvent: {}
+[16.982229] (-) TimerEvent: {}
+[17.082685] (-) TimerEvent: {}
+[17.183111] (-) TimerEvent: {}
+[17.283629] (-) TimerEvent: {}
+[17.384132] (-) TimerEvent: {}
+[17.484667] (-) TimerEvent: {}
+[17.585203] (-) TimerEvent: {}
+[17.685719] (-) TimerEvent: {}
+[17.786256] (-) TimerEvent: {}
+[17.886760] (-) TimerEvent: {}
+[17.987279] (-) TimerEvent: {}
+[18.087786] (-) TimerEvent: {}
+[18.188286] (-) TimerEvent: {}
+[18.288767] (-) TimerEvent: {}
+[18.389280] (-) TimerEvent: {}
+[18.489773] (-) TimerEvent: {}
+[18.590279] (-) TimerEvent: {}
+[18.690762] (-) TimerEvent: {}
+[18.791267] (-) TimerEvent: {}
+[18.891749] (-) TimerEvent: {}
+[18.992254] (-) TimerEvent: {}
+[19.092736] (-) TimerEvent: {}
+[19.193238] (-) TimerEvent: {}
+[19.293720] (-) TimerEvent: {}
+[19.394226] (-) TimerEvent: {}
+[19.494708] (-) TimerEvent: {}
+[19.595205] (-) TimerEvent: {}
+[19.695694] (-) TimerEvent: {}
+[19.796215] (-) TimerEvent: {}
+[19.896721] (-) TimerEvent: {}
+[19.997250] (-) TimerEvent: {}
+[20.097781] (-) TimerEvent: {}
+[20.198304] (-) TimerEvent: {}
+[20.298865] (-) TimerEvent: {}
+[20.399361] (-) TimerEvent: {}
+[20.499860] (-) TimerEvent: {}
+[20.600376] (-) TimerEvent: {}
+[20.700870] (-) TimerEvent: {}
+[20.801375] (-) TimerEvent: {}
+[20.901852] (-) TimerEvent: {}
+[21.002290] (-) TimerEvent: {}
+[21.102778] (-) TimerEvent: {}
+[21.203270] (-) TimerEvent: {}
+[21.303770] (-) TimerEvent: {}
+[21.404286] (-) TimerEvent: {}
+[21.504806] (-) TimerEvent: {}
+[21.605292] (-) TimerEvent: {}
+[21.705766] (-) TimerEvent: {}
+[21.806248] (-) TimerEvent: {}
+[21.906738] (-) TimerEvent: {}
+[22.007277] (-) TimerEvent: {}
+[22.107771] (-) TimerEvent: {}
+[22.208290] (-) TimerEvent: {}
+[22.308796] (-) TimerEvent: {}
+[22.409308] (-) TimerEvent: {}
+[22.509805] (-) TimerEvent: {}
+[22.610310] (-) TimerEvent: {}
+[22.710803] (-) TimerEvent: {}
+[22.811310] (-) TimerEvent: {}
+[22.911808] (-) TimerEvent: {}
+[23.012296] (-) TimerEvent: {}
+[23.112778] (-) TimerEvent: {}
+[23.213286] (-) TimerEvent: {}
+[23.313794] (-) TimerEvent: {}
+[23.414296] (-) TimerEvent: {}
+[23.514794] (-) TimerEvent: {}
+[23.615286] (-) TimerEvent: {}
+[23.715781] (-) TimerEvent: {}
+[23.816281] (-) TimerEvent: {}
+[23.916769] (-) TimerEvent: {}
+[24.017324] (-) TimerEvent: {}
+[24.117811] (-) TimerEvent: {}
+[24.218287] (-) TimerEvent: {}
+[24.318772] (-) TimerEvent: {}
+[24.419288] (-) TimerEvent: {}
+[24.519774] (-) TimerEvent: {}
+[24.620270] (-) TimerEvent: {}
+[24.720760] (-) TimerEvent: {}
+[24.821269] (-) TimerEvent: {}
+[24.921759] (-) TimerEvent: {}
+[25.022271] (-) TimerEvent: {}
+[25.122788] (-) TimerEvent: {}
+[25.223279] (-) TimerEvent: {}
+[25.323765] (-) TimerEvent: {}
+[25.424283] (-) TimerEvent: {}
+[25.524765] (-) TimerEvent: {}
+[25.625272] (-) TimerEvent: {}
+[25.725746] (-) TimerEvent: {}
+[25.826245] (-) TimerEvent: {}
+[25.926728] (-) TimerEvent: {}
+[26.027231] (-) TimerEvent: {}
+[26.127713] (-) TimerEvent: {}
+[26.228224] (-) TimerEvent: {}
+[26.328698] (-) TimerEvent: {}
+[26.429207] (-) TimerEvent: {}
+[26.529704] (-) TimerEvent: {}
+[26.630242] (-) TimerEvent: {}
+[26.730732] (-) TimerEvent: {}
+[26.831242] (-) TimerEvent: {}
+[26.931720] (-) TimerEvent: {}
+[27.032237] (-) TimerEvent: {}
+[27.132711] (-) TimerEvent: {}
+[27.233195] (-) TimerEvent: {}
+[27.333609] (-) TimerEvent: {}
+[27.434097] (-) TimerEvent: {}
+[27.534599] (-) TimerEvent: {}
+[27.635072] (-) TimerEvent: {}
+[27.735571] (-) TimerEvent: {}
+[27.836066] (-) TimerEvent: {}
+[27.936570] (-) TimerEvent: {}
+[28.037045] (-) TimerEvent: {}
+[28.137568] (-) TimerEvent: {}
+[28.238064] (-) TimerEvent: {}
+[28.338571] (-) TimerEvent: {}
+[28.439012] (-) TimerEvent: {}
+[28.539402] (-) TimerEvent: {}
+[28.639802] (-) TimerEvent: {}
+[28.740091] (-) TimerEvent: {}
+[28.840575] (-) TimerEvent: {}
+[28.941338] (-) TimerEvent: {}
+[29.042136] (-) TimerEvent: {}
+[29.142976] (-) TimerEvent: {}
+[29.243715] (-) TimerEvent: {}
+[29.344450] (-) TimerEvent: {}
+[29.445202] (-) TimerEvent: {}
+[29.545952] (-) TimerEvent: {}
+[29.646752] (-) TimerEvent: {}
+[29.747583] (-) TimerEvent: {}
+[29.848301] (-) TimerEvent: {}
+[29.949005] (-) TimerEvent: {}
+[30.049779] (-) TimerEvent: {}
+[30.150411] (-) TimerEvent: {}
+[30.251150] (-) TimerEvent: {}
+[30.351925] (-) TimerEvent: {}
+[30.452687] (-) TimerEvent: {}
+[30.553061] (-) TimerEvent: {}
+[30.653502] (-) TimerEvent: {}
+[30.753957] (-) TimerEvent: {}
+[30.854430] (-) TimerEvent: {}
+[30.954888] (-) TimerEvent: {}
+[31.055358] (-) TimerEvent: {}
+[31.155798] (-) TimerEvent: {}
+[31.256262] (-) TimerEvent: {}
+[31.356771] (-) TimerEvent: {}
+[31.457210] (-) TimerEvent: {}
+[31.557787] (-) TimerEvent: {}
+[31.658289] (-) TimerEvent: {}
+[31.758734] (-) TimerEvent: {}
+[31.859218] (-) TimerEvent: {}
+[31.959908] (-) TimerEvent: {}
+[32.060619] (-) TimerEvent: {}
+[32.161382] (-) TimerEvent: {}
+[32.261845] (-) TimerEvent: {}
+[32.362316] (-) TimerEvent: {}
+[32.462908] (-) TimerEvent: {}
+[32.563764] (-) TimerEvent: {}
+[32.664589] (-) TimerEvent: {}
+[32.765404] (-) TimerEvent: {}
+[32.865869] (-) TimerEvent: {}
+[32.966455] (-) TimerEvent: {}
+[33.067256] (-) TimerEvent: {}
+[33.167710] (-) TimerEvent: {}
+[33.268216] (-) TimerEvent: {}
+[33.368969] (-) TimerEvent: {}
+[33.469859] (-) TimerEvent: {}
+[33.570609] (-) TimerEvent: {}
+[33.671287] (-) TimerEvent: {}
+[33.771852] (-) TimerEvent: {}
+[33.872603] (-) TimerEvent: {}
+[33.973298] (-) TimerEvent: {}
+[34.073832] (-) TimerEvent: {}
+[34.174517] (-) TimerEvent: {}
+[34.275272] (-) TimerEvent: {}
+[34.375720] (-) TimerEvent: {}
+[34.476064] (-) TimerEvent: {}
+[34.576372] (-) TimerEvent: {}
+[34.676775] (-) TimerEvent: {}
+[34.777147] (-) TimerEvent: {}
+[34.877660] (-) TimerEvent: {}
+[34.978386] (-) TimerEvent: {}
+[35.079216] (-) TimerEvent: {}
+[35.179851] (-) TimerEvent: {}
+[35.280343] (-) TimerEvent: {}
+[35.380869] (-) TimerEvent: {}
+[35.481522] (-) TimerEvent: {}
+[35.582240] (-) TimerEvent: {}
+[35.679214] (gazebo) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[35.680013] (gazebo) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[35.680377] (gazebo) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[35.680673] (gazebo) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[35.680859] (gazebo) StderrLine: {'line': b'Error in sys.excepthook:\n'}
+[35.681064] (gazebo) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[35.681292] (gazebo) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook\n'}
+[35.681513] (robdesc) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[35.681765] (robdesc) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[35.681981] (robdesc) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[35.682205] (robdesc) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[35.682500] (-) TimerEvent: {}
+[35.682705] (tempsens) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[35.682951] (tempsens) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[35.683153] (tempsens) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[35.683393] (tempsens) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[35.692842] (gazebo) StderrLine: {'line': b'    return apport_excepthook(binary, exc_type, exc_obj, exc_tb)\n'}
+[35.693163] (gazebo) StderrLine: {'line': b'           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[35.693372] (gazebo) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 144, in apport_excepthook\n'}
+[35.693530] (gazebo) StderrLine: {'line': b'    os.open(pr_filename, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o640), "wb"\n'}
+[35.693684] (gazebo) StderrLine: {'line': b'    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'}
+[35.693835] (gazebo) StderrLine: {'line': b"FileExistsError: [Errno 17] File exists: '/var/crash/_opt_ros_jazzy_share_ament_cmake_core_cmake_package_templates_templates_2_cmake.py.1000.crash'\n"}
+[35.693989] (gazebo) StderrLine: {'line': b'\n'}
+[35.694139] (gazebo) StderrLine: {'line': b'Original exception was:\n'}
+[35.694338] (gazebo) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[35.694491] (gazebo) StderrLine: {'line': b'  File "/opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[35.694641] (gazebo) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[35.694790] (gazebo) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[35.728749] (robdesc) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[35.729106] (robdesc) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[35.729367] (robdesc) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[35.729551] (robdesc) StderrLine: {'line': b'  /home/lsw155linuxbox/justbaked/justbaked/build/robdesc/ament_cmake_package_templates/templates.cmake)\n'}
+[35.729737] (robdesc) StderrLine: {'line': b'  returned error code 1\n'}
+[35.729915] (robdesc) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[35.730087] (robdesc) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[35.730276] (robdesc) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[35.730455] (robdesc) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[35.730612] (robdesc) StderrLine: {'line': b'  CMakeLists.txt:19 (find_package)\n'}
+[35.730781] (robdesc) StderrLine: {'line': b'\n'}
+[35.730944] (robdesc) StderrLine: {'line': b'\x1b[0m\n'}
+[35.731106] (robdesc) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[35.731982] (robdesc) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[35.733625] (tempsens) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[35.734447] (tempsens) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[35.734707] (tempsens) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[35.734907] (tempsens) StderrLine: {'line': b'  /home/lsw155linuxbox/justbaked/justbaked/build/tempsens/ament_cmake_package_templates/templates.cmake)\n'}
+[35.735163] (tempsens) StderrLine: {'line': b'  returned error code 1\n'}
+[35.735373] (tempsens) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[35.735819] (tempsens) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[35.736312] (tempsens) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[35.736672] (tempsens) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[35.736847] (tempsens) StderrLine: {'line': b'  CMakeLists.txt:9 (find_package)\n'}
+[35.737112] (tempsens) StderrLine: {'line': b'\n'}
+[35.737303] (tempsens) StderrLine: {'line': b'\x1b[0m\n'}
+[35.737564] (tempsens) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[35.737737] (robdesc) CommandEnded: {'returncode': 2}
+[35.738161] (tempsens) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[35.741436] (gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[35.741625] (gazebo) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[35.741762] (gazebo) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[35.741927] (gazebo) StderrLine: {'line': b'  /home/lsw155linuxbox/justbaked/justbaked/build/gazebo/ament_cmake_package_templates/templates.cmake)\n'}
+[35.742076] (gazebo) StderrLine: {'line': b'  returned error code 1\n'}
+[35.742202] (gazebo) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[35.742341] (gazebo) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[35.742449] (gazebo) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[35.742559] (gazebo) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[35.742665] (gazebo) StderrLine: {'line': b'  CMakeLists.txt:9 (find_package)\n'}
+[35.742771] (gazebo) StderrLine: {'line': b'\n'}
+[35.742876] (gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[35.743008] (gazebo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[35.745221] (gazebo) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[35.756095] (robdesc) JobEnded: {'identifier': 'robdesc', 'rc': 2}
+[35.757508] (tempsens) JobEnded: {'identifier': 'tempsens', 'rc': 'SIGINT'}
+[35.758544] (gazebo) JobEnded: {'identifier': 'gazebo', 'rc': 'SIGINT'}
+[35.768852] (-) EventReactorShutdown: {}

@@ -1,13 +1,13 @@
 <robot name="sensor_rplidar" xmlns:xacro="http://ros.org/wiki/xacro">
 	
-	
-	<!-- Lidar -->
+    <!-- Lidar -->
 <joint name="lidar_joint" type="continuous">
     <origin xyz="0.0 0.0 0.3661417" rpy="0.0 0.0 0.0"/>
     <parent link="chassis"/>
     <child link="lidar"/>
     <axis xyz="0.0 0.0 1.0"/>
 </joint>
+
 
 <link name="lidar">
     <visual name="lidar">

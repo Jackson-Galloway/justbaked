@@ -17,7 +17,7 @@ def generate_launch_description():
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
     # Add your own gazebo library path here
-    gazebo_models_path = "/home/jack/justbaked/justbaked/src/gazebo/worlds"
+    gazebo_models_path = "/home/lsw155linuxbox/justbaked/justbaked/src/gazebo/worlds"
     os.environ["GZ_SIM_RESOURCE_PATH"] = os.pathsep + gazebo_models_path
 
 

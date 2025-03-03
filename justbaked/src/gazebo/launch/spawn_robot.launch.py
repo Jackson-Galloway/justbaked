@@ -50,7 +50,7 @@ def generate_launch_description():
     rviz_node = Node(
         package='rviz2',
         executable='rviz2',
-        arguments=['-d', os.path.join(pkg_urdf_path, 'description' 'rviz', 'description.rviz')],
+        arguments=['-d', os.path.join(pkg_urdf_path, 'description', 'rviz', 'description.rviz')],
         condition=IfCondition(LaunchConfiguration('rviz')),
         parameters=[
             {'use_sim_time': True},
@@ -92,12 +92,12 @@ def generate_launch_description():
         package="ros_gz_bridge",
         executable="parameter_bridge",
         arguments=[
-            "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+            "/clock@rosgraph_msgs/msg/Clock@gz.msgs.Clock",
             "/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist",
             "/odom@nav_msgs/msg/Odometry@gz.msgs.Odometry",
             "/joint_states@sensor_msgs/msg/JointState@gz.msgs.Model",
-            "/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V"
-            "/scan@sensor_msgs /msg/LaserScan@gz.msgs.LaserScan"
+            "/tf@tf2_msgs/msg/TFMessage@gz.msgs.Pose_V",
+            "/scan@sensor_msgs/msg/LaserScan@gz.msgs.LaserScan"
         ],
         output="screen",
         parameters=[

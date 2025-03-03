@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jack/justbaked/justbaked/src/tempsens
+CMAKE_SOURCE_DIR = /home/lsw155linuxbox/justbaked/justbaked/src/tempsens
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jack/justbaked/justbaked/build/tempsens
+CMAKE_BINARY_DIR = /home/lsw155linuxbox/justbaked/justbaked/build/tempsens
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/jack/justbaked/justbaked/build/tempsens && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jack/justbaked/justbaked/src/tempsens /home/jack/justbaked/justbaked/src/tempsens /home/jack/justbaked/justbaked/build/tempsens /home/jack/justbaked/justbaked/build/tempsens /home/jack/justbaked/justbaked/build/tempsens/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/lsw155linuxbox/justbaked/justbaked/build/tempsens && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lsw155linuxbox/justbaked/justbaked/src/tempsens /home/lsw155linuxbox/justbaked/justbaked/src/tempsens /home/lsw155linuxbox/justbaked/justbaked/build/tempsens /home/lsw155linuxbox/justbaked/justbaked/build/tempsens /home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 
