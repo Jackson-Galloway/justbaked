@@ -1,0 +1,14 @@
+# This is an empty file, so that git commits the folder correctlydiff_drive_controller:
+  ros__parameters:
+    publish_rate: 50.0
+    base_frame_id: base_link  # Make sure this is 'base_link', not 'chassis'
+    odom_frame_id: odom
+    enable_odom_tf: true
+
+    wheel_separation: 0.8
+    wheel_radius: 0.1
+
+    left_wheel_names: ["rear_left_wheel", "front_left_wheel"]
+    right_wheel_names: ["rear_right_wheel", "front_right_wheel"]
+
+    use_stamped_vel: false
