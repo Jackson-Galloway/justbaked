@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="turtlebot4" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- Base create3 model -->
+  <xacro:include filename="$(find turtlebot4_description)/urdf/standard/robotcore.xacro"/>
+  <xacro:include filename="$(find turtlebot4_description)/urdf/sensors/rplidar.xacro" />
+
+
+  <!-- Mechanical properties -->
+  <xacro:property name="name"                     value="rplidar"/>
+  <xacro:property name="parent_link"              value="chassis"/>
+
+  <!-- Turtlebot4 sensor definitions -->
+
+  <joint name="${name}_joint" type="fixed">
+    <origin xyz=" 0 0 0.3661417" />
+    <parent link="${parent_link}"/>
+    <child link="${name}_link"/>
+  </joint>
+
+  <!-- Base footprint for navigation -->
+  <link name="base_footprint" />
+  <joint name="base_footprint_joint" type="fixed">
+    <!-- Create3's base_link is already on the ground -->
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="base_footprint" />
+  </joint>
+</robot>

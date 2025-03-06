@@ -1,9 +1,0 @@
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/uninstall.dir
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/tempsens_uninstall.dir
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/test.dir
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/edit_cache.dir
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/rebuild_cache.dir
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/list_install_components.dir
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/install.dir
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/install/local.dir
-/home/lsw155linuxbox/justbaked/justbaked/build/tempsens/CMakeFiles/install/strip.dir

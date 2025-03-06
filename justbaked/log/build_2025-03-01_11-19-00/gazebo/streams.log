@@ -1,5 +1,0 @@
-[0.115s] Invoking command in '/home/lsw155linuxbox/justbaked/justbaked/build/gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/lsw155linuxbox/justbaked/justbaked/build/gazebo -- -j8 -l8
-[0.131s] [0mCMake Error: The current CMakeCache.txt directory /home/lsw155linuxbox/justbaked/justbaked/build/gazebo/CMakeCache.txt is different than the directory /home/jack/justbaked/justbaked/build/gazebo where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.248s] [0mCMake Error: The source directory "/home/jack/justbaked/justbaked/src/gazebo" does not exist.
-[0.248s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.249s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1

@@ -1,3 +1,0 @@
-<launch>
-  <include file="$(find robdesc)/launch/nav2_bringup.launch"/>
-</launch>
