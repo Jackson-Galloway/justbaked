@@ -1,4 +1,3 @@
-/home/lsw155linuxbox/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a1_launch.py
 /home/lsw155linuxbox/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
 /home/lsw155linuxbox/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
 /home/lsw155linuxbox/justbaked/justbaked/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node

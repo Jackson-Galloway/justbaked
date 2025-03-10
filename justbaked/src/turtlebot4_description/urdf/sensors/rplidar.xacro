@@ -25,7 +25,7 @@
 
   <sensor name="lidar_sensor" type="gpu_lidar">
     <topic>scan</topic>
-    <update_rate>10</update_rate>
+    <update_rate>1</update_rate>
     <always_on>true</always_on>
     <visualize>true</visualize>
     <lidar>

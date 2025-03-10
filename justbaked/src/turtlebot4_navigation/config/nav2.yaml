@@ -1,6 +1,6 @@
 bt_navigator:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     global_frame: map
     robot_base_frame: base_link
@@ -20,7 +20,7 @@ bt_navigator:
 
 controller_server:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     controller_frequency: 20.0
     min_x_velocity_threshold: 0.001
@@ -128,13 +128,13 @@ controller_server:
 local_costmap:
   local_costmap:
     ros__parameters:
-      use_sim_time: true
+      use_sim_time: false
       enable_stamped_cmd_vel: true
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
       robot_base_frame: base_link
-      use_sim_time: true
+      use_sim_time: false
       rolling_window: true
       width: 3
       height: 3
@@ -173,13 +173,13 @@ local_costmap:
 global_costmap:
   global_costmap:
     ros__parameters:
-      use_sim_time: true
+      use_sim_time: false
       enable_stamped_cmd_vel: true
       update_frequency: 1.0
       publish_frequency: 1.0
       global_frame: map
       robot_base_frame: base_link
-      use_sim_time: true
+      use_sim_time: false
       robot_radius: 0.175
       resolution: 0.06
       track_unknown_space: true
@@ -209,10 +209,10 @@ global_costmap:
 
 planner_server:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     #expected_planner_frequency: 20.0
-    use_sim_time: true
+    use_sim_time: false
     planner_plugins: ["GridBased"]
     GridBased:
       plugin: "nav2_navfn_planner::NavfnPlanner"
@@ -222,7 +222,7 @@ planner_server:
 
 smoother_server:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     smoother_plugins: ["simple_smoother"]
     simple_smoother:
@@ -233,7 +233,7 @@ smoother_server:
 
 behavior_server:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     local_costmap_topic: local_costmap/costmap_raw
     global_costmap_topic: global_costmap/costmap_raw
@@ -262,11 +262,11 @@ behavior_server:
 
 robot_state_publisher:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
 
 waypoint_follower:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     loop_rate: 20
     stop_on_failure: false
@@ -279,7 +279,7 @@ waypoint_follower:
 
 velocity_smoother:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     smoothing_frequency: 20.0
     scale_velocities: False
@@ -295,7 +295,7 @@ velocity_smoother:
 
 collision_monitor:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     base_frame_id: "base_link"
     odom_frame_id: "odom"
@@ -328,7 +328,7 @@ collision_monitor:
 
 docking_server:
   ros__parameters:
-    use_sim_time: true
+    use_sim_time: false
     enable_stamped_cmd_vel: true
     controller_frequency: 50.0
     initial_perception_timeout: 5.0
