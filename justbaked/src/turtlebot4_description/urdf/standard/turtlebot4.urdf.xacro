@@ -12,7 +12,7 @@
   <!-- Turtlebot4 sensor definitions -->
 
   <joint name="${name}_joint" type="fixed">
-    <origin xyz=" 0 0 0.3661417" />
+    <origin xyz=" 0 0 0.11159999016" />
     <parent link="${parent_link}"/>
     <child link="${name}_link"/>
   </joint>

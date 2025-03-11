@@ -86,7 +86,9 @@ def launch_setup(context, *args, **kwargs):
                 ('use_sim_time', use_sim_time),
                 ('autostart', autostart),
                 ('use_lifecycle_manager', use_lifecycle_manager),
-                ('slam_params_file', slam_params)
+                ('params_file', slam_params),
+                ('qos_overrides./scan.reliability', 'best_effort'),
+                ('qos_overrides./scan.depth', '50')
             ],
             condition=IfCondition(sync)
         ),
@@ -97,7 +99,7 @@ def launch_setup(context, *args, **kwargs):
                 ('use_sim_time', use_sim_time),
                 ('autostart', autostart),
                 ('use_lifecycle_manager', use_lifecycle_manager),
-                ('slam_params_file', slam_params)
+                ('params_file', slam_params)
             ],
             condition=UnlessCondition(sync)
         )

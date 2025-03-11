@@ -1,7 +1,7 @@
 /home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/launch/robot_description.launch.py
+/home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/lite/robot.urdf.xacro
+/home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/lite/rplidar.xacro
 /home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/sensors/rplidar.xacro
-/home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/standard/robot.urdf.xacro
-/home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/standard/rplidar.xacro
 /home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/standard/turtlebot4.urdf.xacro
 /home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/standard/robotcore.xacro
 /home/lsw155linuxbox/justbaked/justbaked/install/turtlebot4_description/share/ament_index/resource_index/package_run_dependencies/turtlebot4_description
