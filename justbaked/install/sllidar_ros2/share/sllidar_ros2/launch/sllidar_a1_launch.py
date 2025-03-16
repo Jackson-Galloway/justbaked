@@ -69,31 +69,3 @@ def generate_launch_description():
             output='screen'),
     ])
 
-        # publish odom to base_link transform
-        odom_base_trans = TransformStamped()
-        odom_base_trans.header.stamp = self.curr_ts.to_msg()
-        odom_base_trans.header.frame_id = "odom"
-        odom_base_trans.child_frame_id = "base_link"
-        odom_base_trans.transform.translation.x = self.x
-        odom_base_trans.transform.translation.y = self.y
-        odom_base_trans.transform.translation.z = self.GROUND_CLEARANCE
-        odom_base_trans.transform.rotation.x = quat[0]
-        odom_base_trans.transform.rotation.y = quat[1]
-        odom_base_trans.transform.rotation.z = quat[2]
-        odom_base_trans.transform.rotation.w = quat[3]
-        self.odom_base_broadcaster.sendTransform(odom_base_trans)
-        # publish odom
-        odom_msg = Odometry()
-        odom_msg.header.stamp = self.curr_ts.to_msg()
-        odom_msg.header.frame_id = "odom"
-        odom_msg.child_frame_id = "base_link"
-        odom_msg.pose.pose.position.x = self.x
-        odom_msg.pose.pose.position.y = self.y
-        odom_msg.pose.pose.position.z = self.GROUND_CLEARANCE
-        odom_msg.pose.pose.orientation.x = quat[0]
-        odom_msg.pose.pose.orientation.y = quat[1]
-        odom_msg.pose.pose.orientation.z = quat[2]
-        odom_msg.pose.pose.orientation.w = quat[3]
-        odom_msg.twist.twist.linear.x = self.lin_vel
-        odom_msg.twist.twist.angular.z = self.ang_vel
-        self.odom_pubr.publish(odom_msg)

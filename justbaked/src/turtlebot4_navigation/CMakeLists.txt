@@ -18,9 +18,15 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
+find_package(rclpy REQUIRED)
+
+install(PROGRAMS
+	turtlebot4_navigation/TankDemo.py
+	DESTINATION lib/${PROJECT_NAME}
+)
 
 install(
-  DIRECTORY config launch maps
+  DIRECTORY config launch maps turtlebot4_navigation
   DESTINATION share/${PROJECT_NAME}
 )
 
