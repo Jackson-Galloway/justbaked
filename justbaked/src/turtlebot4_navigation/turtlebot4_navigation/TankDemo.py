@@ -9,6 +9,7 @@ from geometry_msgs.msg import TwistStamped, Quaternion, TransformStamped
 from nav_msgs.msg import Odometry
 import tf_transformations
 from math import sin, cos
+import tf2_ros
 
 # (Set the I2C bus number, usually 1)
 I2C_BUS = 1
@@ -52,6 +53,9 @@ class MotorController(Node):
         self.last_encoder_left = 0
         self.last_encoder_right = 0
 
+        # Create a timer to call update_odometry regularly
+        self.timer = self.create_timer(0.1, self.update_odometry)  # Update odometry at 10 Hz
+
     def motor_init(self):
         print("Initializing motor...")
         try:
@@ -82,9 +86,6 @@ class MotorController(Node):
             bus.write_i2c_block_data(MOTOR_ADDR, MOTOR_FIXED_SPEED_ADDR, speed_command)
         except OSError as e:
             print(f"Failed to send speed command: {e}")
-
-        # Update and publish odometry
-        self.update_odometry()
 
     def update_odometry(self):
         current_time = self.get_clock().now()
@@ -161,6 +162,7 @@ class MotorController(Node):
         transform.transform.translation.z = 0.0
         transform.transform.rotation = Quaternion(*odom_quat)
 
+        print(f"Publishing transform: {transform}")
         self.tf_broadcaster.sendTransform(transform)
 
         self.last_time = current_time
