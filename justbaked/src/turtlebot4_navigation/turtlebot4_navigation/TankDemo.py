@@ -91,8 +91,19 @@ class MotorController(Node):
             current_time = self.get_clock().now()
             dt = (current_time - self.last_time).nanoseconds / 1e9  # Convert to seconds
 
-            # Read encoder values
-            encoder_data = struct.unpack('iiii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 16)))
+            # Read encoder values with retry logic
+            encoder_data = None
+            for _ in range(3):  # Retry up to 3 times
+                try:
+                    encoder_data = struct.unpack('iiii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 16)))
+                    break
+                except OSError as e:
+                    print(f"Failed to read encoder data, retrying...: {e}")
+                    time.sleep(0.1)
+            if encoder_data is None:
+                print("Failed to read encoder data after retries.")
+                return
+
             encoder_left = encoder_data[0]
             encoder_right = encoder_data[1]
 
