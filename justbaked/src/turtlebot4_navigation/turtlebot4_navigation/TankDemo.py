@@ -67,112 +67,113 @@ class MotorController(Node):
             print(f"Failed to initialize motor: {e}")
 
     def cmd_vel_callback(self, msg):
-        # Extract linear and angular velocities from the Twist message
-        linear_x = msg.twist.linear.x
-        angular_z = msg.twist.angular.z
-
-        # Translate velocities to motor speeds
-        left_speed = int((linear_x - angular_z) * 50)  # Adjust the scaling factor as needed
-        right_speed = int((linear_x + angular_z) * 50)  # Adjust the scaling factor as needed
-
-        # Ensure the speeds are within the valid range
-        left_speed = max(min(left_speed, 100), -100)
-        right_speed = max(min(right_speed, 100), -100)
-
-        # Send motor speed commands via I2C
-        speed_command = [left_speed, right_speed]
-        print(f"Sending speed command: {speed_command}")
         try:
+            # Extract linear and angular velocities from the Twist message
+            linear_x = msg.twist.linear.x
+            angular_z = msg.twist.angular.z
+
+            # Translate velocities to motor speeds
+            left_speed = int((linear_x - angular_z) * 50)  # Adjust the scaling factor as needed
+            right_speed = int((linear_x + angular_z) * 50)  # Adjust the scaling factor as needed
+
+            # Ensure the speeds are within the valid range
+            left_speed = max(min(left_speed, 100), -100)
+            right_speed = max(min(right_speed, 100), -100)
+
+            # Send motor speed commands via I2C
+            speed_command = [left_speed, right_speed]
             bus.write_i2c_block_data(MOTOR_ADDR, MOTOR_FIXED_SPEED_ADDR, speed_command)
-        except OSError as e:
-            print(f"Failed to send speed command: {e}")
+        except Exception as e:
+            print(f"Error in cmd_vel_callback: {e}")
 
     def update_odometry(self):
-        current_time = self.get_clock().now()
-        dt = (current_time - self.last_time).nanoseconds / 1e9  # Convert to seconds
-
-        # Read encoder values
         try:
+            current_time = self.get_clock().now()
+            dt = (current_time - self.last_time).nanoseconds / 1e9  # Convert to seconds
+
+            # Read encoder values
             encoder_data = struct.unpack('iiii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 16)))
             encoder_left = encoder_data[0]
             encoder_right = encoder_data[1]
-            print(f"Encoder left: {encoder_left}, Encoder right: {encoder_right}")
-        except OSError as e:
-            print(f"Failed to read encoder data: {e}")
-            return
 
-        # Calculate the change in encoder values
-        delta_left = encoder_left - self.last_encoder_left
-        delta_right = encoder_right - self.last_encoder_right
+            # Calculate the change in encoder values
+            delta_left = encoder_left - self.last_encoder_left
+            delta_right = encoder_right - self.last_encoder_right
 
-        # Update last encoder values
-        self.last_encoder_left = encoder_left
-        self.last_encoder_right = encoder_right
+            # Update last encoder values
+            self.last_encoder_left = encoder_left
+            self.last_encoder_right = encoder_right
 
-        # Assuming wheel separation and wheel radius
-        wheel_separation = 0.5  # Distance between wheels in meters
-        wheel_radius = 0.1  # Radius of the wheels in meters
-        encoder_resolution = 44  # Pulses per revolution
+            # Assuming wheel separation and wheel radius
+            wheel_separation = 0.5  # Distance between wheels in meters
+            wheel_radius = 0.1  # Radius of the wheels in meters
+            encoder_resolution = 44  # Pulses per revolution
 
-        # Calculate distances traveled by each wheel
-        distance_left = (delta_left / encoder_resolution) * (2 * 3.14159 * wheel_radius)
-        distance_right = (delta_right / encoder_resolution) * (2 * 3.14159 * wheel_radius)
+            # Calculate distances traveled by each wheel
+            distance_left = (delta_left / encoder_resolution) * (2 * 3.14159 * wheel_radius)
+            distance_right = (delta_right / encoder_resolution) * (2 * 3.14159 * wheel_radius)
 
-        # Calculate velocities
-        v_left = distance_left / dt
-        v_right = distance_right / dt
-        v = (v_left + v_right) / 2.0
-        omega = (v_right - v_left) / wheel_separation
+            # Calculate velocities
+            v_left = distance_left / dt
+            v_right = distance_right / dt
+            v = (v_left + v_right) / 2.0
+            omega = (v_right - v_left) / wheel_separation
 
-        # Update position
-        self.x += v * dt * cos(self.theta)
-        self.y += v * dt * sin(self.theta)
-        self.theta += omega * dt
+            # Update position
+            self.x += v * dt * cos(self.theta)
+            self.y += v * dt * sin(self.theta)
+            self.theta += omega * dt
 
-        # Create quaternion from yaw
-        odom_quat = tf_transformations.quaternion_from_euler(0, 0, self.theta)
+            # Create quaternion from yaw
+            odom_quat = tf_transformations.quaternion_from_euler(0, 0, self.theta)
 
-        # Create and publish odometry message
-        odom = Odometry()
-        odom.header.stamp = current_time.to_msg()
-        odom.header.frame_id = 'odom'
+            # Create and publish odometry message
+            odom = Odometry()
+            odom.header.stamp = current_time.to_msg()
+            odom.header.frame_id = 'odom'
 
-        # Set the position
-        odom.pose.pose.position.x = self.x
-        odom.pose.pose.position.y = self.y
-        odom.pose.pose.position.z = 0.0
-        odom.pose.pose.orientation = Quaternion(*odom_quat)
+            # Set the position
+            odom.pose.pose.position.x = self.x
+            odom.pose.pose.position.y = self.y
+            odom.pose.pose.position.z = 0.0
+            odom.pose.pose.orientation = Quaternion(*odom_quat)
 
-        # Set the velocity
-        odom.child_frame_id = 'base_link'
-        odom.twist.twist.linear.x = v
-        odom.twist.twist.linear.y = 0.0
-        odom.twist.twist.angular.z = omega
+            # Set the velocity
+            odom.child_frame_id = 'base_link'
+            odom.twist.twist.linear.x = v
+            odom.twist.twist.linear.y = 0.0
+            odom.twist.twist.angular.z = omega
 
-        # Publish the message
-        self.odom_publisher.publish(odom)
+            # Publish the message
+            self.odom_publisher.publish(odom)
 
-        # Publish the transform
-        transform = TransformStamped()
-        transform.header.stamp = current_time.to_msg()
-        transform.header.frame_id = 'odom'
-        transform.child_frame_id = 'base_link'
-        transform.transform.translation.x = self.x
-        transform.transform.translation.y = self.y
-        transform.transform.translation.z = 0.0
-        transform.transform.rotation = Quaternion(*odom_quat)
+            # Publish the transform
+            transform = TransformStamped()
+            transform.header.stamp = current_time.to_msg()
+            transform.header.frame_id = 'odom'
+            transform.child_frame_id = 'base_link'
+            transform.transform.translation.x = self.x
+            transform.transform.translation.y = self.y
+            transform.transform.translation.z = 0.0
+            transform.transform.rotation = Quaternion(*odom_quat)
 
-        print(f"Publishing transform: {transform}")
-        self.tf_broadcaster.sendTransform(transform)
+            self.tf_broadcaster.sendTransform(transform)
 
-        self.last_time = current_time
+            self.last_time = current_time
+        except Exception as e:
+            print(f"Error in update_odometry: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
     motor_controller = MotorController()
-    rclpy.spin(motor_controller)
-    motor_controller.destroy_node()
-    rclpy.shutdown()
+    print("MotorController node has been initialized.")
+    try:
+        rclpy.spin(motor_controller)
+    except KeyboardInterrupt:
+        print("Shutting down MotorController node.")
+    finally:
+        motor_controller.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
