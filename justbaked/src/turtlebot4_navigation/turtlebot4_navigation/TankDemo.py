@@ -5,7 +5,10 @@ import time
 import struct
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import TwistStamped
+from geometry_msgs.msg import TwistStamped, Quaternion
+from nav_msgs.msg import Odometry
+import tf_transformations
+from math import sin, cos
 
 # (Set the I2C bus number, usually 1)
 I2C_BUS = 1
@@ -15,23 +18,16 @@ MOTOR_ADDR = 0x34
 
 # (Register address)
 ADC_BAT_ADDR = 0x00
-MOTOR_TYPE_ADDR = 0x14 #Set the encoder motor type
-MOTOR_ENCODER_POLARITY_ADDR = 0x15 #Set the polarity of the encoder)，
-#If the motor speed can not be controlled, either rotating at the fastest speed or stopping, the value of this address can be reset
-#Range: 0 or 1, default: 0)
-MOTOR_FIXED_PWM_ADDR = 0x1F #-100~100）(Fixed PWM control, open-loop control, range: (-100~100))  
-MOTOR_FIXED_SPEED_ADDR = 0x33 #Fixed speed control, closed-loop control,)，
-#(Unit: pulse count per 10 milliseconds, range: (depending on the specific encoder motor, affected by the number of encoder wires, voltage, load, etc., generally around ±50))
+MOTOR_TYPE_ADDR = 0x14 # Set the encoder motor type
+MOTOR_ENCODER_POLARITY_ADDR = 0x15 # Set the polarity of the encoder
+MOTOR_FIXED_PWM_ADDR = 0x1F # Fixed PWM control, open-loop control, range: (-100~100)
+MOTOR_FIXED_SPEED_ADDR = 0x33 # Fixed speed control, closed-loop control
+MOTOR_ENCODER_TOTAL_ADDR = 0x3C # Total pulse value of each of the four encoder motors
 
-MOTOR_ENCODER_TOTAL_ADDR = 0x3C #Total pulse value of each of the four encoder motors
-# If the number of pulses per revolution of the motor is known as U, and the diameter of the wheel is known as D, the distance traveled by each wheel can be obtained by counting the pulses)
-# (P/U) * (3.14159*D)(For example, if the total number of pulses for motor 1 is P, the distance traveled is (P/U) * (3.14159*D))
-# The number of pulses per revolution U for different motors can be tested manually by rotating 10 revolutions and reading the pulse count, and then taking the average value to obtain)
+# (Motor type values)
+MOTOR_TYPE_JGB37_520_12V_110RPM = 3 # Magnetic ring rotates 44 pulses per revolution, reduction ratio: 90, default
 
-
-#(Motor type values)
-MOTOR_TYPE_JGB37_520_12V_110RPM = 3 #Magnetic ring rotates 44 pulses per revolution, reduction ratio: 90, default
-#(Motor type and encoder direction polarity)
+# (Motor type and encoder direction polarity)
 MotorType = MOTOR_TYPE_JGB37_520_12V_110RPM
 MotorEncoderPolarity = 0
 
@@ -46,15 +42,22 @@ class MotorController(Node):
             self.cmd_vel_callback,
             10)
         self.subscription  # prevent unused variable warning
+        self.odom_publisher = self.create_publisher(Odometry, 'odom', 10)
         self.motor_init()
+        self.x = 0.0
+        self.y = 0.0
+        self.theta = 0.0
+        self.last_time = self.get_clock().now()
+        self.last_encoder_left = 0
+        self.last_encoder_right = 0
 
     def motor_init(self):
-        print("Initializing Motor...")
+        print("Initializing motor...")
         try:
             bus.write_byte_data(MOTOR_ADDR, MOTOR_TYPE_ADDR, MotorType)  # Set the motor type
             time.sleep(0.5)
             bus.write_byte_data(MOTOR_ADDR, MOTOR_ENCODER_POLARITY_ADDR, MotorEncoderPolarity)  # Set the polarity of the encoder
-            print("Motor Initialized")
+            print("Motor initialized.")
         except OSError as e:
             print(f"Failed to initialize motor: {e}")
 
@@ -76,6 +79,75 @@ class MotorController(Node):
         bus.write_i2c_block_data(MOTOR_ADDR, MOTOR_FIXED_SPEED_ADDR, speed_command)
         bus.write_i2c_block_data(MOTOR_ADDR, MOTOR_FIXED_SPEED_ADDR, speed_command)
 
+        # Update and publish odometry
+        self.update_odometry()
+
+    def update_odometry(self):
+        current_time = self.get_clock().now()
+        dt = (current_time - self.last_time).nanoseconds / 1e9  # Convert to seconds
+
+        # Read encoder values
+        try:
+            encoder_data = struct.unpack('iiii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 16)))
+            encoder_left = encoder_data[0]
+            encoder_right = encoder_data[1]
+        except OSError as e:
+            print(f"Failed to read encoder data: {e}")
+            return
+
+        # Calculate the change in encoder values
+        delta_left = encoder_left - self.last_encoder_left
+        delta_right = encoder_right - self.last_encoder_right
+
+        # Update last encoder values
+        self.last_encoder_left = encoder_left
+        self.last_encoder_right = encoder_right
+
+        # Assuming wheel separation and wheel radius
+        wheel_separation = 0.5  # Distance between wheels in meters
+        wheel_radius = 0.1  # Radius of the wheels in meters
+        encoder_resolution = 44  # Pulses per revolution
+
+        # Calculate distances traveled by each wheel
+        distance_left = (delta_left / encoder_resolution) * (2 * 3.14159 * wheel_radius)
+        distance_right = (delta_right / encoder_resolution) * (2 * 3.14159 * wheel_radius)
+
+        # Calculate velocities
+        v_left = distance_left / dt
+        v_right = distance_right / dt
+        v = (v_left + v_right) / 2.0
+        omega = (v_right - v_left) / wheel_separation
+
+        # Update position
+        self.x += v * dt * cos(self.theta)
+        self.y += v * dt * sin(self.theta)
+        self.theta += omega * dt
+
+        # Create quaternion from yaw
+        odom_quat = tf_transformations.quaternion_from_euler(0, 0, self.theta)
+
+        # Create and publish odometry message
+        odom = Odometry()
+        odom.header.stamp = current_time.to_msg()
+        odom.header.frame_id = 'odom'
+
+        # Set the position
+        odom.pose.pose.position.x = self.x
+        odom.pose.pose.position.y = self.y
+        odom.pose.pose.position.z = 0.0
+        odom.pose.pose.orientation = Quaternion(*odom_quat)
+
+        # Set the velocity
+        odom.child_frame_id = 'base_link'
+        odom.twist.twist.linear.x = v
+        odom.twist.twist.linear.y = 0.0
+        odom.twist.twist.angular.z = omega
+
+        # Publish the message
+        self.odom_publisher.publish(odom)
+
+        self.last_time = current_time
+
 def main(args=None):
     rclpy.init(args=args)
     motor_controller = MotorController()
@@ -85,6 +157,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-
-
