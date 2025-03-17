@@ -1,0 +1,95 @@
+[0.019s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_navigation -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_navigation
+[0.254s] -- The C compiler identification is GNU 13.3.0
+[0.479s] -- The CXX compiler identification is GNU 13.3.0
+[0.511s] -- Detecting C compiler ABI info
+[0.721s] -- Detecting C compiler ABI info - done
+[0.735s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.737s] -- Detecting C compile features
+[0.738s] -- Detecting C compile features - done
+[0.755s] -- Detecting CXX compiler ABI info
+[0.985s] -- Detecting CXX compiler ABI info - done
+[0.999s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.000s] -- Detecting CXX compile features
+[1.001s] -- Detecting CXX compile features - done
+[1.010s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.342s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.611s] -- Found rclpy: 7.1.3 (/opt/ros/jazzy/share/rclpy/cmake)
+[1.823s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.059s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.063s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.063s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.064s] -- Added test 'lint_cmake' to check CMake code style
+[2.066s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.069s] -- Added test 'xmllint' to check XML markup files
+[2.072s] -- Configuring done (2.0s)
+[2.080s] -- Generating done (0.0s)
+[2.083s] -- Build files have been written to: /home/ieee/justbaked/justbaked/build/turtlebot4_navigation
+[2.096s] Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_navigation -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_navigation
+[2.098s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_navigation -- -j4 -l4
+[2.224s] Built target ament_cmake_python_copy_turtlebot4_navigation
+[2.525s] running egg_info
+[2.526s] creating turtlebot4_navigation.egg-info
+[2.551s] writing turtlebot4_navigation.egg-info/PKG-INFO
+[2.551s] writing dependency_links to turtlebot4_navigation.egg-info/dependency_links.txt
+[2.552s] writing top-level names to turtlebot4_navigation.egg-info/top_level.txt
+[2.552s] writing manifest file 'turtlebot4_navigation.egg-info/SOURCES.txt'
+[2.627s] reading manifest file 'turtlebot4_navigation.egg-info/SOURCES.txt'
+[2.628s] writing manifest file 'turtlebot4_navigation.egg-info/SOURCES.txt'
+[2.718s] Built target ament_cmake_python_build_turtlebot4_navigation_egg
+[2.740s] Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_navigation -- -j4 -l4
+[2.742s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_navigation
+[2.760s] -- Install configuration: ""
+[2.760s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/turtlebot4_navigation/TankDemo.py
+[2.760s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config
+[2.760s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/slam.yaml
+[2.761s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/localization.yaml
+[2.761s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/nav2.yaml
+[2.761s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch
+[2.762s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/nav2.launch.py
+[2.762s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/tank_mov.launch.py
+[2.762s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/localization.launch.py
+[2.762s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/slam.launch.py
+[2.763s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps
+[2.763s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/depot.yaml
+[2.764s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/warehouse.pgm
+[2.773s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/maze.yaml
+[2.774s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/warehouse.yaml
+[2.774s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/maze.pgm
+[2.775s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/depot.pgm
+[2.777s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/turtlebot4_navigation
+[2.777s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/turtlebot4_navigation/turtlebot4_navigator.py
+[2.777s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/turtlebot4_navigation/__init__.py
+[2.777s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/turtlebot4_navigation/TankDemo.py
+[2.778s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/pythonpath.sh
+[2.778s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/pythonpath.dsv
+[2.778s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info
+[2.778s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info/dependency_links.txt
+[2.778s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info/PKG-INFO
+[2.778s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info/top_level.txt
+[2.779s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info/SOURCES.txt
+[2.779s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation
+[2.779s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/turtlebot4_navigator.py
+[2.779s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/__init__.py
+[2.779s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/TankDemo.py
+[2.843s] Listing '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation'...
+[2.844s] Compiling '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/TankDemo.py'...
+[2.844s] Compiling '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/__init__.py'...
+[2.844s] Compiling '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/turtlebot4_navigator.py'...
+[2.862s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigator.py
+[2.953s] Compiling '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigator.py'...
+[2.969s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/ament_index/resource_index/package_run_dependencies/turtlebot4_navigation
+[2.970s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/ament_index/resource_index/parent_prefix_path/turtlebot4_navigation
+[2.970s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/ament_prefix_path.sh
+[2.971s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/ament_prefix_path.dsv
+[2.971s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/path.sh
+[2.971s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/path.dsv
+[2.972s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/local_setup.bash
+[2.972s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/local_setup.sh
+[2.973s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/local_setup.zsh
+[2.973s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/local_setup.dsv
+[2.974s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.dsv
+[2.974s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/ament_index/resource_index/packages/turtlebot4_navigation
+[2.974s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/cmake/turtlebot4_navigationConfig.cmake
+[2.975s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/cmake/turtlebot4_navigationConfig-version.cmake
+[2.975s] -- Installing: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.xml
+[2.982s] Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_navigation

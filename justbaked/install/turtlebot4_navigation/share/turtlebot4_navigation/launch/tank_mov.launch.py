@@ -7,7 +7,7 @@ def generate_launch_description():
             package='turtlebot4_navigation',
             executable='TankDemo.py',
             name='motor_controller',
-            output='screen'
+            output='screen',
         )
     ])
 
