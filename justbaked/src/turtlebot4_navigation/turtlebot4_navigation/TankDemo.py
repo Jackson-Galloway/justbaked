@@ -136,7 +136,10 @@ class MotorController(Node):
             odom.pose.pose.position.x = self.x
             odom.pose.pose.position.y = self.y
             odom.pose.pose.position.z = 0.0
-            odom.pose.pose.orientation = Quaternion(*odom_quat)
+            odom.pose.pose.orientation.x = odom_quat[0]
+            odom.pose.pose.orientation.y = odom_quat[1]
+            odom.pose.pose.orientation.z = odom_quat[2]
+            odom.pose.pose.orientation.w = odom_quat[3]
 
             # Set the velocity
             odom.child_frame_id = 'base_link'
@@ -155,7 +158,10 @@ class MotorController(Node):
             transform.transform.translation.x = self.x
             transform.transform.translation.y = self.y
             transform.transform.translation.z = 0.0
-            transform.transform.rotation = Quaternion(*odom_quat)
+            transform.transform.rotation.x = odom_quat[0]
+            transform.transform.rotation.y = odom_quat[1]
+            transform.transform.rotation.z = odom_quat[2]
+            transform.transform.rotation.w = odom_quat[3]
 
             self.tf_broadcaster.sendTransform(transform)
 
