@@ -5,7 +5,7 @@ import time
 import struct
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import TwistStamped, Quaternion
+from geometry_msgs.msg import TwistStamped, Quaternion, TransformStamped
 from nav_msgs.msg import Odometry
 import tf_transformations
 from math import sin, cos
@@ -43,6 +43,7 @@ class MotorController(Node):
             10)
         self.subscription  # prevent unused variable warning
         self.odom_publisher = self.create_publisher(Odometry, 'odom', 10)
+        self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
         self.motor_init()
         self.x = 0.0
         self.y = 0.0
@@ -76,8 +77,11 @@ class MotorController(Node):
 
         # Send motor speed commands via I2C
         speed_command = [left_speed, right_speed]
-        bus.write_i2c_block_data(MOTOR_ADDR, MOTOR_FIXED_SPEED_ADDR, speed_command)
-        bus.write_i2c_block_data(MOTOR_ADDR, MOTOR_FIXED_SPEED_ADDR, speed_command)
+        print(f"Sending speed command: {speed_command}")
+        try:
+            bus.write_i2c_block_data(MOTOR_ADDR, MOTOR_FIXED_SPEED_ADDR, speed_command)
+        except OSError as e:
+            print(f"Failed to send speed command: {e}")
 
         # Update and publish odometry
         self.update_odometry()
@@ -91,6 +95,7 @@ class MotorController(Node):
             encoder_data = struct.unpack('iiii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 16)))
             encoder_left = encoder_data[0]
             encoder_right = encoder_data[1]
+            print(f"Encoder left: {encoder_left}, Encoder right: {encoder_right}")
         except OSError as e:
             print(f"Failed to read encoder data: {e}")
             return
@@ -145,6 +150,18 @@ class MotorController(Node):
 
         # Publish the message
         self.odom_publisher.publish(odom)
+
+        # Publish the transform
+        transform = TransformStamped()
+        transform.header.stamp = current_time.to_msg()
+        transform.header.frame_id = 'odom'
+        transform.child_frame_id = 'base_link'
+        transform.transform.translation.x = self.x
+        transform.transform.translation.y = self.y
+        transform.transform.translation.z = 0.0
+        transform.transform.rotation = Quaternion(*odom_quat)
+
+        self.tf_broadcaster.sendTransform(transform)
 
         self.last_time = current_time
 
