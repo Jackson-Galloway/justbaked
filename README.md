@@ -1,5 +1,5 @@
 # ASUIEEE25
-Arkansas State University IEEE Robotics Team for the 2025 region 5 conference in Whichita Kansas
+Arkansas State University IEEE Robotics Team for the 2025 region 5 conference in Wichita, Kansas
 
 Team Members
 - Chase Himschoot
