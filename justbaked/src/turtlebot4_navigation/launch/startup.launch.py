@@ -21,6 +21,15 @@ def generate_launch_description():
         "sllidar_a1_launch.py",
     )
 
+<<<<<<< Updated upstream
+=======
+    tank_mov_launch_file = os.path.join(
+        get_package_share_directory("turtlebot4_navigation"),
+        "launch",
+        "tank_mov.launch.py",
+    )    
+
+>>>>>>> Stashed changes
     slam_launch_file = os.path.join(
         get_package_share_directory("turtlebot4_navigation"),
         "launch",
@@ -44,6 +53,14 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(lidar_launch_file)
     )
 
+<<<<<<< Updated upstream
+=======
+    # Tank Movement
+    tank_mov = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(tank_mov_launch_file)
+    )
+
+>>>>>>> Stashed changes
     # SLAM Toolbox
     slam = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(slam_launch_file),
@@ -82,9 +99,14 @@ def generate_launch_description():
         arguments=["-d", os.path.join(
             os.path.expanduser("~"),
             "src",
+<<<<<<< Updated upstream
             "sllidar_ros2",
             "rviz",
             "sllidar_ros2.rviz"
+=======
+            "turtlebot4_description",
+            "robdesc.rviz"
+>>>>>>> Stashed changes
         )]
     )
 
@@ -104,6 +126,15 @@ def generate_launch_description():
         ),
         RegisterEventHandler(
             OnProcessExit(
+<<<<<<< Updated upstream
+=======
+                target_action=tank_mov,
+                on_exit=[LogError(msg="Error: Tank Movement failed to launch!")]
+            )
+        ),        
+        RegisterEventHandler(
+            OnProcessExit(
+>>>>>>> Stashed changes
                 target_action=slam,
                 on_exit=[LogError(msg="Error: SLAM Toolbox failed to launch!")]
             )
