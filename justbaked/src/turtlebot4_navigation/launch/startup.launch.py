@@ -102,37 +102,37 @@ def generate_launch_description():
         RegisterEventHandler(
             OnProcessExit(
                 target_action=robot_description,
-                on_exit=[LogError(msg="Error: Robot Description failed to launch!")]
+                on_exit=[LogInfo(msg="Error: Robot Description failed to launch!")]
             )
         ),
         RegisterEventHandler(
             OnProcessExit(
                 target_action=lidar,
-                on_exit=[LogError(msg="Error: LIDAR Sensor failed to launch!")]
+                on_exit=[LogInfo(msg="Error: LIDAR Sensor failed to launch!")]
             )
         ),
         RegisterEventHandler(
             OnProcessExit(
                 target_action=tank_mov,
-                on_exit=[LogError(msg="Error: Tank Movement failed to launch!")]
+                on_exit=[LogInfo(msg="Error: Tank Movement failed to launch!")]
             )
-        ),        
+        ),
         RegisterEventHandler(
             OnProcessExit(
                 target_action=slam,
-                on_exit=[LogError(msg="Error: SLAM Toolbox failed to launch!")]
+                on_exit=[LogInfo(msg="Error: SLAM Toolbox failed to launch!")]
             )
         ),
         RegisterEventHandler(
             OnProcessExit(
                 target_action=nav2,
-                on_exit=[LogError(msg="Error: Navigation 2 (Nav2) failed to launch!")]
+                on_exit=[LogInfo(msg="Error: Navigation 2 (Nav2) failed to launch!")]
             )
         ),
         RegisterEventHandler(
             OnProcessExit(
                 target_action=rviz,
-                on_exit=[LogError(msg="Error: RViz2 failed to launch!")]
+                on_exit=[LogInfo(msg="Error: RViz2 failed to launch!")]
             )
         ),
     ]
