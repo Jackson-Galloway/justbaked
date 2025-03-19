@@ -144,7 +144,7 @@ local_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 4.0
-        inflation_radius: 0.45
+        inflation_radius: 0.15
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: true
@@ -204,7 +204,7 @@ global_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 4.0
-        inflation_radius: 0.45
+        inflation_radius: 0.15
       always_send_full_costmap: true
 
 planner_server:
@@ -268,7 +268,7 @@ waypoint_follower:
   ros__parameters:
     use_sim_time: false
     enable_stamped_cmd_vel: true
-    loop_rate: 20
+    loop_rate: 10
     stop_on_failure: false
     action_server_result_timeout: 900.0
     waypoint_task_executor_plugin: "wait_at_waypoint"
@@ -281,7 +281,7 @@ velocity_smoother:
   ros__parameters:
     use_sim_time: false
     enable_stamped_cmd_vel: true
-    smoothing_frequency: 20.0
+    smoothing_frequency: 10.0
     scale_velocities: False
     feedback: "OPEN_LOOP"
     max_velocity: [0.26, 0.0, 1.0]
