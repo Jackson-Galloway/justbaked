@@ -198,17 +198,17 @@ turtlebot4_navigation_uninstall/fast:
 .PHONY : turtlebot4_navigation_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_turtlebot4_navigation
+# Target rules for targets named ament_cmake_python_symlink_turtlebot4_navigation
 
 # Build rule for target.
-ament_cmake_python_copy_turtlebot4_navigation: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_turtlebot4_navigation
-.PHONY : ament_cmake_python_copy_turtlebot4_navigation
+ament_cmake_python_symlink_turtlebot4_navigation: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_turtlebot4_navigation
+.PHONY : ament_cmake_python_symlink_turtlebot4_navigation
 
 # fast build rule for target.
-ament_cmake_python_copy_turtlebot4_navigation/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_turtlebot4_navigation.dir/build.make CMakeFiles/ament_cmake_python_copy_turtlebot4_navigation.dir/build
-.PHONY : ament_cmake_python_copy_turtlebot4_navigation/fast
+ament_cmake_python_symlink_turtlebot4_navigation/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_turtlebot4_navigation.dir/build.make CMakeFiles/ament_cmake_python_symlink_turtlebot4_navigation.dir/build
+.PHONY : ament_cmake_python_symlink_turtlebot4_navigation/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_turtlebot4_navigation_egg
@@ -237,7 +237,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_turtlebot4_navigation_egg"
-	@echo "... ament_cmake_python_copy_turtlebot4_navigation"
+	@echo "... ament_cmake_python_symlink_turtlebot4_navigation"
 	@echo "... turtlebot4_navigation_uninstall"
 	@echo "... uninstall"
 .PHONY : help

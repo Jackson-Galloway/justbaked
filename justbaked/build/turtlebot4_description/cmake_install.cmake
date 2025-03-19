@@ -43,69 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description" TYPE DIRECTORY FILES
-    "/home/ieee/justbaked/justbaked/src/turtlebot4_description/launch"
-    "/home/ieee/justbaked/justbaked/src/turtlebot4_description/urdf"
-    )
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot4_description")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot4_description")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description/environment" TYPE FILE FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description/environment" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_environment_hooks/ament_prefix_path.dsv")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description/environment" TYPE FILE FILES "/opt/ros/jazzy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description/environment" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_environment_hooks/path.dsv")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_environment_hooks/local_setup.bash")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_environment_hooks/local_setup.sh")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_environment_hooks/local_setup.zsh")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_environment_hooks/local_setup.dsv")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_environment_hooks/package.dsv")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot4_description")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description/cmake" TYPE FILE FILES
-    "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_core/turtlebot4_descriptionConfig.cmake"
-    "/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_core/turtlebot4_descriptionConfig-version.cmake"
-    )
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot4_description" TYPE FILE FILES "/home/ieee/justbaked/justbaked/src/turtlebot4_description/package.xml")
+  include("/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

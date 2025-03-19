@@ -1,7 +1,1 @@
-image: maze.pgm
-mode: trinary
-resolution: 0.03
-origin: [-10.1, -10, 0]
-negate: 0
-occupied_thresh: 0.65
-free_thresh: 0.1
+/home/ieee/justbaked/justbaked/src/turtlebot4_navigation/maps/maze.yaml

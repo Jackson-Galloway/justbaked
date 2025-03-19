@@ -1,2 +1,1 @@
-source;share/turtlebot4_description/environment/ament_prefix_path.sh
-source;share/turtlebot4_description/environment/path.sh
+/home/ieee/justbaked/justbaked/build/turtlebot4_description/ament_cmake_environment_hooks/local_setup.dsv

@@ -1,0 +1,57 @@
+[0.020s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_description
+[0.170s] -- The C compiler identification is GNU 13.3.0
+[0.321s] -- The CXX compiler identification is GNU 13.3.0
+[0.352s] -- Detecting C compiler ABI info
+[0.574s] -- Detecting C compiler ABI info - done
+[0.591s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.592s] -- Detecting C compile features
+[0.593s] -- Detecting C compile features - done
+[0.609s] -- Detecting CXX compiler ABI info
+[0.853s] -- Detecting CXX compiler ABI info - done
+[0.871s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.871s] -- Detecting CXX compile features
+[0.871s] -- Detecting CXX compile features - done
+[0.877s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.228s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.414s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.519s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[1.595s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[1.622s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.893s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.897s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.897s] -- Configured 'flake8' exclude dirs and/or files: 
+[1.899s] -- Added test 'lint_cmake' to check CMake code style
+[1.902s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.906s] -- Added test 'xmllint' to check XML markup files
+[1.908s] -- Configuring done (1.9s)
+[1.916s] -- Generating done (0.0s)
+[1.919s] -- Build files have been written to: /home/ieee/justbaked/justbaked/build/turtlebot4_description
+[1.935s] Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_description
+[1.939s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_description -- -j4 -l4
+[2.038s] Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_description -- -j4 -l4
+[2.062s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_description
+[2.082s] -- Install configuration: ""
+[2.083s] -- Execute custom install script
+[2.084s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/launch/robdesc.rviz
+[2.108s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/launch/robot_description.launch.py
+[2.137s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/lite/robot.urdf.xacro
+[2.154s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/lite/rplidar.xacro
+[2.175s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/sensors/rplidar.xacro
+[2.199s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/standard/robotcore.xacro
+[2.218s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/standard/turtlebot4.urdf.xacro
+[2.240s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/ament_index/resource_index/package_run_dependencies/turtlebot4_description
+[2.261s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/ament_index/resource_index/parent_prefix_path/turtlebot4_description
+[2.285s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/environment/ament_prefix_path.sh
+[2.307s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/environment/ament_prefix_path.dsv
+[2.332s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/environment/path.sh
+[2.356s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/environment/path.dsv
+[2.379s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/local_setup.bash
+[2.401s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/local_setup.sh
+[2.425s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/local_setup.zsh
+[2.449s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/local_setup.dsv
+[2.472s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.dsv
+[2.493s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/ament_index/resource_index/packages/turtlebot4_description
+[2.516s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/cmake/turtlebot4_descriptionConfig.cmake
+[2.540s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/cmake/turtlebot4_descriptionConfig-version.cmake
+[2.564s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.xml
+[2.592s] Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_description

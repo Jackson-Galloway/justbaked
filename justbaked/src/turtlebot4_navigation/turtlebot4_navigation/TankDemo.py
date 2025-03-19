@@ -59,7 +59,7 @@ class MotorController(Node):
         self.encoder_resolution = 44  # Pulses per revolution (replace with actual value)
 
         # Create a timer to call update_odometry regularly
-        self.timer = self.create_timer(0.01, self.update_odometry)  # Update odometry at 100 Hz
+        self.timer = self.create_timer(0.1, self.update_odometry)  # Update odometry at 10 Hz
 
     def motor_init(self):
         print("Initializing motor...", flush=True)
