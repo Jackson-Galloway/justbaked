@@ -1,6 +1,6 @@
 import os
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, LogInfo, LogError, RegisterEventHandler
+from launch.actions import IncludeLaunchDescription, LogInfo, RegisterEventHandler
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.event_handlers import OnProcessExit
