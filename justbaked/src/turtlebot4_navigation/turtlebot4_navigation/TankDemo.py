@@ -91,105 +91,105 @@ class MotorController(Node):
         except Exception as e:
             print(f"Error in cmd_vel_callback: {e}", flush=True)
 
-def update_odometry(self):
-    try:
-        current_time = self.get_clock().now()
-        dt = (current_time - self.last_time).nanoseconds / 1e9  # Convert to seconds
+    def update_odometry(self):
+        try:
+            current_time = self.get_clock().now()
+            dt = (current_time - self.last_time).nanoseconds / 1e9  # Convert to seconds
 
-        # Read encoder values with retry logic
-        encoder_data = None
-        for _ in range(3):  # Retry up to 3 times
-            try:
-                encoder_data = struct.unpack('ii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 8)))
-                break
-            except OSError as e:
-                print(f"Failed to read encoder data, retrying...: {e}", flush=True)
-                time.sleep(0.1)
-        if encoder_data is None:
-            print("Failed to read encoder data after retries.", flush=True)
-            return
+            # Read encoder values with retry logic
+            encoder_data = None
+            for _ in range(3):  # Retry up to 3 times
+                try:
+                    encoder_data = struct.unpack('ii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 8)))
+                    break
+                except OSError as e:
+                    print(f"Failed to read encoder data, retrying...: {e}", flush=True)
+                    time.sleep(0.1)
+            if encoder_data is None:
+                print("Failed to read encoder data after retries.", flush=True)
+                return
 
-        encoder_left = encoder_data[0]
-        encoder_right = encoder_data[1]
+            encoder_left = encoder_data[0]
+            encoder_right = encoder_data[1]
 
-        # Calculate the change in encoder values
-        delta_left = encoder_left - self.last_encoder_left
-        delta_right = encoder_right - self.last_encoder_right
+            # Calculate the change in encoder values
+            delta_left = encoder_left - self.last_encoder_left
+            delta_right = encoder_right - self.last_encoder_right
 
-        # Update last encoder values
-        self.last_encoder_left = encoder_left
-        self.last_encoder_right = encoder_right
+            # Update last encoder values
+            self.last_encoder_left = encoder_left
+            self.last_encoder_right = encoder_right
 
-        # Calculate distances traveled by each track
-        distance_left = (delta_left / self.encoder_resolution) * (2 * 3.14159 * self.track_radius)
-        distance_right = (delta_right / self.encoder_resolution) * (2 * 3.14159 * self.track_radius)
+            # Calculate distances traveled by each track
+            distance_left = (delta_left / self.encoder_resolution) * (2 * 3.14159 * self.track_radius)
+            distance_right = (delta_right / self.encoder_resolution) * (2 * 3.14159 * self.track_radius)
 
-        # Calculate velocities
-        v_left = distance_left / dt
-        v_right = distance_right / dt
-        v = (v_left + v_right) / 2.0
-        omega = (v_right - v_left) / self.track_width
+            # Calculate velocities
+            v_left = distance_left / dt
+            v_right = distance_right / dt
+            v = (v_left + v_right) / 2.0
+            omega = (v_right - v_left) / self.track_width
 
-        # Update position
-        self.x += v * dt * cos(self.theta)
-        self.y += v * dt * sin(self.theta)
-        self.theta += omega * dt
+            # Update position
+            self.x += v * dt * cos(self.theta)
+            self.y += v * dt * sin(self.theta)
+            self.theta += omega * dt
 
-        # Normalize theta to the range [-pi, pi]
-        self.theta = (self.theta + 3.14159) % (2 * 3.14159) - 3.14159
+            # Normalize theta to the range [-pi, pi]
+            self.theta = (self.theta + 3.14159) % (2 * 3.14159) - 3.14159
 
-        # Create quaternion from yaw
-        odom_quat = tf_transformations.quaternion_from_euler(0, 0, self.theta)
+            # Create quaternion from yaw
+            odom_quat = tf_transformations.quaternion_from_euler(0, 0, self.theta)
 
-        # Create and publish odometry message
-        odom = Odometry()
-        odom.header.stamp = current_time.to_msg()
-        odom.header.frame_id = 'odom'
+            # Create and publish odometry message
+            odom = Odometry()
+            odom.header.stamp = current_time.to_msg()
+            odom.header.frame_id = 'odom'
 
-        # Set the position
-        odom.pose.pose.position.x = self.x
-        odom.pose.pose.position.y = self.y
-        odom.pose.pose.position.z = 0.0
-        odom.pose.pose.orientation.x = odom_quat[0]
-        odom.pose.pose.orientation.y = odom_quat[1]
-        odom.pose.pose.orientation.z = odom_quat[2]
-        odom.pose.pose.orientation.w = odom_quat[3]
+            # Set the position
+            odom.pose.pose.position.x = self.x
+            odom.pose.pose.position.y = self.y
+            odom.pose.pose.position.z = 0.0
+            odom.pose.pose.orientation.x = odom_quat[0]
+            odom.pose.pose.orientation.y = odom_quat[1]
+            odom.pose.pose.orientation.z = odom_quat[2]
+            odom.pose.pose.orientation.w = odom_quat[3]
 
-        # Set the velocity
-        odom.child_frame_id = 'base_link'
-        odom.twist.twist.linear.x = v
-        odom.twist.twist.linear.y = 0.0
-        odom.twist.twist.angular.z = omega
+            # Set the velocity
+            odom.child_frame_id = 'base_link'
+            odom.twist.twist.linear.x = v
+            odom.twist.twist.linear.y = 0.0
+            odom.twist.twist.angular.z = omega
 
-        # Publish the message
-        self.odom_publisher.publish(odom)
+            # Publish the message
+            self.odom_publisher.publish(odom)
 
-        # Publish the transform
-        transform = TransformStamped()
-        transform.header.stamp = current_time.to_msg()
-        transform.header.frame_id = 'odom'
-        transform.child_frame_id = 'base_link'
-        transform.transform.translation.x = self.x
-        transform.transform.translation.y = self.y
-        transform.transform.translation.z = 0.0
-        transform.transform.rotation.x = odom_quat[0]
-        transform.transform.rotation.y = odom_quat[1]
-        transform.transform.rotation.z = odom_quat[2]
-        transform.transform.rotation.w = odom_quat[3]
+            # Publish the transform
+            transform = TransformStamped()
+            transform.header.stamp = current_time.to_msg()
+            transform.header.frame_id = 'odom'
+            transform.child_frame_id = 'base_link'
+            transform.transform.translation.x = self.x
+            transform.transform.translation.y = self.y
+            transform.transform.translation.z = 0.0
+            transform.transform.rotation.x = odom_quat[0]
+            transform.transform.rotation.y = odom_quat[1]
+            transform.transform.rotation.z = odom_quat[2]
+            transform.transform.rotation.w = odom_quat[3]
 
-        self.tf_broadcaster.sendTransform(transform)
+            self.tf_broadcaster.sendTransform(transform)
 
-        # Debug print statements to verify the calculations
-        print(f"Time: {current_time.nanoseconds / 1e9} s", flush=True)
-        print(f"Delta Left: {delta_left}, Delta Right: {delta_right}", flush=True)
-        print(f"Distance Left: {distance_left}, Distance Right: {distance_right}", flush=True)
-        print(f"Velocity Left: {v_left}, Velocity Right: {v_right}", flush=True)
-        print(f"Linear Velocity: {v}, Angular Velocity: {omega}", flush=True)
-        print(f"Position: x={self.x}, y={self.y}, theta={self.theta}", flush=True)
+            # Debug print statements to verify the calculations
+            print(f"Time: {current_time.nanoseconds / 1e9} s", flush=True)
+            print(f"Delta Left: {delta_left}, Delta Right: {delta_right}", flush=True)
+            print(f"Distance Left: {distance_left}, Distance Right: {distance_right}", flush=True)
+            print(f"Velocity Left: {v_left}, Velocity Right: {v_right}", flush=True)
+            print(f"Linear Velocity: {v}, Angular Velocity: {omega}", flush=True)
+            print(f"Position: x={self.x}, y={self.y}, theta={self.theta}", flush=True)
 
-        self.last_time = current_time
-    except Exception as e:
-        print(f"Error in update_odometry: {e}", flush=True)
+            self.last_time = current_time
+        except Exception as e:
+            print(f"Error in update_odometry: {e}", flush=True)
 
 def main(args=None):
     rclpy.init(args=args)
