@@ -3,7 +3,7 @@ bt_navigator:
     use_sim_time: false
     enable_stamped_cmd_vel: true
     global_frame: map
-    robot_base_frame: base_footprint
+    robot_base_frame: base_link
     odom_topic: odom
     bt_loop_duration: 10
     default_server_timeout: 20
@@ -133,7 +133,7 @@ local_costmap:
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
-      robot_base_frame: base_footprint
+      robot_base_frame: base_link
       use_sim_time: false
       rolling_window: true
       width: 3
@@ -144,7 +144,7 @@ local_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 4.0
-        inflation_radius: 0.45
+        inflation_radius: 0.15
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: true
@@ -178,7 +178,7 @@ global_costmap:
       update_frequency: 1.0
       publish_frequency: 1.0
       global_frame: map
-      robot_base_frame: base_footprint
+      robot_base_frame: base_link
       use_sim_time: false
       robot_radius: 0.175
       resolution: 0.06
@@ -204,7 +204,7 @@ global_costmap:
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 4.0
-        inflation_radius: 0.45
+        inflation_radius: 0.15
       always_send_full_costmap: true
 
 planner_server:
@@ -253,7 +253,7 @@ behavior_server:
       plugin: "nav2_behaviors::AssistedTeleop"
     global_frame: map
     local_frame: odom
-    robot_base_frame: base_footprint
+    robot_base_frame: base_link
     transform_tolerance: 0.1
     simulate_ahead_time: 2.0
     max_rotational_vel: 1.0
@@ -268,7 +268,7 @@ waypoint_follower:
   ros__parameters:
     use_sim_time: false
     enable_stamped_cmd_vel: true
-    loop_rate: 20
+    loop_rate: 10
     stop_on_failure: false
     action_server_result_timeout: 900.0
     waypoint_task_executor_plugin: "wait_at_waypoint"
@@ -281,7 +281,7 @@ velocity_smoother:
   ros__parameters:
     use_sim_time: false
     enable_stamped_cmd_vel: true
-    smoothing_frequency: 20.0
+    smoothing_frequency: 10.0
     scale_velocities: False
     feedback: "OPEN_LOOP"
     max_velocity: [0.26, 0.0, 1.0]
@@ -297,7 +297,7 @@ collision_monitor:
   ros__parameters:
     use_sim_time: false
     enable_stamped_cmd_vel: true
-    base_frame_id: "base_footprint"
+    base_frame_id: "base_link"
     odom_frame_id: "odom"
     cmd_vel_in_topic: "cmd_vel_smoothed"
     cmd_vel_out_topic: "cmd_vel"
@@ -337,7 +337,7 @@ docking_server:
     undock_linear_tolerance: 0.05
     undock_angular_tolerance: 0.1
     max_retries: 3
-    base_frame: "base_footprint"
+    base_frame: "base_link"
     fixed_frame: "odom"
     dock_backwards: false
     dock_prestaging_tolerance: 0.5

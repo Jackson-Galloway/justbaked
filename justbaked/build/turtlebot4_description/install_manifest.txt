@@ -1,3 +1,4 @@
+/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/launch/robdesc.rviz
 /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/launch/robot_description.launch.py
 /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/sensors/rplidar.xacro
 /home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/urdf/lite/robot.urdf.xacro

@@ -26,9 +26,6 @@ from action_msgs.msg import GoalStatus
 
 from geometry_msgs.msg import PoseStamped, PoseWithCovarianceStamped
 
-from irobot_create_msgs.action import Dock, Undock
-from irobot_create_msgs.msg import DockStatus
-
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 
 import rclpy
@@ -155,113 +152,6 @@ class TurtleBot4Navigator(BasicNavigator):
         if self.creating_path:
             self.new_pose = msg.pose.pose
 
-    # DockStatus subscription callback
-    def _dockCallback(self, msg: DockStatus):
-        self.is_docked = msg.is_docked
-
-    def getDockedStatus(self):
-        """
-        Get current docked status.
-
-        :return: ``True`` if docked, ``False`` otherwise.
-        """
-        # Spin to get latest dock status
-        rclpy.spin_once(self, timeout_sec=0.1)
-        # If dock status hasn't been published yet, spin until it is
-        while self.is_docked is None:
-            rclpy.spin_once(self, timeout_sec=0.1)
-
-        return self.is_docked
-
-    def undock(self):
-        """Perform Undock action."""
-        self.info('Undocking...')
-        self.undock_send_goal()
-
-        while not self.isUndockComplete():
-            time.sleep(0.1)
-
-    def undock_send_goal(self):
-        goal_msg = Undock.Goal()
-        self.undock_action_client.wait_for_server()
-        goal_future = self.undock_action_client.send_goal_async(goal_msg)
-
-        rclpy.spin_until_future_complete(self, goal_future)
-
-        self.undock_goal_handle = goal_future.result()
-
-        if not self.undock_goal_handle.accepted:
-            self.error('Undock goal rejected')
-            return
-
-        self.undock_result_future = self.undock_goal_handle.get_result_async()
-
-    def isUndockComplete(self):
-        """
-        Get status of Undock action.
-
-        :return: ``True`` if undocked, ``False`` otherwise.
-        """
-        if self.undock_result_future is None or not self.undock_result_future:
-            return True
-
-        rclpy.spin_until_future_complete(self, self.undock_result_future, timeout_sec=0.1)
-
-        if self.undock_result_future.result():
-            self.undock_status = self.undock_result_future.result().status
-            if self.undock_status != GoalStatus.STATUS_SUCCEEDED:
-                self.info(f'Goal with failed with status code: {self.status}')
-                return True
-        else:
-            return False
-
-        self.info('Undock succeeded')
-        return True
-
-    def dock(self):
-        """Perform Undock action."""
-        self.info('Docking...')
-        self.dock_send_goal()
-
-        while not self.isDockComplete():
-            time.sleep(0.1)
-
-    def dock_send_goal(self):
-        goal_msg = Dock.Goal()
-        self.dock_action_client.wait_for_server()
-        goal_future = self.dock_action_client.send_goal_async(goal_msg)
-
-        rclpy.spin_until_future_complete(self, goal_future)
-
-        self.dock_goal_handle = goal_future.result()
-
-        if not self.dock_goal_handle.accepted:
-            self.error('Dock goal rejected')
-            return
-
-        self.dock_result_future = self.dock_goal_handle.get_result_async()
-
-    def isDockComplete(self):
-        """
-        Get status of Dock action.
-
-        :return: ``True`` if docked, ``False`` otherwise.
-        """
-        if self.dock_result_future is None or not self.dock_result_future:
-            return True
-
-        rclpy.spin_until_future_complete(self, self.dock_result_future, timeout_sec=0.1)
-
-        if self.dock_result_future.result():
-            self.dock_status = self.dock_result_future.result().status
-            if self.dock_status != GoalStatus.STATUS_SUCCEEDED:
-                self.info(f'Goal with failed with status code: {self.status}')
-                return True
-        else:
-            return False
-
-        self.info('Dock succeeded')
-        return True
 
     def startToPose(self, pose: PoseStamped):
         """
