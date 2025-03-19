@@ -1,6 +1,6 @@
 import os
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, LogInfo, RegisterEventHandler
+from launch.actions import IncludeLaunchDescription, RegisterEventHandler
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.event_handlers import OnProcessExit
@@ -97,46 +97,6 @@ def generate_launch_description():
         )]
     )
 
-    # Error Handling: Print error if any process fails
-    error_handler = [
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=robot_description,
-                on_exit=[LogInfo(msg="Error: Robot Description failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=lidar,
-                on_exit=[LogInfo(msg="Error: LIDAR Sensor failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=tank_mov,
-                on_exit=[LogInfo(msg="Error: Tank Movement failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=slam,
-                on_exit=[LogInfo(msg="Error: SLAM Toolbox failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=nav2,
-                on_exit=[LogInfo(msg="Error: Navigation 2 (Nav2) failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=rviz,
-                on_exit=[LogInfo(msg="Error: RViz2 failed to launch!")]
-            )
-        ),
-    ]
-
     return LaunchDescription([
         # Log messages for successful launch
         LogInfo(msg="Launching TurtleBot4 Robot Description..."),
@@ -154,6 +114,4 @@ def generate_launch_description():
         LogInfo(msg="Launching RViz2 for visualization..."),
         rviz,
 
-        # Attach error handlers
-        *error_handler,
     ])
