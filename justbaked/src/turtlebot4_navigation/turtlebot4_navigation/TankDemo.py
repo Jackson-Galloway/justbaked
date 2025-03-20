@@ -101,7 +101,7 @@ class MotorController(Node):
         # Encoder parameters (adjust for your robot)
         self.track_width = 0.15       # Distance between tracks (meters)
         self.track_radius = 0.025     # Effective track radius (meters)
-        self.encoder_resolution = 1000  # Pulses per revolution
+        self.encoder_resolution = 450  # Pulses per revolution
 
         # 3) Filters for Encoder Data
         # - First pass each reading through a Median Filter
@@ -135,8 +135,8 @@ class MotorController(Node):
             right_speed = int((linear_x + angular_z) * 50)
 
             # Ensure speeds are within valid range
-            left_speed = max(min(left_speed, 0.5), -0.5)
-            right_speed = max(min(right_speed, 0.5), -0.5)
+            left_speed = max(min(left_speed, 50), -50)
+            right_speed = max(min(right_speed, 50), -50)
 
             # Send motor speed commands via I2C
             speed_command = [right_speed, left_speed]
