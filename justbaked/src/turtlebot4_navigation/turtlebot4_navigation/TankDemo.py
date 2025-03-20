@@ -100,7 +100,7 @@ class MotorController(Node):
         # Encoder parameters (adjust for your robot)
         self.track_width = 0.15       # Distance between tracks (meters)
         self.track_radius = 0.025     # Effective track radius (meters)
-        self.encoder_resolution = 450  # Pulses per revolution
+        self.encoder_resolution = 11  # Pulses per revolution
 
         # 3) Filters for Encoder Data
         # - First pass each reading through a Median Filter
