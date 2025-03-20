@@ -19,20 +19,32 @@ MOTOR_ADDR = 0x34
 
 # (Register address)
 ADC_BAT_ADDR = 0x00
-MOTOR_TYPE_ADDR = 0x14 # Set the encoder motor type
-MOTOR_ENCODER_POLARITY_ADDR = 0x15 # Set the polarity of the encoder
-MOTOR_FIXED_PWM_ADDR = 0x1F # Fixed PWM control, open-loop control, range: (-100~100)
-MOTOR_FIXED_SPEED_ADDR = 0x33 # Fixed speed control, closed-loop control
-MOTOR_ENCODER_TOTAL_ADDR = 0x3C # Total pulse value of each of the four encoder motors
+MOTOR_TYPE_ADDR = 0x14  # Set the encoder motor type
+MOTOR_ENCODER_POLARITY_ADDR = 0x15  # Set the polarity of the encoder
+MOTOR_FIXED_PWM_ADDR = 0x1F  # Fixed PWM control, open-loop control, range: (-100~100)
+MOTOR_FIXED_SPEED_ADDR = 0x33  # Fixed speed control, closed-loop control
+MOTOR_ENCODER_TOTAL_ADDR = 0x3C  # Total pulse value of each of the four encoder motors
 
 # (Motor type values)
-MOTOR_TYPE_JGB37_520_12V_110RPM = 3 # Magnetic ring rotates 44 pulses per revolution, reduction ratio: 90, default
+MOTOR_TYPE_JGB37_520_12V_110RPM = 3  # Magnetic ring rotates 44 pulses per revolution, reduction ratio: 90, default
 
 # (Motor type and encoder direction polarity)
 MotorType = MOTOR_TYPE_JGB37_520_12V_110RPM
 MotorEncoderPolarity = 0
 
 bus = smbus.SMBus(I2C_BUS)
+
+# Moving Average Filter Class
+class MovingAverageFilter:
+    def __init__(self, size=5):
+        self.buffer = []
+        self.size = size
+
+    def filter(self, new_value):
+        self.buffer.append(new_value)
+        if len(self.buffer) > self.size:
+            self.buffer.pop(0)
+        return sum(self.buffer) / len(self.buffer)
 
 class MotorController(Node):
     def __init__(self):
@@ -53,8 +65,17 @@ class MotorController(Node):
         self.last_encoder_left = 0
         self.last_encoder_right = 0
 
+        # Define track parameters
+        self.track_width = 0.15  # Distance between tracks in meters (replace with actual value)
+        self.track_radius = 0.025  # Effective radius of the track in meters (replace with actual value)
+        self.encoder_resolution = 44  # Pulses per revolution (replace with actual value)
+
+        # Moving Average Filters for Encoder Data
+        self.encoder_filter_left = MovingAverageFilter(5)
+        self.encoder_filter_right = MovingAverageFilter(5)
+
         # Create a timer to call update_odometry regularly
-        self.timer = self.create_timer(0.3, self.update_odometry)  # Update odometry at 30 Hz
+        self.timer = self.create_timer(0.1, self.update_odometry)  # Update odometry at 10 Hz
 
     def motor_init(self):
         print("Initializing motor...")
@@ -81,7 +102,7 @@ class MotorController(Node):
             right_speed = max(min(right_speed, 100), -100)
 
             # Send motor speed commands via I2C
-            speed_command = [left_speed, right_speed]
+            speed_command = [right_speed, left_speed]
             bus.write_i2c_block_data(MOTOR_ADDR, MOTOR_FIXED_SPEED_ADDR, speed_command)
         except Exception as e:
             print(f"Error in cmd_vel_callback: {e}")
@@ -91,10 +112,22 @@ class MotorController(Node):
             current_time = self.get_clock().now()
             dt = (current_time - self.last_time).nanoseconds / 1e9  # Convert to seconds
 
-            # Read encoder values
-            encoder_data = struct.unpack('iiii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 16)))
-            encoder_left = encoder_data[0]
-            encoder_right = encoder_data[1]
+            # Read encoder values with retry logic
+            encoder_data = None
+            for _ in range(3):  # Retry up to 3 times
+                try:
+                    encoder_data = struct.unpack('ii', bytes(bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 8)))
+                    break
+                except OSError as e:
+                    print(f"Failed to read encoder data, retrying...: {e}")
+                    time.sleep(0.1)
+            if encoder_data is None:
+                print("Failed to read encoder data after retries.")
+                return
+
+            # Apply Moving Average Filter
+            encoder_left = self.encoder_filter_left.filter(encoder_data[0])
+            encoder_right = self.encoder_filter_right.filter(encoder_data[1])
 
             # Calculate the change in encoder values
             delta_left = encoder_left - self.last_encoder_left
@@ -104,25 +137,23 @@ class MotorController(Node):
             self.last_encoder_left = encoder_left
             self.last_encoder_right = encoder_right
 
-            # Assuming wheel separation and wheel radius
-            wheel_separation = 0.5  # Distance between wheels in meters
-            wheel_radius = 0.1  # Radius of the wheels in meters
-            encoder_resolution = 44  # Pulses per revolution
-
-            # Calculate distances traveled by each wheel
-            distance_left = (delta_left / encoder_resolution) * (2 * 3.14159 * wheel_radius)
-            distance_right = (delta_right / encoder_resolution) * (2 * 3.14159 * wheel_radius)
+            # Calculate distances traveled by each track
+            distance_left = (delta_left / self.encoder_resolution) * (2 * 3.14159 * self.track_radius)
+            distance_right = (delta_right / self.encoder_resolution) * (2 * 3.14159 * self.track_radius)
 
             # Calculate velocities
             v_left = distance_left / dt
             v_right = distance_right / dt
             v = (v_left + v_right) / 2.0
-            omega = (v_right - v_left) / wheel_separation
+            omega = (v_right - v_left) / self.track_width
 
             # Update position
             self.x += v * dt * cos(self.theta)
             self.y += v * dt * sin(self.theta)
             self.theta += omega * dt
+
+            # Normalize theta to the range [-pi, pi]
+            self.theta = (self.theta + 3.14159) % (2 * 3.14159) - 3.14159
 
             # Create quaternion from yaw
             odom_quat = tf_transformations.quaternion_from_euler(0, 0, self.theta)
@@ -172,14 +203,10 @@ class MotorController(Node):
 def main(args=None):
     rclpy.init(args=args)
     motor_controller = MotorController()
-    print("MotorController node has been initialized.")
-    try:
-        rclpy.spin(motor_controller)
-    except KeyboardInterrupt:
-        print("Shutting down MotorController node.")
-    finally:
-        motor_controller.destroy_node()
-        rclpy.shutdown()
+    rclpy.spin(motor_controller)
+    motor_controller.destroy_node()
+    rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
+
