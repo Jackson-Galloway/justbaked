@@ -88,6 +88,7 @@ class MotorController(Node):
 
         self.odom_publisher = self.create_publisher(Odometry, 'odom', 30)
         self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
+
         self.motor_init()
 
         # Robot state
@@ -95,8 +96,6 @@ class MotorController(Node):
         self.y = 0.0
         self.theta = 0.0
         self.last_time = self.get_clock().now()
-        self.last_encoder_left = 0.0
-        self.last_encoder_right = 0.0
 
         # Encoder parameters (adjust for your robot)
         self.track_width = 0.15       # Distance between tracks (meters)
@@ -110,6 +109,21 @@ class MotorController(Node):
         self.median_right = MedianFilter(size=5)
         self.average_left = MovingAverageFilter(size=7)
         self.average_right = MovingAverageFilter(size=7)
+
+        # --------------------------------------------------------
+        # Read the current encoder counts ONCE to sync "last_*"
+        # --------------------------------------------------------
+        try:
+            raw_data = bus.read_i2c_block_data(MOTOR_ADDR, MOTOR_ENCODER_TOTAL_ADDR, 8)
+            init_left, init_right = struct.unpack('ii', bytes(raw_data))
+            self.get_logger().info(f"Initial encoder counts: left={init_left}, right={init_right}")
+        except Exception as e:
+            self.get_logger().warn(f"Failed to read initial encoder data, defaulting to 0: {e}")
+            init_left, init_right = 0, 0
+
+        self.last_encoder_left = float(init_left)
+        self.last_encoder_right = float(init_right)
+        # --------------------------------------------------------
 
         # Timer to update odometry at ~30 Hz
         self.timer = self.create_timer(0.3, self.update_odometry)
@@ -218,9 +232,7 @@ class MotorController(Node):
             odom_msg.pose.pose.orientation.z = odom_quat[2]
             odom_msg.pose.pose.orientation.w = odom_quat[3]
 
-            # Covariance for Pose (example: small uncertainty in x, y, large in z, etc.)
-            # Typically for 2D differential drive, z is "unobserved" so set it high
-            # x, y, theta might have small but nonzero covariances
+            # Covariance for Pose
             odom_msg.pose.covariance = [
                 0.001, 0,     0,     0,     0,     0,
                 0,     0.001, 0,     0,     0,     0,
@@ -267,6 +279,7 @@ class MotorController(Node):
         except Exception as e:
             self.get_logger().error(f"Error in update_odometry: {e}")
 
+
 def main(args=None):
     rclpy.init(args=args)
     node = MotorController()
@@ -279,5 +292,7 @@ def main(args=None):
         node.destroy_node()
         rclpy.shutdown()
 
+
 if __name__ == '__main__':
     main()
+

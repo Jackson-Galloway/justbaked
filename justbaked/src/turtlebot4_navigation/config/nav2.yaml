@@ -135,7 +135,7 @@ local_costmap:
       global_frame: odom
       robot_base_frame: base_link
       use_sim_time: false
-      rolling_window: true
+      rolling_window: false
       width: 3
       height: 3
       resolution: 0.06
