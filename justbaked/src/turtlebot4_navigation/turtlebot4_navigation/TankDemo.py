@@ -54,7 +54,7 @@ class MotorController(Node):
         self.last_encoder_right = 0
 
         # Create a timer to call update_odometry regularly
-        self.timer = self.create_timer(0.1, self.update_odometry)  # Update odometry at 10 Hz
+        self.timer = self.create_timer(0.3, self.update_odometry)  # Update odometry at 30 Hz
 
     def motor_init(self):
         print("Initializing motor...")
