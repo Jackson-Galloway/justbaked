@@ -86,7 +86,7 @@ class MotorController(Node):
         )
         self.subscription  # prevent unused variable warning
 
-        self.odom_publisher = self.create_publisher(Odometry, 'odom', 10)
+        self.odom_publisher = self.create_publisher(Odometry, 'odom', 30)
         self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
         self.motor_init()
 
@@ -108,8 +108,8 @@ class MotorController(Node):
         # - Then pass the result through a Moving Average Filter
         self.median_left = MedianFilter(size=5)
         self.median_right = MedianFilter(size=5)
-        self.average_left = MovingAverageFilter(size=6)
-        self.average_right = MovingAverageFilter(size=6)
+        self.average_left = MovingAverageFilter(size=7)
+        self.average_right = MovingAverageFilter(size=7)
 
         # Timer to update odometry at ~30 Hz
         self.timer = self.create_timer(0.3, self.update_odometry)
@@ -135,8 +135,8 @@ class MotorController(Node):
             right_speed = int((linear_x + angular_z) * 50)
 
             # Ensure speeds are within valid range
-            left_speed = max(min(left_speed, 100), -100)
-            right_speed = max(min(right_speed, 100), -100)
+            left_speed = max(min(left_speed, 0.5), -0.5)
+            right_speed = max(min(right_speed, 0.5), -0.5)
 
             # Send motor speed commands via I2C
             speed_command = [right_speed, left_speed]
