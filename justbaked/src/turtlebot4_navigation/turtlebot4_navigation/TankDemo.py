@@ -98,9 +98,9 @@ class MotorController(Node):
         self.last_time = self.get_clock().now()
 
         # Encoder parameters (adjust for your robot)
-        self.track_width = 0.15       # Distance between tracks (meters)
-        self.track_radius = 0.025     # Effective track radius (meters)
-        self.encoder_resolution = 450  # Pulses per revolution
+        self.track_width = 0.013       # Distance between tracks (meters)
+        self.track_radius = 0.0025     # Effective track radius (meters)
+        self.encoder_resolution = 3960  # Pulses per revolution
 
         # 3) Filters for Encoder Data
         # - First pass each reading through a Median Filter
@@ -126,7 +126,7 @@ class MotorController(Node):
         # --------------------------------------------------------
 
         # Timer to update odometry at ~30 Hz
-        self.timer = self.create_timer(0.3, self.update_odometry)
+        self.timer = self.create_timer(0.05, self.update_odometry)
 
     def motor_init(self):
         self.get_logger().info("Initializing motor...")

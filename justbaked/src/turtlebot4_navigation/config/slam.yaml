@@ -14,12 +14,6 @@ slam_toolbox:
     map_frame: map
     base_frame: base_link
     scan_topic: /scan
-    qos_overrides:
-      /scan:
-        reliability: reliable
-        durability: volatile
-        history: keep_last
-        depth: 50
     use_map_saver: true
     mode: mapping
 
@@ -34,13 +28,13 @@ slam_toolbox:
     tf_buffer_duration: 30.0
     stack_size_to_use: 40000000
     enable_interactive_mode: true
-    queue_size: 1000 
 
     # General Parameters
     use_scan_matching: true
     use_scan_barycenter: true
-    minimum_travel_distance: 0.1
-    minimum_travel_heading: 0.1
+    scan_matching_threshold: 0.8
+    minimum_travel_distance: 0.5
+    minimum_travel_heading: 0.5
     scan_buffer_size: 1
     scan_buffer_maximum_scan_distance: 10.0
     link_match_minimum_response_fine: 0.1
