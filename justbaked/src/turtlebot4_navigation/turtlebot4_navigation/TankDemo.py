@@ -214,7 +214,9 @@ class MotorController(Node):
             omega = (v_right - v_left) / self.track_width
 
             # Add slippage compensation for angular velocity
-            omega *= 0.9  # Reduce omega by 20% to account for slippage during turns
+            omega *= 0.85  # Reduce omega by 150% to account for slippage during turns
+
+            omega = -omega
 
             # Update robot pose
             self.x += v * dt * cos(self.theta)
