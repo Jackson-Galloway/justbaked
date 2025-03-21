@@ -98,17 +98,17 @@ class MotorController(Node):
         self.last_time = self.get_clock().now()
 
         # Encoder parameters (adjust for your robot)
-        self.track_width = 0.013       # Distance between tracks (meters)
-        self.track_radius = 0.0025     # Effective track radius (meters)
-        self.encoder_resolution = 3960  # Pulses per revolution
+        self.track_width = 0.143       # Distance between tracks (meters)
+        self.track_radius = 0.025     # Effective track radius (meters)
+        self.encoder_resolution = 1980  # Pulses per revolution
 
         # 3) Filters for Encoder Data
         # - First pass each reading through a Median Filter
         # - Then pass the result through a Moving Average Filter
         self.median_left = MedianFilter(size=5)
         self.median_right = MedianFilter(size=5)
-        self.average_left = MovingAverageFilter(size=7)
-        self.average_right = MovingAverageFilter(size=7)
+        self.average_left = MovingAverageFilter(size=9)
+        self.average_right = MovingAverageFilter(size=9)
 
         # --------------------------------------------------------
         # Read the current encoder counts ONCE to sync "last_*"
@@ -125,8 +125,8 @@ class MotorController(Node):
         self.last_encoder_right = float(init_right)
         # --------------------------------------------------------
 
-        # Timer to update odometry at ~30 Hz
-        self.timer = self.create_timer(0.05, self.update_odometry)
+        # Timer to update odometry at ~50 Hz
+        self.timer = self.create_timer(0.02, self.update_odometry)
 
     def motor_init(self):
         self.get_logger().info("Initializing motor...")
@@ -140,9 +140,15 @@ class MotorController(Node):
 
     def cmd_vel_callback(self, msg):
         try:
+            max_linear_speed = 0.5
+            max_angular_speed = 0.3
+
             # Extract linear and angular velocities from the Twist message
             linear_x = msg.twist.linear.x
             angular_z = msg.twist.angular.z
+
+            linear_x = max(min(linear_x, max_linear_speed), -max_linear_speed)
+            angular_z = max(min(angular_z, max_angular_speed), -max_angular_speed)
 
             # Translate velocities to motor speeds
             left_speed = int((linear_x - angular_z) * 50)
@@ -206,6 +212,9 @@ class MotorController(Node):
             v_right = distance_right / dt
             v = (v_left + v_right) / 2.0
             omega = (v_right - v_left) / self.track_width
+
+            # Add slippage compensation for angular velocity
+            omega *= 0.9  # Reduce omega by 20% to account for slippage during turns
 
             # Update robot pose
             self.x += v * dt * cos(self.theta)
