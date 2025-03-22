@@ -2,14 +2,14 @@
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Temperature
-import smbus2
+import smbus
 import time
 
 class MLX90614Node(Node):
     def __init__(self):
         super().__init__('mlx90614_node')
         self.publisher = self.create_publisher(Temperature, 'temperature', 10)
-        self.bus = smbus2.SMBus(1)  # I2C bus 1 on Raspberry Pi
+        self.bus = smbus.SMBus(1)  # I2C bus 1 on Raspberry Pi
         self.address = 0x5A  # MLX90614 default I2C address
         self.timer = self.create_timer(1.0, self.read_temperature)  # Read every second
 
