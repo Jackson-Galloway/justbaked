@@ -1,12 +1,12 @@
 import os
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, LogInfo, RegisterEventHandler, TimerAction, EmitEvent
+from launch.actions import IncludeLaunchDescription, LogInfo, RegisterEventHandler, TimerAction, EmitEvent, GroupAction
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.event_handlers import OnShutdown
 from launch.events import Shutdown
 from ament_index_python.packages import get_package_share_directory
-
+from launch_ros.actions import PushRosNamespace, SetRemap
 
 def generate_launch_description():
     # Get paths to required launch files
@@ -58,9 +58,8 @@ def generate_launch_description():
 
     # SLAM Toolbox
     slam = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(slam_launch_file),
-    )
-
+            PythonLaunchDescriptionSource(slam_launch_file),
+           )
     # Navigation 2 (Nav2)
     nav2 = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(nav2_launch_file),
