@@ -1,0 +1,35 @@
+Built target ament_cmake_python_symlink_temp_sens
+running egg_info
+writing temp_sens.egg-info/PKG-INFO
+writing dependency_links to temp_sens.egg-info/dependency_links.txt
+writing top-level names to temp_sens.egg-info/top_level.txt
+reading manifest file 'temp_sens.egg-info/SOURCES.txt'
+writing manifest file 'temp_sens.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_temp_sens_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/lib/temp_sens/mlx90614_node.py
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/pythonpath.sh
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/pythonpath.dsv
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/PKG-INFO
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/SOURCES.txt
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/dependency_links.txt
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/top_level.txt
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/__init__.py
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/mlx90614_node.py
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/package_run_dependencies/temp_sens
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/parent_prefix_path/temp_sens
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/path.sh
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/path.dsv
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.bash
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.sh
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.zsh
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.dsv
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.dsv
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/packages/temp_sens
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/cmake/temp_sensConfig.cmake
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/cmake/temp_sensConfig-version.cmake
+-- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.xml
+Listing '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens'...

@@ -26,20 +26,20 @@ controller_server:
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
     min_theta_velocity_threshold: 0.001
-    failure_tolerance: 0.5
+    failure_tolerance: 0.3
     progress_checker_plugins: ["progress_checker"]
     goal_checker_plugins: ["general_goal_checker"]
     controller_plugins: ["FollowPath"]
     use_realtime_priority: false
     progress_checker:
       plugin: "nav2_controller::SimpleProgressChecker"
-      required_movement_radius: 0.5
-      movement_time_allowance: 10.0
+      required_movement_radius: 0.1
+      movement_time_allowance: 15.0
     general_goal_checker:
       stateful: true
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.3
-      yaw_goal_tolerance: 0.5
+      xy_goal_tolerance: 0.25
+      yaw_goal_tolerance: 0.4
     FollowPath:
       plugin: "dwb_core::DWBLocalPlanner"
       min_vel_x: 0.0
@@ -63,18 +63,19 @@ controller_server:
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.3
-      xy_goal_tolerance: 0.5
-      yaw_goal_tolerance: 0.6
+      xy_goal_tolerance: 0.4
+      yaw_goal_tolerance: 0.5
       trans_stopped_velocity: 0.001
       short_circuit_trajectory_evaluation: true
       stateful: true
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      BaseObstacle.scale: 0.02
-      PathAlign.scale: 0.0
+      BaseObstacle.scale: 0.1
+      PathAlign.scale: 5.0
       GoalAlign.scale: 0.0
-      PathDist.scale: 32.0
-      GoalDist.scale: 24.0
-      RotateToGoal.scale: 32.0
+      PathDist.scale: 20.0
+      GoalDist.scale: 25.0
+      RotateToGoal.scale: 10.0
+      Oscillation.scale: 0.9
       RotateToGoal.slowing_factor: 5.0
       RotateToGoal.lookahead_time: -1.0
 
@@ -88,16 +89,16 @@ local_costmap:
       global_frame: odom
       robot_base_frame: base_link
       use_sim_time: false
-      rolling_window: false
-      width: 3
-      height: 3
+      rolling_window: true
+      width: 4
+      height: 4
       resolution: 0.06
-      robot_radius: 0.14
+      robot_radius: 0.125
       plugins: ["static_layer", "voxel_layer", "inflation_layer"]
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 12.0
-        inflation_radius: 0.04
+        cost_scaling_factor: 0.5
+        inflation_radius: 0.01
       voxel_layer:
         plugin: "nav2_costmap_2d::VoxelLayer"
         enabled: true
@@ -129,12 +130,12 @@ global_costmap:
       use_sim_time: false
       enable_stamped_cmd_vel: true
       update_frequency: 3.0
-      publish_frequency: 1.0
+      publish_frequency: 2.0
       global_frame: map
       robot_base_frame: base_link
       use_sim_time: false
-      robot_radius: 0.14
-      resolution: 0.06
+      robot_radius: 0.125
+      resolution: 0.04
       track_unknown_space: true
       plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
       obstacle_layer:
@@ -156,8 +157,8 @@ global_costmap:
         map_subscribe_transient_local: true
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 12.0
-        inflation_radius: 0.04
+        cost_scaling_factor: 0.5
+        inflation_radius: 0.01
       always_send_full_costmap: true
 
 planner_server:
@@ -169,7 +170,7 @@ planner_server:
     planner_plugins: ["GridBased"]
     GridBased:
       plugin: "nav2_navfn_planner::NavfnPlanner"
-      tolerance: 1.5
+      tolerance: 0.2
       use_astar: false
       allow_unknown: true
 
