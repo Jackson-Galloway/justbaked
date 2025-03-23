@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclpy: 7.1.3 (/opt/ros/jazzy/share/rclpy/cmake)
+-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ieee/justbaked/justbaked/build/temp_sens
+Built target ament_cmake_python_symlink_temp_sens
+running egg_info
+creating temp_sens.egg-info
+writing temp_sens.egg-info/PKG-INFO
+writing dependency_links to temp_sens.egg-info/dependency_links.txt
+writing top-level names to temp_sens.egg-info/top_level.txt
+writing manifest file 'temp_sens.egg-info/SOURCES.txt'
+reading manifest file 'temp_sens.egg-info/SOURCES.txt'
+writing manifest file 'temp_sens.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_temp_sens_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/temp_sens/mlx90614_node.py
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/pythonpath.sh
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/pythonpath.dsv
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/PKG-INFO
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/top_level.txt
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/__init__.py
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/mlx90614_node.py
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/package_run_dependencies/temp_sens
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/parent_prefix_path/temp_sens
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/ament_prefix_path.sh
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/path.sh
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/path.dsv
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.bash
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.sh
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.zsh
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.dsv
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.dsv
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/packages/temp_sens
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/cmake/temp_sensConfig.cmake
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/cmake/temp_sensConfig-version.cmake
+-- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.xml
+Listing '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens'...
+Compiling '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/__init__.py'...
+Compiling '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/mlx90614_node.py'...

@@ -1,9 +1,9 @@
 import os
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription, LogInfo, LogError, RegisterEventHandler, TimerAction, EmitEvent
+from launch.actions import IncludeLaunchDescription, LogInfo, RegisterEventHandler, TimerAction, EmitEvent
 from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.event_handlers import OnProcessExit
+from launch.event_handlers import OnShutdown
 from launch.events import Shutdown
 from ament_index_python.packages import get_package_share_directory
 
@@ -20,6 +20,12 @@ def generate_launch_description():
         get_package_share_directory("sllidar_ros2"),
         "launch",
         "sllidar_a1_launch.py",
+    )
+
+    mov_launch_file = os.path.join(
+        get_package_share_directory("turtlebot4_navigation"),
+        "launch",
+        "tank_mov.launch.py",
     )
 
     slam_launch_file = os.path.join(
@@ -45,20 +51,14 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(lidar_launch_file)
     )
 
+    # Robot_Mov
+    mov = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(mov_launch_file)
+    )
+
     # SLAM Toolbox
     slam = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(slam_launch_file),
-        launch_arguments={
-            "use_sim_time": "false",
-            "sync": "false",
-            "autostart": "true",
-            "use_lifecycle_manager": "false",
-            "params": os.path.join(
-                get_package_share_directory("turtlebot4_navigation"),
-                "config",
-                "slam.yaml"
-            ),
-        }.items(),
     )
 
     # Navigation 2 (Nav2)
@@ -82,52 +82,18 @@ def generate_launch_description():
         output="screen",
         arguments=["-d", os.path.join(
             os.path.expanduser("~"),
+            "justbaked",
+            "justbaked",
             "src",
-            "sllidar_ros2",
-            "rviz",
-            "sllidar_ros2.rviz"
+            "turtlebot4_description",
+            "robdesc.rviz",
         )]
     )
 
-    # Error Handling: Print error if any process fails
-    error_handler = [
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=robot_description,
-                on_exit=[LogError(msg="Error: Robot Description failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=lidar,
-                on_exit=[LogError(msg="Error: LIDAR Sensor failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=slam,
-                on_exit=[LogError(msg="Error: SLAM Toolbox failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=nav2,
-                on_exit=[LogError(msg="Error: Navigation 2 (Nav2) failed to launch!")]
-            )
-        ),
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=rviz,
-                on_exit=[LogError(msg="Error: RViz2 failed to launch!")]
-            )
-        ),
-    ]
-
     # Shutdown handler with delays
     shutdown_handler = RegisterEventHandler(
-        OnProcessExit(
-            target_action=rviz,
-            on_exit=[
+        OnShutdown(
+            on_shutdown=[
                 LogInfo(msg="RViz2 has exited, starting shutdown sequence..."),
                 TimerAction(
                     period=5.0,
@@ -144,11 +110,17 @@ def generate_launch_description():
                 TimerAction(
                     period=15.0,
                     actions=[
-                        LogInfo(msg="Shutting down LIDAR Sensor..."),
+                        LogInfo(msg="Shutting down Tank Mov..."),
                     ]
                 ),
                 TimerAction(
                     period=20.0,
+                    actions=[
+                        LogInfo(msg="Shutting down LIDAR Sensor..."),
+                    ]
+                ),
+                TimerAction(
+                    period=25.0,
                     actions=[
                         LogInfo(msg="Shutting down Robot Description..."),
                         EmitEvent(event=Shutdown(reason="Launch completed")),
@@ -172,35 +144,41 @@ def generate_launch_description():
             ]
         ),
 
-        # Delay SLAM launch by 10 seconds
+        # Delay Mov launch by 10 second
         TimerAction(
             period=10.0,
+            actions=[
+                LogInfo(msg="Launching Tank Mov..."),
+                mov,
+            ]
+        ),
+
+        # Delay SLAM launch by 15 seconds
+        TimerAction(
+            period=15.0,
             actions=[
                 LogInfo(msg="Launching SLAM Toolbox..."),
                 slam,
             ]
         ),
 
-        # Delay Nav2 launch by 15 seconds
+        # Delay Nav2 launch by 20 seconds
         TimerAction(
-            period=15.0,
+            period=20.0,
             actions=[
                 LogInfo(msg="Launching Navigation 2 (Nav2)..."),
                 nav2,
             ]
         ),
 
-        # Delay RViz launch by 20 seconds
+        # Delay RViz launch by 25 seconds
         TimerAction(
-            period=20.0,
+            period=25.0,
             actions=[
                 LogInfo(msg="Launching RViz2 for visualization..."),
                 rviz,
             ]
         ),
-
-        # Attach error handlers
-        *error_handler,
 
         # Attach shutdown handler
         shutdown_handler,

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(turtlebot4_navigation)
+project(robot_bringup)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -22,11 +22,9 @@ find_package(rclpy REQUIRED)
 
 
 install(
- launch 
+ DIRECTORY launch 
  DESTINATION share/${PROJECT_NAME}
 )
-
-ament_python_install_package(${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
