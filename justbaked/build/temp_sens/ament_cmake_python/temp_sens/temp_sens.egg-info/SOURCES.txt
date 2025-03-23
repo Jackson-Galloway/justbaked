@@ -1,0 +1,7 @@
+setup.py
+temp_sens/__init__.py
+temp_sens/mlx90614_node.py
+temp_sens.egg-info/PKG-INFO
+temp_sens.egg-info/SOURCES.txt
+temp_sens.egg-info/dependency_links.txt
+temp_sens.egg-info/top_level.txt

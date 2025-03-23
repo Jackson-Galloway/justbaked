@@ -1,0 +1,71 @@
+[0.025s] Invoking command in '/home/ieee/justbaked/justbaked/build/temp_sens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/temp_sens -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/temp_sens
+[0.201s] -- The C compiler identification is GNU 13.3.0
+[0.365s] -- The CXX compiler identification is GNU 13.3.0
+[0.398s] -- Detecting C compiler ABI info
+[0.651s] -- Detecting C compiler ABI info - done
+[0.667s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.667s] -- Detecting C compile features
+[0.668s] -- Detecting C compile features - done
+[0.687s] -- Detecting CXX compiler ABI info
+[0.961s] -- Detecting CXX compiler ABI info - done
+[0.976s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.976s] -- Detecting CXX compile features
+[0.977s] -- Detecting CXX compile features - done
+[0.983s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.375s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.578s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.660s] -- Found rclpy: 7.1.3 (/opt/ros/jazzy/share/rclpy/cmake)
+[1.927s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.208s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.208s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.209s] -- Added test 'lint_cmake' to check CMake code style
+[2.210s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.213s] -- Added test 'xmllint' to check XML markup files
+[2.217s] -- Configuring done (2.2s)
+[2.224s] -- Generating done (0.0s)
+[2.228s] -- Build files have been written to: /home/ieee/justbaked/justbaked/build/temp_sens
+[2.257s] Invoked command in '/home/ieee/justbaked/justbaked/build/temp_sens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/temp_sens -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/temp_sens
+[2.260s] Invoking command in '/home/ieee/justbaked/justbaked/build/temp_sens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/temp_sens -- -j4 -l4
+[2.410s] Built target ament_cmake_python_symlink_temp_sens
+[2.828s] running egg_info
+[2.829s] creating temp_sens.egg-info
+[2.856s] writing temp_sens.egg-info/PKG-INFO
+[2.856s] writing dependency_links to temp_sens.egg-info/dependency_links.txt
+[2.857s] writing top-level names to temp_sens.egg-info/top_level.txt
+[2.857s] writing manifest file 'temp_sens.egg-info/SOURCES.txt'
+[2.942s] reading manifest file 'temp_sens.egg-info/SOURCES.txt'
+[2.943s] writing manifest file 'temp_sens.egg-info/SOURCES.txt'
+[3.050s] Built target ament_cmake_python_build_temp_sens_egg
+[3.078s] Invoked command in '/home/ieee/justbaked/justbaked/build/temp_sens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/temp_sens -- -j4 -l4
+[3.081s] Invoking command in '/home/ieee/justbaked/justbaked/build/temp_sens': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/temp_sens
+[3.101s] -- Install configuration: ""
+[3.103s] -- Execute custom install script
+[3.106s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/temp_sens/__init__.py
+[3.140s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/temp_sens/mlx90614_node.py
+[3.182s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/pythonpath.sh
+[3.221s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/pythonpath.dsv
+[3.251s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/PKG-INFO
+[3.276s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/SOURCES.txt
+[3.298s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/dependency_links.txt
+[3.320s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.0-py3.12.egg-info/top_level.txt
+[3.342s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/__init__.py
+[3.368s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/mlx90614_node.py
+[3.411s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/package_run_dependencies/temp_sens
+[3.453s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/parent_prefix_path/temp_sens
+[3.498s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/ament_prefix_path.sh
+[3.550s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/ament_prefix_path.dsv
+[3.602s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/path.sh
+[3.651s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/environment/path.dsv
+[3.697s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.bash
+[3.751s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.sh
+[3.800s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.zsh
+[3.834s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/local_setup.dsv
+[3.888s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.dsv
+[3.933s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/packages/temp_sens
+[3.987s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/cmake/temp_sensConfig.cmake
+[4.040s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/cmake/temp_sensConfig-version.cmake
+[4.092s] -- Symlinking: /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.xml
+[4.309s] Listing '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens'...
+[4.309s] Compiling '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/__init__.py'...
+[4.309s] Compiling '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/mlx90614_node.py'...
+[4.364s] Invoked command in '/home/ieee/justbaked/justbaked/build/temp_sens' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/temp_sens

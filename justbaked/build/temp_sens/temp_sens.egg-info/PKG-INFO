@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: temp-sens
-Version: 0.0.1
-Summary: ROS 2 node for MLX90614 temperature sensor
-Maintainer: your_name
-Maintainer-email: your_email@example.com
-License: Apache-2.0
