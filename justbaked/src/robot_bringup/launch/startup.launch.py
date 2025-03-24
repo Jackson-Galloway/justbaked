@@ -89,46 +89,6 @@ def generate_launch_description():
         )]
     )
 
-    # Shutdown handler with delays
-    shutdown_handler = RegisterEventHandler(
-        OnShutdown(
-            on_shutdown=[
-                LogInfo(msg="RViz2 has exited, starting shutdown sequence..."),
-                TimerAction(
-                    period=5.0,
-                    actions=[
-                        LogInfo(msg="Shutting down Nav2..."),
-                    ]
-                ),
-                TimerAction(
-                    period=10.0,
-                    actions=[
-                        LogInfo(msg="Shutting down SLAM Toolbox..."),
-                    ]
-                ),
-                TimerAction(
-                    period=15.0,
-                    actions=[
-                        LogInfo(msg="Shutting down Tank Mov..."),
-                    ]
-                ),
-                TimerAction(
-                    period=20.0,
-                    actions=[
-                        LogInfo(msg="Shutting down LIDAR Sensor..."),
-                    ]
-                ),
-                TimerAction(
-                    period=25.0,
-                    actions=[
-                        LogInfo(msg="Shutting down Robot Description..."),
-                        EmitEvent(event=Shutdown(reason="Launch completed")),
-                    ]
-                ),
-            ]
-        )
-    )
-
     return LaunchDescription([
         # Log and launch robot description immediately
         LogInfo(msg="Launching TurtleBot4 Robot Description..."),
@@ -179,6 +139,4 @@ def generate_launch_description():
             ]
         ),
 
-        # Attach shutdown handler
-        shutdown_handler,
     ])

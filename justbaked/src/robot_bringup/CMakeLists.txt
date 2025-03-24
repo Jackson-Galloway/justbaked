@@ -22,7 +22,7 @@ find_package(rclpy REQUIRED)
 
 
 install(
- DIRECTORY launch 
+ DIRECTORY launch catapult
  DESTINATION share/${PROJECT_NAME}
 )
 
