@@ -20,9 +20,14 @@ find_package(ament_cmake REQUIRED)
 find_package(ament_cmake_python REQUIRED)
 find_package(rclpy REQUIRED)
 
+install(PROGRAMS
+ catapult/cat_servo_gpiozero.py
+ catapult/cat_servo_fire.py
+ DESTINATION lib/${PROJECT_NAME}
+)
 
 install(
- DIRECTORY launch catapult
+ DIRECTORY launch 
  DESTINATION share/${PROJECT_NAME}
 )
 

@@ -96,7 +96,7 @@ def generate_launch_description():
 
         # Delay LIDAR launch by 5 seconds
         TimerAction(
-            period=5.0,
+            period=3.0,
             actions=[
                 LogInfo(msg="Launching LIDAR Sensor..."),
                 lidar,
@@ -105,7 +105,7 @@ def generate_launch_description():
 
         # Delay Mov launch by 10 second
         TimerAction(
-            period=10.0,
+            period=6.0,
             actions=[
                 LogInfo(msg="Launching Tank Mov..."),
                 mov,
@@ -114,7 +114,7 @@ def generate_launch_description():
 
         # Delay SLAM launch by 15 seconds
         TimerAction(
-            period=15.0,
+            period=10.0,
             actions=[
                 LogInfo(msg="Launching SLAM Toolbox..."),
                 slam,
@@ -123,7 +123,7 @@ def generate_launch_description():
 
         # Delay Nav2 launch by 20 seconds
         TimerAction(
-            period=20.0,
+            period=14.0,
             actions=[
                 LogInfo(msg="Launching Navigation 2 (Nav2)..."),
                 nav2,
@@ -132,7 +132,7 @@ def generate_launch_description():
 
         # Delay RViz launch by 25 seconds
         TimerAction(
-            period=25.0,
+            period=18.0,
             actions=[
                 LogInfo(msg="Launching RViz2 for visualization..."),
                 rviz,

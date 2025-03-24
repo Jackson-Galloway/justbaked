@@ -1,3 +1,5 @@
+/home/ieee/justbaked/justbaked/install/robot_bringup/lib/robot_bringup/cat_servo_gpiozero.py
+/home/ieee/justbaked/justbaked/install/robot_bringup/lib/robot_bringup/cat_servo_fire.py
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/launch/startup.launch.py
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup

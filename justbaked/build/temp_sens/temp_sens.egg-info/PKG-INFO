@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: temp-sens
+Version: 0.0.1
+Summary: ROS 2 package for reading temperature from MLX90614 sensor
+Maintainer: Jackson Galloway
+Maintainer-email: jackson.galloway02@gmail.com
+License: Apache License 2.0
+License-File: LICENSE

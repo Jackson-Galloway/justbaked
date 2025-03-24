@@ -1,1 +1,0 @@
-/home/ieee/justbaked/justbaked/src/temp_sens/temp_sens/mlx90614_node.py

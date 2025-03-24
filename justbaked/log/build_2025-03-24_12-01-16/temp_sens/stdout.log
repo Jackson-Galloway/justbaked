@@ -1,0 +1,28 @@
+running develop
+Removing /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp-sens.egg-link (link to .)
+running egg_info
+writing ../../build/temp_sens/temp_sens.egg-info/PKG-INFO
+writing dependency_links to ../../build/temp_sens/temp_sens.egg-info/dependency_links.txt
+writing entry points to ../../build/temp_sens/temp_sens.egg-info/entry_points.txt
+writing requirements to ../../build/temp_sens/temp_sens.egg-info/requires.txt
+writing top-level names to ../../build/temp_sens/temp_sens.egg-info/top_level.txt
+reading manifest file '../../build/temp_sens/temp_sens.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/temp_sens/temp_sens.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens
+copying /home/ieee/justbaked/justbaked/build/temp_sens/build/lib/temp_sens/serial_temp_reader.py -> /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens
+copying /home/ieee/justbaked/justbaked/build/temp_sens/build/lib/temp_sens/__init__.py -> /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens
+byte-compiling /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/serial_temp_reader.py to serial_temp_reader.cpython-312.pyc
+byte-compiling /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/temp_sens -> /home/ieee/justbaked/justbaked/install/temp_sens/share/ament_index/resource_index/packages
+copying package.xml -> /home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens
+running install_egg_info
+Copying ../../build/temp_sens/temp_sens.egg-info to /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.1-py3.12.egg-info
+running install_scripts
+Installing serial_temp_reader script to /home/ieee/justbaked/justbaked/install/temp_sens/lib/temp_sens
+writing list of installed files to '/home/ieee/justbaked/justbaked/build/temp_sens/install.log'

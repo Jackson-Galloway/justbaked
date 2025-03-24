@@ -310,6 +310,9 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(PROGRAMS "catapult/cat_servo_gpiozero.py" "catapult/cat_servo_fire.py" "DESTINATION" "lib/robot_bringup")
+ament_cmake_symlink_install_programs("/home/ieee/justbaked/justbaked/src/robot_bringup" PROGRAMS "catapult/cat_servo_gpiozero.py" "catapult/cat_servo_fire.py" "DESTINATION" "lib/robot_bringup")
+
 # install(DIRECTORY "launch" "DESTINATION" "share/robot_bringup")
 ament_cmake_symlink_install_directory("/home/ieee/justbaked/justbaked/src/robot_bringup" DIRECTORY "launch" "DESTINATION" "share/robot_bringup")
 

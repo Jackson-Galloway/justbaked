@@ -1,0 +1,2 @@
+[console_scripts]
+serial_temp_reader = temp_sens.serial_temp_reader:main
