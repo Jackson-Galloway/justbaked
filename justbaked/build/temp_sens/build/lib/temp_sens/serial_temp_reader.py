@@ -25,9 +25,9 @@ class SerialTempReader(Node):
             if self.serial_port.in_waiting > 0:
                 # Read all available data
                 data = self.serial_port.read(self.serial_port.in_waiting).decode('utf-8', errors='ignore')
-                self.get_logger().debug(f"Data available: {len(data)} bytes")
+                #self.get_logger().debug(f"Data available: {len(data)} bytes")
                 self.buffer += data
-                self.get_logger().debug(f"Buffer after read: {self.buffer}")
+                #self.get_logger().debug(f"Buffer after read: {self.buffer}")
             else:
                 self.get_logger().debug("No data available on serial port")
 
@@ -41,22 +41,19 @@ class SerialTempReader(Node):
                 self.buffer = ""
                 lines = lines
 
-            self.get_logger().debug(f"Processing lines: {lines}")
+            #self.get_logger().debug(f"Processing lines: {lines}")
 
             for line in lines:
                 line = line.strip()  # Remove \r or \n from the line itself
                 if not line:  # Skip empty lines
                     continue
-                self.get_logger().info(f"Received line: {line}")
+               #self.get_logger().info(f"Received line: {line}")
 
-                try:
-                    temp_f = float(line)  # Convert the line to a float (Fahrenheit)
-                    msg = Float32()
-                    msg.data = temp_f
-                    self.publisher.publish(msg)
-                    self.get_logger().info(f"Published temperature: {temp_f:.2f} F")
-                except ValueError as e:
-                    self.get_logger().error(f"Error parsing temperature: {line}, {e}")
+                temp_f = float(line)  # Convert the line to a float (Fahrenheit)
+                msg = Float32()
+                msg.data = temp_f
+                self.publisher.publish(msg)
+                #self.get_logger().info(f"Published temperature: {temp_f:.2f} F")
 
         except serial.SerialException as e:
             self.get_logger().error(f"Error reading serial: {e}")
@@ -70,8 +67,6 @@ def main(args=None):
     node = SerialTempReader()
     try:
         rclpy.spin(node)
-    except KeyboardInterrupt:
-        node.get_logger().info("Shutting down serial temp reader")
     except Exception as e:
         node.get_logger().error(f"Unexpected error: {e}")
     finally:
