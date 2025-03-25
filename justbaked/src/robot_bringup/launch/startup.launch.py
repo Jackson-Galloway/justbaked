@@ -13,10 +13,10 @@ def generate_launch_description():
     launch_lidar = LaunchConfiguration('launch_lidar')
     launch_mov = LaunchConfiguration('launch_mov')
     launch_temp_sens = LaunchConfiguration('launch_temp_sens')
+    launch_localization = LaunchConfiguration('launch_localization')
     launch_slam = LaunchConfiguration('launch_slam')
     launch_nav2 = LaunchConfiguration('launch_nav2')
     launch_rviz = LaunchConfiguration('launch_rviz')
-    launch_waypoint_nav = LaunchConfiguration('launch_waypoint_nav')
 
     # Get paths to required launch files
     turtlebot4_description_launch = os.path.join(
@@ -33,6 +33,11 @@ def generate_launch_description():
         get_package_share_directory("turtlebot4_navigation"),
         "launch",
         "tank_mov.launch.py",
+    )
+    localization_launch_file = os.path.join(
+        get_package_share_directory("turtlebot4_navigation"),
+        "launch",
+        "localization.launch.py",
     )
     slam_launch_file = os.path.join(
         get_package_share_directory("turtlebot4_navigation"),
@@ -73,6 +78,21 @@ def generate_launch_description():
         condition=IfCondition(launch_temp_sens)
     )
 
+    # Localization
+    localization = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(localization_launch_file),
+        condition=IfCondition(launch_localization)
+        launch_arguments={
+            "use_sim_time": "false",
+            "params_file": os.path.join(
+                get_package_share_directory("turtlebot4_navigation"),
+                "config",
+                "localization.yaml"
+            ),
+        }.items(),
+        condition=IfCondition(launch_localization)
+    )
+
     # SLAM Toolbox
     slam = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(slam_launch_file),
@@ -110,15 +130,6 @@ def generate_launch_description():
         condition=IfCondition(launch_rviz)
     )
 
-    # Waypoint Navigation Node
-    waypoint_nav = Node(
-        package='robot_bringup',
-        executable='waypoint_navigation_node',
-        name='waypoint_navigation_node',
-        output='screen',
-        condition=IfCondition(launch_waypoint_nav)
-    )
-
     return LaunchDescription([
         # Declare launch arguments
         DeclareLaunchArgument(
@@ -143,6 +154,12 @@ def generate_launch_description():
             'launch_temp_sens',
             default_value='true',
             description='Whether to launch the temperature sensor',
+            choices=['true', 'false']
+        ),
+        DeclareLaunchArgument(
+            'launch_localization',
+            default_value='false', # Set to false to avoid conflicts with SLAM Toolbox
+            description='Whether to launch localization',
             choices=['true', 'false']
         ),
         DeclareLaunchArgument(
@@ -196,6 +213,16 @@ def generate_launch_description():
                 temp_sens,
             ],
             condition=IfCondition(launch_temp_sens)
+        ),
+
+        # Localization (delayed by 8 seconds)
+        TimerAction(
+            period=8.0,
+            actions=[
+                LogInfo(msg="Launching Localization...", condition=IfCondition(launch_localization)),
+                localization,
+            ],
+            condition=IfCondition(launch_localization)
         ),
 
         # SLAM Toolbox (delayed by 8 seconds)

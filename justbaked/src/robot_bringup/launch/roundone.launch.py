@@ -1,3 +1,5 @@
+##!/usr/bin/env python3
+
 import rclpy
 from rclpy.node import Node
 from rclpy.action import ActionClient
@@ -8,6 +10,7 @@ from nav2_msgs.srv import SaveMap
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch.substitutions import LaunchConfiguration
 from ament_index_python.packages import get_package_share_directory
 import tf_transformations
 import math
@@ -16,115 +19,83 @@ import os
 import yaml
 
 def generate_launch_description():
+    # Declare launch arguments for each component
+    launch_robot_description = LaunchConfiguration('launch_robot_description')
+    launch_lidar = LaunchConfiguration('launch_lidar')
+    launch_mov = LaunchConfiguration('launch_mov')
+    launch_temp_sens = LaunchConfiguration('launch_temp_sens')
+    launch_slam = LaunchConfiguration('launch_slam')
+    launch_nav2 = LaunchConfiguration('launch_nav2')
+    launch_rviz = LaunchConfiguration('launch_rviz')
+
+    # Get paths to required launch files
     startup_launch_file = os.path.join(
-        get_package_share_directory('robot_bringup'),
-        'launch',
-        'startup.launch.py'
+        get_package_share_directory("robot_bringup"),
+        "launch",
+        "startup.launch.py",
+    )
+
+    # Include the startup.launch.py file
+    startup_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(startup_launch_file),
+        launch_arguments={
+            'launch_robot_description': launch_robot_description,
+            'launch_lidar': launch_lidar,
+            'launch_mov': launch_mov,
+            'launch_temp_sens': launch_temp_sens,
+            'launch_slam': launch_slam,
+            'launch_nav2': launch_nav2,
+            'launch_rviz': launch_rviz,
+        }.items()
     )
 
     return LaunchDescription([
-        # Declare arguments to override defaults in startup.launch.py
+        # Declare launch arguments
         DeclareLaunchArgument(
             'launch_robot_description',
-            description='Whether to launch RViz2 for visualization'
-        ),
-        DeclareLaunchArgument(
-            'launch_waypoint_nav',
             default_value='true',
-            description='Whether to launch the waypoint navigation node'
-        ),
-
-        # Include startup.launch.py with the specified arguments
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(startup_launch_file),
-            launch_arguments={
-                'launch_robot_description': 'true',
-                'launch_lidar': 'true',
-                'launch_mov': 'true',
-                'launch_temp_sens': 'true',
-                'launch_slam': 'true',
-                'launch_nav2': 'true',
-                'launch_rviz': 'true',
-                'launch_waypoint_nav': 'true'
-            }.items()
-        )
-    ])
-            default_value='true',
-            description='Whether to launch the robot description'
+            description='Whether to launch the robot description',
+            choices=['true', 'false']
         ),
         DeclareLaunchArgument(
             'launch_lidar',
             default_value='true',
-            description='Whether to launch the LIDAR sensor'
+            description='Whether to launch the LIDAR sensor',
+            choices=['true', 'false']
         ),
         DeclareLaunchArgument(
             'launch_mov',
             default_value='true',
-            description='Whether to launch the tank movement'
+            description='Whether to launch the tank movement',
+            choices=['true', 'false']
         ),
         DeclareLaunchArgument(
             'launch_temp_sens',
             default_value='true',
-            description='Whether to launch the temperature sensor'
+            description='Whether to launch the temperature sensor',
+            choices=['true', 'false']
         ),
         DeclareLaunchArgument(
             'launch_slam',
-            default_value='true',  # Enable SLAM for mapping in round 1
-            description='Whether to launch the SLAM Toolbox'
+            default_value='true',
+            description='Whether to launch the SLAM Toolbox',
+            choices=['true', 'false']
         ),
         DeclareLaunchArgument(
             'launch_nav2',
             default_value='true',
-            description='Whether to launch Navigation 2 (Nav2)'
-        ),
-                description='Whether to launch RViz2 for visualization'
+            description='Whether to launch Navigation 2 (Nav2)',
+            choices=['true', 'false']
         ),
         DeclareLaunchArgument(
-            'launch_waypoint_nav',
-            default_value='true',
-            description='Whether to launch the waypoint navigation node'
-        ),
-
-        # Include startup.launch.py with the specified arguments
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(startup_launch_file),
-            launch_arguments={
-                'launch_robot_description': 'true',
-                'launch_lidar': 'true',
-                'launch_mov': 'true',
-                'launch_temp_sens': 'true',
-                'launch_slam': 'true',
-                'launch_nav2': 'true',
-                'launch_rviz': 'true',
-                'launch_waypoint_nav': 'true'
-            }.items()
-        )
-    ])
-    DeclareLaunchArgument(
             'launch_rviz',
             default_value='true',
-            description='Whether to launch RViz2 for visualization'
-        ),
-        DeclareLaunchArgument(
-            'launch_waypoint_nav',
-            default_value='true',
-            description='Whether to launch the waypoint navigation node'
+            description='Whether to launch RViz2 for visualization',
+            choices=['true', 'false']
         ),
 
-        # Include startup.launch.py with the specified arguments
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(startup_launch_file),
-            launch_arguments={
-                'launch_robot_description': 'true',
-                'launch_lidar': 'true',
-                'launch_mov': 'true',
-                'launch_temp_sens': 'true',
-                'launch_slam': 'true',
-                'launch_nav2': 'true',
-                'launch_rviz': 'true',
-                'launch_waypoint_nav': 'true'
-            }.items()
-        )
+        # Include the startup.launch.py file
+        startup_launch,
     ])
 
 class WaypointNavigationNode(Node):
@@ -444,4 +415,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
