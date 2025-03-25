@@ -81,7 +81,7 @@ def generate_launch_description():
     # Localization
     localization = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(localization_launch_file),
-        condition=IfCondition(launch_localization)
+        condition=IfCondition(launch_localization),
         launch_arguments={
             "use_sim_time": "false",
             "params_file": os.path.join(

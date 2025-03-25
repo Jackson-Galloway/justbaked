@@ -1,0 +1,46 @@
+[0.030s] Invoking command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/sllidar_ros2
+[0.503s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.503s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.503s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.554s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.574s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.601s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.630s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.756s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.759s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.887s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.001s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.092s] -- Found std_srvs: 5.3.5 (/opt/ros/jazzy/share/std_srvs/cmake)
+[1.379s] -- Configuring done (1.3s)
+[1.421s] -- Generating done (0.0s)
+[1.433s] -- Build files have been written to: /home/ieee/justbaked/justbaked/build/sllidar_ros2
+[1.461s] Invoked command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/sllidar_ros2 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/sllidar_ros2
+[1.462s] Invoking command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/sllidar_ros2 -- -j4 -l4
+[1.617s] [ 10%] Built target sllidar_client
+[1.652s] [100%] Built target sllidar_node
+[1.679s] Invoked command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/sllidar_ros2 -- -j4 -l4
+[1.680s] Invoking command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/sllidar_ros2
+[1.697s] -- Install configuration: ""
+[1.697s] -- Execute custom install script
+[1.698s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[1.698s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[1.698s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[1.699s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[1.699s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[1.699s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[1.700s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[1.700s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[1.700s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[1.701s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[1.701s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[1.701s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[1.701s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[1.702s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[1.702s] -- Symlinking: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[1.728s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[1.728s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.728s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.728s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[1.728s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[1.729s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[1.732s] Invoked command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/sllidar_ros2
