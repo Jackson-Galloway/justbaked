@@ -140,7 +140,7 @@ class MotorController(Node):
 
     def cmd_vel_callback(self, msg):
         try:
-            max_linear_speed = 0.5
+            max_linear_speed = 0.3
             max_angular_speed = 0.3
 
             # Extract linear and angular velocities from the Twist message
@@ -214,7 +214,7 @@ class MotorController(Node):
             omega = (v_right - v_left) / self.track_width
 
             # Add slippage compensation for angular velocity
-            omega *= 0.85  # Reduce omega by 150% to account for slippage during turns
+            omega *= 0.875  # Reduce omega by 150% to account for slippage during turns
 
             omega = -omega
 

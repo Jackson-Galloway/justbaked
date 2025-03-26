@@ -1,0 +1,85 @@
+[0.044s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_navigation -- -j4 -l4
+[0.222s] Built target ament_cmake_python_symlink_turtlebot4_navigation
+[0.709s] running egg_info
+[0.740s] writing turtlebot4_navigation.egg-info/PKG-INFO
+[0.741s] writing dependency_links to turtlebot4_navigation.egg-info/dependency_links.txt
+[0.741s] writing top-level names to turtlebot4_navigation.egg-info/top_level.txt
+[0.856s] reading manifest file 'turtlebot4_navigation.egg-info/SOURCES.txt'
+[0.859s] writing manifest file 'turtlebot4_navigation.egg-info/SOURCES.txt'
+[1.002s] Built target ament_cmake_python_build_turtlebot4_navigation_egg
+[1.030s] Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_navigation -- -j4 -l4
+[1.031s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_navigation
+[1.050s] -- Install configuration: ""
+[1.051s] -- Execute custom install script
+[1.051s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/turtlebot4_navigation/TankDemo.py
+[1.053s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[1.054s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[1.054s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[1.056s]   Use the cmake_policy command to set the policy and suppress this warning.
+[1.057s] Call Stack (most recent call first):
+[1.057s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+[1.057s]   cmake_install.cmake:46 (include)
+[1.057s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.057s] [0m
+[1.057s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/build/.built_by
+[1.058s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/build/COLCON_IGNORE
+[1.058s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/.colcon_install_layout
+[1.058s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/COLCON_IGNORE
+[1.058s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/_local_setup_util_sh.py
+[1.059s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/local_setup.bash
+[1.061s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/local_setup.sh
+[1.062s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/local_setup.zsh
+[1.064s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/setup.bash
+[1.065s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/setup.sh
+[1.065s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/install/setup.zsh
+[1.065s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/localization.yaml
+[1.065s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/log/COLCON_IGNORE
+[1.069s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/log/build_2025-03-25_15-38-18/events.log
+[1.070s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/log/build_2025-03-25_15-38-18/logger_all.log
+[1.071s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/log/latest/events.log
+[1.071s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/log/latest/logger_all.log
+[1.073s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/log/latest_build/events.log
+[1.073s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/log/latest_build/logger_all.log
+[1.073s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/nav2.yaml
+[1.075s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/slam.yaml
+[1.076s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/.lgd-nfy0
+[1.078s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/localization.launch.py
+[1.078s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/nav2.launch.py
+[1.079s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/slam.launch.py
+[1.079s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/tank_mov.launch.py
+[1.079s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/depot.pgm
+[1.079s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/depot.yaml
+[1.079s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/maze.pgm
+[1.079s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/maze.yaml
+[1.079s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/warehouse.pgm
+[1.080s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/maps/warehouse.yaml
+[1.083s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/turtlebot4_navigation/TankDemo.py
+[1.085s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/turtlebot4_navigation/__init__.py
+[1.085s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/turtlebot4_navigation/turtlebot4_navigator.py
+[1.085s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/pythonpath.sh
+[1.085s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/pythonpath.dsv
+[1.085s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info/PKG-INFO
+[1.085s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info/SOURCES.txt
+[1.086s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info/dependency_links.txt
+[1.086s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation-2.0.1-py3.12.egg-info/top_level.txt
+[1.086s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/TankDemo.py
+[1.086s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/__init__.py
+[1.086s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation/turtlebot4_navigator.py
+[1.086s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigator.py
+[1.086s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/ament_index/resource_index/package_run_dependencies/turtlebot4_navigation
+[1.086s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/ament_index/resource_index/parent_prefix_path/turtlebot4_navigation
+[1.087s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/ament_prefix_path.sh
+[1.087s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/ament_prefix_path.dsv
+[1.088s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/path.sh
+[1.088s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/environment/path.dsv
+[1.088s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/local_setup.bash
+[1.088s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/local_setup.sh
+[1.088s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/local_setup.zsh
+[1.090s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/local_setup.dsv
+[1.091s] -- Symlinking: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.dsv
+[1.107s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/ament_index/resource_index/packages/turtlebot4_navigation
+[1.108s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/cmake/turtlebot4_navigationConfig.cmake
+[1.108s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/cmake/turtlebot4_navigationConfig-version.cmake
+[1.108s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.xml
+[1.183s] Listing '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages/turtlebot4_navigation'...
+[1.356s] Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_navigation

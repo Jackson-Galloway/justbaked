@@ -1,7 +1,6 @@
 /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/turtlebot4_navigation/TankDemo.py
 /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/localization.yaml
 /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/nav2.yaml
-/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/navigate_to_pose_with_recovery.xml
 /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/config/slam.yaml
 /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/.lgd-nfy0
 /home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/launch/localization.launch.py

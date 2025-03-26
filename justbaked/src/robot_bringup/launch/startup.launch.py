@@ -90,7 +90,6 @@ def generate_launch_description():
                 "localization.yaml"
             ),
         }.items(),
-        condition=IfCondition(launch_localization)
     )
 
     # SLAM Toolbox
