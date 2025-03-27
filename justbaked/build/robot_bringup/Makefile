@@ -197,6 +197,43 @@ robot_bringup_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_bringup_uninstall.dir/build.make CMakeFiles/robot_bringup_uninstall.dir/build
 .PHONY : robot_bringup_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named waypoint_nav_cpp
+
+# Build rule for target.
+waypoint_nav_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 waypoint_nav_cpp
+.PHONY : waypoint_nav_cpp
+
+# fast build rule for target.
+waypoint_nav_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/build
+.PHONY : waypoint_nav_cpp/fast
+
+src/waypoint_nav.o: src/waypoint_nav.cpp.o
+.PHONY : src/waypoint_nav.o
+
+# target to build an object file
+src/waypoint_nav.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/src/waypoint_nav.cpp.o
+.PHONY : src/waypoint_nav.cpp.o
+
+src/waypoint_nav.i: src/waypoint_nav.cpp.i
+.PHONY : src/waypoint_nav.i
+
+# target to preprocess a source file
+src/waypoint_nav.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/src/waypoint_nav.cpp.i
+.PHONY : src/waypoint_nav.cpp.i
+
+src/waypoint_nav.s: src/waypoint_nav.cpp.s
+.PHONY : src/waypoint_nav.s
+
+# target to generate assembly for a file
+src/waypoint_nav.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/src/waypoint_nav.cpp.s
+.PHONY : src/waypoint_nav.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... robot_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... waypoint_nav_cpp"
+	@echo "... src/waypoint_nav.o"
+	@echo "... src/waypoint_nav.i"
+	@echo "... src/waypoint_nav.s"
 .PHONY : help
 
 

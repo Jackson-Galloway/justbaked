@@ -1,0 +1,374 @@
+[0.141s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.141s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff9514dbb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9514d970>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9514d970>>)
+[0.197s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.198s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ieee/justbaked/justbaked'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_bringup) by extension 'ros'
+[0.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_bringup' with type 'ros.ament_cmake' and name 'robot_bringup'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/temp_sens) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/temp_sens' with type 'ros.ament_python' and name 'temp_sens'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_description) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot4_description' with type 'ros.ament_cmake' and name 'turtlebot4_description'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot4_navigation) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot4_navigation' with type 'ros.ament_cmake' and name 'turtlebot4_navigation'
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.247s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.271s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ieee/justbaked/justbaked/build/robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ieee/justbaked/justbaked/install/robot_bringup', 'merge_install': False, 'path': '/home/ieee/justbaked/justbaked/src/robot_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.272s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.272s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ieee/justbaked/justbaked/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ieee/justbaked/justbaked/install/sllidar_ros2', 'merge_install': False, 'path': '/home/ieee/justbaked/justbaked/src/sllidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'cmake_target' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'cmake_clean_cache' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'cmake_clean_first' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'cmake_force_configure' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'temp_sens' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'temp_sens' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ieee/justbaked/justbaked/build/temp_sens', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ieee/justbaked/justbaked/install/temp_sens', 'merge_install': False, 'path': '/home/ieee/justbaked/justbaked/src/temp_sens', 'symlink_install': True, 'test_result_base': None}
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'cmake_target' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.273s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.273s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot4_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ieee/justbaked/justbaked/build/turtlebot4_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ieee/justbaked/justbaked/install/turtlebot4_description', 'merge_install': False, 'path': '/home/ieee/justbaked/justbaked/src/turtlebot4_description', 'symlink_install': True, 'test_result_base': None}
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'turtlebot4_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.274s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot4_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation', 'merge_install': False, 'path': '/home/ieee/justbaked/justbaked/src/turtlebot4_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.274s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.276s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ieee/justbaked/justbaked/src/robot_bringup' with build type 'ament_cmake'
+[0.276s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ieee/justbaked/justbaked/src/robot_bringup'
+[0.278s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ieee/justbaked/justbaked/install/turtlebot4_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ieee/justbaked/justbaked/install/temp_sens' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ieee/justbaked/justbaked/install/sllidar_ros2' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/ieee/justbaked/justbaked/install/robot_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ieee/justbaked/justbaked/install/turtlebot4_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ieee/justbaked/justbaked/install/sllidar_ros2' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.280s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/ieee/justbaked/justbaked/install/robot_bringup' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.285s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ieee/justbaked/justbaked/src/sllidar_ros2' with build type 'ament_cmake'
+[0.286s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ieee/justbaked/justbaked/src/sllidar_ros2'
+[0.286s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.291s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ieee/justbaked/justbaked/src/temp_sens' with build type 'ament_python'
+[0.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_sens', 'ament_prefix_path')
+[0.291s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/hook/ament_prefix_path.dsv'
+[0.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/hook/ament_prefix_path.sh'
+[0.293s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.298s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ieee/justbaked/justbaked/src/turtlebot4_description' with build type 'ament_cmake'
+[0.298s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ieee/justbaked/justbaked/src/turtlebot4_description'
+[0.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/robot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/robot_bringup
+[0.313s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/sllidar_ros2
+[0.808s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ieee/justbaked/justbaked/src/temp_sens'
+[0.808s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.821s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_description
+[2.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/temp_sens': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ieee/justbaked/justbaked/build/temp_sens/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ieee/justbaked/justbaked/build/temp_sens/build --no-deps symlink_data
+[2.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_description
+[2.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_description -- -j4 -l4
+[2.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_description -- -j4 -l4
+[2.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_description
+[3.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/sllidar_ros2
+[3.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/sllidar_ros2 -- -j4 -l4
+[3.565s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_description)
+[3.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_description
+[3.577s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description' for CMake module files
+[3.582s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description' for CMake config files
+[3.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_description', 'cmake_prefix_path')
+[3.583s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/hook/cmake_prefix_path.dsv'
+[3.584s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/hook/cmake_prefix_path.sh'
+[3.585s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description/bin'
+[3.585s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description/lib/pkgconfig/turtlebot4_description.pc'
+[3.586s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description/lib/python3.12/site-packages'
+[3.590s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description/bin'
+[3.590s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.dsv'
+[3.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.sh'
+[3.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.bash'
+[3.602s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.zsh'
+[3.614s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/colcon-core/packages/turtlebot4_description)
+[3.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_description)
+[3.620s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description' for CMake module files
+[3.620s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description' for CMake config files
+[3.621s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_description', 'cmake_prefix_path')
+[3.621s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/hook/cmake_prefix_path.dsv'
+[3.622s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/hook/cmake_prefix_path.sh'
+[3.626s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description/bin'
+[3.626s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description/lib/pkgconfig/turtlebot4_description.pc'
+[3.627s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description/lib/python3.12/site-packages'
+[3.627s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_description/bin'
+[3.630s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.dsv'
+[3.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.sh'
+[3.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.bash'
+[3.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/turtlebot4_description/package.zsh'
+[3.636s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/turtlebot4_description/share/colcon-core/packages/turtlebot4_description)
+[3.638s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ieee/justbaked/justbaked/src/turtlebot4_navigation' with build type 'ament_cmake'
+[3.642s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ieee/justbaked/justbaked/src/turtlebot4_navigation'
+[3.642s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.663s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_sens', 'pythonpath_develop')
+[3.663s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/temp_sens' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ieee/justbaked/justbaked/build/temp_sens/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ieee/justbaked/justbaked/build/temp_sens/build --no-deps symlink_data
+[3.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/build/temp_sens/share/temp_sens/hook/pythonpath_develop.dsv'
+[3.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/build/temp_sens/share/temp_sens/hook/pythonpath_develop.sh'
+[3.671s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/temp_sens' for CMake module files
+[3.672s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/temp_sens' for CMake config files
+[3.676s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/temp_sens/lib'
+[3.676s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/temp_sens/bin'
+[3.677s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/temp_sens/lib/pkgconfig/temp_sens.pc'
+[3.677s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages'
+[3.677s] Level 1:colcon.colcon_core.shell:create_environment_hook('temp_sens', 'pythonpath')
+[3.678s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/hook/pythonpath.dsv'
+[3.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/hook/pythonpath.sh'
+[3.683s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/temp_sens/bin'
+[3.686s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(temp_sens)
+[3.687s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.dsv'
+[3.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.sh'
+[3.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.bash'
+[3.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/temp_sens/share/temp_sens/package.zsh'
+[3.690s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/temp_sens/share/colcon-core/packages/temp_sens)
+[3.706s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_navigation
+[4.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/robot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/robot_bringup
+[4.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/robot_bringup -- -j4 -l4
+[8.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_navigation -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_navigation
+[8.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_navigation -- -j4 -l4
+[10.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_navigation -- -j4 -l4
+[10.411s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_navigation
+[12.207s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_navigation)
+[12.208s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation' for CMake module files
+[12.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_navigation
+[12.211s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation' for CMake config files
+[12.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_navigation', 'cmake_prefix_path')
+[12.213s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/hook/cmake_prefix_path.dsv'
+[12.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/hook/cmake_prefix_path.sh'
+[12.215s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib'
+[12.216s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/bin'
+[12.216s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/pkgconfig/turtlebot4_navigation.pc'
+[12.216s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages'
+[12.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_navigation', 'pythonpath')
+[12.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/hook/pythonpath.dsv'
+[12.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/hook/pythonpath.sh'
+[12.219s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/bin'
+[12.220s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.dsv'
+[12.221s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.sh'
+[12.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.bash'
+[12.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.zsh'
+[12.224s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/colcon-core/packages/turtlebot4_navigation)
+[12.226s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot4_navigation)
+[12.226s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation' for CMake module files
+[12.227s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation' for CMake config files
+[12.228s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_navigation', 'cmake_prefix_path')
+[12.229s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/hook/cmake_prefix_path.dsv'
+[12.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/hook/cmake_prefix_path.sh'
+[12.231s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib'
+[12.231s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/bin'
+[12.232s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/pkgconfig/turtlebot4_navigation.pc'
+[12.232s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/lib/python3.12/site-packages'
+[12.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot4_navigation', 'pythonpath')
+[12.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/hook/pythonpath.dsv'
+[12.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/hook/pythonpath.sh'
+[12.235s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/bin'
+[12.236s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.dsv'
+[12.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.sh'
+[12.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.bash'
+[12.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/turtlebot4_navigation/package.zsh'
+[12.241s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/turtlebot4_navigation/share/colcon-core/packages/turtlebot4_navigation)
+[21.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/robot_bringup -- -j4 -l4
+[21.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/robot_bringup
+[22.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/sllidar_ros2 -- -j4 -l4
+[22.137s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/sllidar_ros2
+[22.211s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[22.211s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup' for CMake module files
+[22.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/robot_bringup
+[22.213s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup' for CMake config files
+[22.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[22.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[22.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[22.216s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/lib'
+[22.216s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/bin'
+[22.216s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[22.216s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/lib/python3.12/site-packages'
+[22.217s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/bin'
+[22.217s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/package.dsv'
+[22.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/package.sh'
+[22.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/package.bash'
+[22.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/package.zsh'
+[22.219s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[22.219s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_bringup)
+[22.220s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup' for CMake module files
+[22.220s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup' for CMake config files
+[22.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_bringup', 'cmake_prefix_path')
+[22.221s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.dsv'
+[22.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/hook/cmake_prefix_path.sh'
+[22.222s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/lib'
+[22.222s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/bin'
+[22.223s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/lib/pkgconfig/robot_bringup.pc'
+[22.223s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/lib/python3.12/site-packages'
+[22.223s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/robot_bringup/bin'
+[22.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/package.dsv'
+[22.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/package.sh'
+[22.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/package.bash'
+[22.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/package.zsh'
+[22.226s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/robot_bringup/share/colcon-core/packages/robot_bringup)
+[22.555s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[22.556s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2' for CMake module files
+[22.556s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/sllidar_ros2
+[22.557s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2' for CMake config files
+[22.557s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[22.558s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[22.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[22.559s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/lib'
+[22.559s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/bin'
+[22.559s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[22.560s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/lib/python3.12/site-packages'
+[22.560s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/bin'
+[22.560s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[22.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[22.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[22.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[22.562s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[22.563s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[22.563s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2' for CMake module files
+[22.564s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2' for CMake config files
+[22.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[22.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[22.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[22.565s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/lib'
+[22.566s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/bin'
+[22.566s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[22.566s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/lib/python3.12/site-packages'
+[22.566s] Level 1:colcon.colcon_core.environment:checking '/home/ieee/justbaked/justbaked/install/sllidar_ros2/bin'
+[22.567s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[22.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[22.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[22.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[22.569s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ieee/justbaked/justbaked/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[22.569s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[22.570s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[22.570s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[22.570s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[22.579s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[22.579s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[22.579s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[22.595s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[22.596s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ieee/justbaked/justbaked/install/local_setup.sh'
+[22.597s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ieee/justbaked/justbaked/install/_local_setup_util_sh.py'
+[22.598s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ieee/justbaked/justbaked/install/setup.sh'
+[22.600s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ieee/justbaked/justbaked/install/local_setup.bash'
+[22.600s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ieee/justbaked/justbaked/install/setup.bash'
+[22.602s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ieee/justbaked/justbaked/install/local_setup.zsh'
+[22.603s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ieee/justbaked/justbaked/install/setup.zsh'

@@ -310,11 +310,14 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(PROGRAMS "catapult/cat_servo_gpiozero.py" "catapult/cat_servo_fire.py" "DESTINATION" "lib/robot_bringup")
-ament_cmake_symlink_install_programs("/home/ieee/justbaked/justbaked/src/robot_bringup" PROGRAMS "catapult/cat_servo_gpiozero.py" "catapult/cat_servo_fire.py" "DESTINATION" "lib/robot_bringup")
+# install("TARGETS" "waypoint_nav_cpp" "DESTINATION" "lib/robot_bringup")
+include("/home/ieee/justbaked/justbaked/build/robot_bringup/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "launch" "DESTINATION" "share/robot_bringup")
-ament_cmake_symlink_install_directory("/home/ieee/justbaked/justbaked/src/robot_bringup" DIRECTORY "launch" "DESTINATION" "share/robot_bringup")
+# install(PROGRAMS "rounds/button_publisher.py" "DESTINATION" "lib/robot_bringup")
+ament_cmake_symlink_install_programs("/home/ieee/justbaked/justbaked/src/robot_bringup" PROGRAMS "rounds/button_publisher.py" "DESTINATION" "lib/robot_bringup")
+
+# install(DIRECTORY "launch" "waypoints" "maps" "DESTINATION" "share/robot_bringup")
+ament_cmake_symlink_install_directory("/home/ieee/justbaked/justbaked/src/robot_bringup" DIRECTORY "launch" "waypoints" "maps" "DESTINATION" "share/robot_bringup")
 
 # install(FILES "/home/ieee/justbaked/justbaked/build/robot_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ieee/justbaked/justbaked/src/robot_bringup" FILES "/home/ieee/justbaked/justbaked/build/robot_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

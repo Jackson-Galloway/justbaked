@@ -1,5 +1,6 @@
 /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles/uninstall.dir
 /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles/robot_bringup_uninstall.dir
+/home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles/waypoint_nav_cpp.dir
 /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles/test.dir
 /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles/edit_cache.dir
 /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles/rebuild_cache.dir

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/ieee/justbaked/justbaked/build/robot_bringup
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/waypoint_nav_cpp.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +73,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/robot_bringup_uninstall.dir/clean
+clean: CMakeFiles/waypoint_nav_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +127,32 @@ robot_bringup_uninstall: CMakeFiles/robot_bringup_uninstall.dir/rule
 CMakeFiles/robot_bringup_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_bringup_uninstall.dir/build.make CMakeFiles/robot_bringup_uninstall.dir/clean
 .PHONY : CMakeFiles/robot_bringup_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/waypoint_nav_cpp.dir
+
+# All Build rule for target.
+CMakeFiles/waypoint_nav_cpp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles --progress-num=1,2 "Built target waypoint_nav_cpp"
+.PHONY : CMakeFiles/waypoint_nav_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/waypoint_nav_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/waypoint_nav_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/waypoint_nav_cpp.dir/rule
+
+# Convenience name for target.
+waypoint_nav_cpp: CMakeFiles/waypoint_nav_cpp.dir/rule
+.PHONY : waypoint_nav_cpp
+
+# clean rule for target.
+CMakeFiles/waypoint_nav_cpp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/clean
+.PHONY : CMakeFiles/waypoint_nav_cpp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
