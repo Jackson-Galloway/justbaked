@@ -210,6 +210,43 @@ waypoint_nav_cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/build
 .PHONY : waypoint_nav_cpp/fast
 
+#=============================================================================
+# Target rules for targets named determine_fire_location
+
+# Build rule for target.
+determine_fire_location: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 determine_fire_location
+.PHONY : determine_fire_location
+
+# fast build rule for target.
+determine_fire_location/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/determine_fire_location.dir/build.make CMakeFiles/determine_fire_location.dir/build
+.PHONY : determine_fire_location/fast
+
+src/determine_fire_location.o: src/determine_fire_location.cpp.o
+.PHONY : src/determine_fire_location.o
+
+# target to build an object file
+src/determine_fire_location.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/determine_fire_location.dir/build.make CMakeFiles/determine_fire_location.dir/src/determine_fire_location.cpp.o
+.PHONY : src/determine_fire_location.cpp.o
+
+src/determine_fire_location.i: src/determine_fire_location.cpp.i
+.PHONY : src/determine_fire_location.i
+
+# target to preprocess a source file
+src/determine_fire_location.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/determine_fire_location.dir/build.make CMakeFiles/determine_fire_location.dir/src/determine_fire_location.cpp.i
+.PHONY : src/determine_fire_location.cpp.i
+
+src/determine_fire_location.s: src/determine_fire_location.cpp.s
+.PHONY : src/determine_fire_location.s
+
+# target to generate assembly for a file
+src/determine_fire_location.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/determine_fire_location.dir/build.make CMakeFiles/determine_fire_location.dir/src/determine_fire_location.cpp.s
+.PHONY : src/determine_fire_location.cpp.s
+
 src/waypoint_nav.o: src/waypoint_nav.cpp.o
 .PHONY : src/waypoint_nav.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... robot_bringup_uninstall"
 	@echo "... uninstall"
+	@echo "... determine_fire_location"
 	@echo "... waypoint_nav_cpp"
+	@echo "... src/determine_fire_location.o"
+	@echo "... src/determine_fire_location.i"
+	@echo "... src/determine_fire_location.s"
 	@echo "... src/waypoint_nav.o"
 	@echo "... src/waypoint_nav.i"
 	@echo "... src/waypoint_nav.s"

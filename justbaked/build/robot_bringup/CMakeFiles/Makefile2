@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/ieee/justbaked/justbaked/build/robot_bringup
 
 # The main recursive "all" target.
 all: CMakeFiles/waypoint_nav_cpp.dir/all
+all: CMakeFiles/determine_fire_location.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/robot_bringup_uninstall.dir/clean
 clean: CMakeFiles/waypoint_nav_cpp.dir/clean
+clean: CMakeFiles/determine_fire_location.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -135,7 +137,7 @@ CMakeFiles/robot_bringup_uninstall.dir/clean:
 CMakeFiles/waypoint_nav_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles --progress-num=1,2 "Built target waypoint_nav_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles --progress-num=3,4 "Built target waypoint_nav_cpp"
 .PHONY : CMakeFiles/waypoint_nav_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -153,6 +155,32 @@ waypoint_nav_cpp: CMakeFiles/waypoint_nav_cpp.dir/rule
 CMakeFiles/waypoint_nav_cpp.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/waypoint_nav_cpp.dir/build.make CMakeFiles/waypoint_nav_cpp.dir/clean
 .PHONY : CMakeFiles/waypoint_nav_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/determine_fire_location.dir
+
+# All Build rule for target.
+CMakeFiles/determine_fire_location.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/determine_fire_location.dir/build.make CMakeFiles/determine_fire_location.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/determine_fire_location.dir/build.make CMakeFiles/determine_fire_location.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles --progress-num=1,2 "Built target determine_fire_location"
+.PHONY : CMakeFiles/determine_fire_location.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/determine_fire_location.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/determine_fire_location.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ieee/justbaked/justbaked/build/robot_bringup/CMakeFiles 0
+.PHONY : CMakeFiles/determine_fire_location.dir/rule
+
+# Convenience name for target.
+determine_fire_location: CMakeFiles/determine_fire_location.dir/rule
+.PHONY : determine_fire_location
+
+# clean rule for target.
+CMakeFiles/determine_fire_location.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/determine_fire_location.dir/build.make CMakeFiles/determine_fire_location.dir/clean
+.PHONY : CMakeFiles/determine_fire_location.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

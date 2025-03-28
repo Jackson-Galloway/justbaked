@@ -17,7 +17,6 @@ endif()
 # Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(rclcpp_action REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav2_msgs REQUIRED)
@@ -25,27 +24,39 @@ find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(yaml-cpp REQUIRED)
 
-# Build C++ executable
+# Build C++ executable for waypoint navigation
 add_executable(waypoint_nav_cpp src/waypoint_nav.cpp)
 ament_target_dependencies(waypoint_nav_cpp
   rclcpp
-  rclcpp_action
+  std_msgs
   geometry_msgs
   nav2_msgs
-  std_msgs
   tf2
   tf2_geometry_msgs
 )
 
-target_link_libraries(waypoint_nav_cpp yaml-cpp)
+# Build C++ executable for determine_fire_location
+add_executable(determine_fire_location src/determine_fire_location.cpp)
+ament_target_dependencies(determine_fire_location
+  rclcpp
+  std_msgs
+)
 
-# Install compiled binary
+# Link the necessary libraries for each executable
+target_link_libraries(waypoint_nav_cpp yaml-cpp)
+target_link_libraries(determine_fire_location yaml-cpp)
+
+# Install compiled binaries
 install(TARGETS waypoint_nav_cpp
+  DESTINATION lib/${PROJECT_NAME}
+)
+install(TARGETS determine_fire_location
   DESTINATION lib/${PROJECT_NAME}
 )
 
 # Install Python scripts
 install(PROGRAMS
+  catapult/catapult_launch.py	
   rounds/button_publisher.py
   DESTINATION lib/${PROJECT_NAME}
 )

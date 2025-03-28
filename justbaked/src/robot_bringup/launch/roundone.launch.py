@@ -36,7 +36,7 @@ def generate_launch_description():
         }.items()
     )
 
-    # Add a TimerAction to delay waypoint navigation until everything is launched
+    # Launch the C++ waypoint navigation node (delayed to ensure Nav2 is ready)
     waypoint_nav_node = TimerAction(
         period=15.0,  # delay to allow Nav2 to fully start
         actions=[
@@ -51,13 +51,13 @@ def generate_launch_description():
     )
 
     # Add a new Python Node to process the temperature readings and update the round2.yaml file
-   # process_temp_data_node = Node(
-    #    package='robot_bringup',  # Replace with your package name
-     #   executable='determine_fire_location.py',  # Replace with your Python script name
-      #  name='determine_fire_location_node',
-       # output='screen',
-       # parameters=[{'temperature_sensor': 'True'}],  # Example param, adjust as needed
-    #)
+    process_temp_data_node = Node(
+        package='robot_bringup',  # Replace with your package name
+        executable='determine_fire_location',  # Replace with your C++ or Python script name
+        name='determine_fire_location_node',
+        output='screen',
+        parameters=[{'temperature_sensor': 'True'}],  # Example param, adjust as needed
+    )
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -102,7 +102,8 @@ def generate_launch_description():
         # Launch the mission logic
         waypoint_nav_node,
 
+
         # Add the new node that processes temperature data and updates round2.yaml
- #       process_temp_data_node
+        process_temp_data_node
     ])
 
