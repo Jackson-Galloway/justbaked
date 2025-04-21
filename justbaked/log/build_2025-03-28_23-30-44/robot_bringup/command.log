@@ -1,0 +1,2 @@
+Invoking command in '/home/ieee/justbaked/justbaked/build/robot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/robot_bringup -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/robot_bringup
+Invoked command in '/home/ieee/justbaked/justbaked/build/robot_bringup' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/robot_bringup -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/robot_bringup

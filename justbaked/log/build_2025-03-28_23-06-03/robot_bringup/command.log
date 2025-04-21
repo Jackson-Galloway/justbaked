@@ -1,0 +1,2 @@
+Invoking command in '/home/ieee/justbaked/justbaked/build/robot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/robot_bringup -- -j4 -l4
+Invoked command in '/home/ieee/justbaked/justbaked/build/robot_bringup' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/robot_bringup -- -j4 -l4
