@@ -17,6 +17,7 @@ def generate_launch_description():
     launch_slam = LaunchConfiguration('launch_slam')
     launch_nav2 = LaunchConfiguration('launch_nav2')
     launch_rviz = LaunchConfiguration('launch_rviz')
+    waypoints_file = LaunchConfiguration('waypoints_file', default='round1.yaml')
 
     # Get path to startup.launch.py
     startup_launch = IncludeLaunchDescription(
@@ -39,24 +40,16 @@ def generate_launch_description():
     # Launch the C++ waypoint navigation node (delayed to ensure Nav2 is ready)
     waypoint_nav_node = TimerAction(
         period=15.0,  # delay to allow Nav2 to fully start
-        actions=[
+        actions=[ 
             LogInfo(msg="Launching waypoint_nav_cpp node..."),
             Node(
                 package="robot_bringup",
                 executable="waypoint_nav_cpp",
                 name="waypoint_nav_cpp_node",
-                output="screen"
+                output="screen",
+                parameters=[{'waypoints_file': waypoints_file}]
             )
         ]
-    )
-
-    # Add a new Python Node to process the temperature readings and update the round2.yaml file
-    process_temp_data_node = Node(
-        package='robot_bringup',  # Replace with your package name
-        executable='determine_fire_location',  # Replace with your C++ or Python script name
-        name='determine_fire_location_node',
-        output='screen',
-        parameters=[{'temperature_sensor': 'True'}],  # Example param, adjust as needed
     )
 
     return LaunchDescription([
@@ -77,7 +70,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'launch_temp_sens',
-            default_value='true',
+            default_value='false',
             description='Launch temperature sensor node'
         ),
         DeclareLaunchArgument(
@@ -92,18 +85,18 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'launch_rviz',
-            default_value='true',
+            default_value='false',
             description='Launch RViz2'
         ),
-
+        DeclareLaunchArgument(
+            'waypoints_file',
+            default_value='round1.yaml',
+            description='Waypoints file to use (round1.yaml, round2.yaml, round3.yaml)'
+        ),
         # Launch core system
         startup_launch,
 
         # Launch the mission logic
         waypoint_nav_node,
-
-
-        # Add the new node that processes temperature data and updates round2.yaml
-        process_temp_data_node
-    ])
+     ])
 

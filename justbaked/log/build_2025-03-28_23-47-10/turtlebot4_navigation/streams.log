@@ -1,0 +1,14 @@
+[0.028s] Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ieee/justbaked/justbaked/src/turtlebot4_navigation -DCMAKE_INSTALL_PREFIX=/home/ieee/justbaked/justbaked/install/turtlebot4_navigation
+[0.068s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.549s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.559s] -- Found rclpy: 7.1.3 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.715s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.881s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.885s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.885s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.885s] -- Added test 'lint_cmake' to check CMake code style
+[0.886s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.888s] -- Added test 'xmllint' to check XML markup files
+[0.889s] -- Configuring done (0.8s)
+[0.895s] -- Generating done (0.0s)
+[0.899s] -- Build files have been written to: /home/ieee/justbaked/justbaked/build/turtlebot4_navigation

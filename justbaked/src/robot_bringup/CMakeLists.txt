@@ -23,6 +23,9 @@ find_package(nav2_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 find_package(yaml-cpp REQUIRED)
+find_package(ament_cmake_python REQUIRED)
+find_package(rclpy REQUIRED)
+
 
 # Build C++ executable for waypoint navigation
 add_executable(waypoint_nav_cpp src/waypoint_nav.cpp)
@@ -56,8 +59,9 @@ install(TARGETS determine_fire_location
 
 # Install Python scripts
 install(PROGRAMS
-  catapult/catapult_launch.py	
   rounds/button_publisher.py
+  src/catapult_launch.py
+  catapult/cat_servo_gpiofire.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

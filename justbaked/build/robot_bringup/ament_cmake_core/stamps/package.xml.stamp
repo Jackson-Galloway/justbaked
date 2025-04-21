@@ -3,18 +3,22 @@
 <package format="3">
   <name>robot_bringup</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Robot Bringup Package for autonomous navigation and catapult control</description>
   <maintainer email="jackson.galloway02@gmail.com">lsw155linuxbox</maintainer>
   <license>Apache-2.0</license>
 
+  <!-- Build Dependencies -->
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_python</buildtool_depend>
 
+
+  <!-- Test Dependencies -->
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
-  
 
+  <!-- Export build type -->
   <export>
     <build_type>ament_cmake</build_type>
   </export>
 </package>
+

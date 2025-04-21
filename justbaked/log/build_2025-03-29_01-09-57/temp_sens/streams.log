@@ -1,0 +1,22 @@
+[1.579s] Invoking command in '/home/ieee/justbaked/justbaked/src/temp_sens': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ieee/justbaked/justbaked/build/temp_sens/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/temp_sens build --build-base /home/ieee/justbaked/justbaked/build/temp_sens/build install --record /home/ieee/justbaked/justbaked/build/temp_sens/install.log --single-version-externally-managed install_data
+[1.969s] running egg_info
+[1.997s] writing ../../build/temp_sens/temp_sens.egg-info/PKG-INFO
+[1.997s] writing dependency_links to ../../build/temp_sens/temp_sens.egg-info/dependency_links.txt
+[1.998s] writing entry points to ../../build/temp_sens/temp_sens.egg-info/entry_points.txt
+[1.998s] writing requirements to ../../build/temp_sens/temp_sens.egg-info/requires.txt
+[1.998s] writing top-level names to ../../build/temp_sens/temp_sens.egg-info/top_level.txt
+[2.054s] reading manifest file '../../build/temp_sens/temp_sens.egg-info/SOURCES.txt'
+[2.055s] adding license file 'LICENSE'
+[2.055s] writing manifest file '../../build/temp_sens/temp_sens.egg-info/SOURCES.txt'
+[2.056s] running build
+[2.056s] running build_py
+[2.056s] running install
+[2.066s] running install_lib
+[2.095s] running install_data
+[2.095s] running install_egg_info
+[2.125s] removing '/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.1-py3.12.egg-info' (and everything under it)
+[2.125s] Copying ../../build/temp_sens/temp_sens.egg-info to /home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages/temp_sens-0.0.1-py3.12.egg-info
+[2.127s] running install_scripts
+[2.319s] Installing serial_temp_reader script to /home/ieee/justbaked/justbaked/install/temp_sens/lib/temp_sens
+[2.319s] writing list of installed files to '/home/ieee/justbaked/justbaked/build/temp_sens/install.log'
+[2.412s] Invoked command in '/home/ieee/justbaked/justbaked/src/temp_sens' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ieee/justbaked/justbaked/build/temp_sens/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ieee/justbaked/justbaked/install/temp_sens/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/temp_sens build --build-base /home/ieee/justbaked/justbaked/build/temp_sens/build install --record /home/ieee/justbaked/justbaked/build/temp_sens/install.log --single-version-externally-managed install_data

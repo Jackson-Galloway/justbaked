@@ -151,7 +151,7 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'launch_temp_sens',
-            default_value='true',
+            default_value='false',
             description='Whether to launch the temperature sensor',
             choices=['true', 'false']
         ),

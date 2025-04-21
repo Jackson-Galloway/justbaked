@@ -1,0 +1,11 @@
+[0.036s] Invoking command in '/home/ieee/justbaked/justbaked/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/robot_bringup -- -j4 -l4
+[0.434s] [ 50%] Built target determine_fire_location
+[0.434s] [ 75%] [32mBuilding CXX object CMakeFiles/waypoint_nav_cpp.dir/src/waypoint_nav.cpp.o[0m
+[4.541s] [01m[K/home/ieee/justbaked/justbaked/src/robot_bringup/src/waypoint_nav.cpp:147:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[4.541s]   147 | }
+[4.541s]       |  [01;31m[K^[m[K
+[4.541s]       |  [32m[K;[m[K
+[6.669s] gmake[2]: *** [CMakeFiles/waypoint_nav_cpp.dir/build.make:76: CMakeFiles/waypoint_nav_cpp.dir/src/waypoint_nav.cpp.o] Error 1
+[6.669s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/waypoint_nav_cpp.dir/all] Error 2
+[6.669s] gmake: *** [Makefile:146: all] Error 2
+[6.672s] Invoked command in '/home/ieee/justbaked/justbaked/build/robot_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ieee/justbaked/justbaked/install/temp_sens:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/robot_bringup -- -j4 -l4

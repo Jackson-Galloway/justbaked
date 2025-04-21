@@ -17,6 +17,7 @@ def generate_launch_description():
     launch_slam = LaunchConfiguration('launch_slam')
     launch_nav2 = LaunchConfiguration('launch_nav2')
     launch_rviz = LaunchConfiguration('launch_rviz')
+    waypoints_file = LaunchConfiguration('waypoints_file', default='round1.yaml')
 
     # Get path to startup.launch.py
     startup_launch = IncludeLaunchDescription(
@@ -29,25 +30,43 @@ def generate_launch_description():
             'launch_robot_description': launch_robot_description,
             'launch_lidar': launch_lidar,
             'launch_mov': launch_mov,
+            'launch_temp_sens': launch_temp_sens,
             'launch_slam': launch_slam,
             'launch_nav2': launch_nav2,
             'launch_rviz': launch_rviz,
         }.items()
     )
 
-    # Launch the Python catapult launch node (delayed to ensure Nav2 is ready)
-    catapult_launch_node = TimerAction(
+    # Launch the C++ waypoint navigation node (delayed to ensure Nav2 is ready)
+    waypoint_nav_node = TimerAction(
         period=15.0,  # delay to allow Nav2 to fully start
-        actions=[
-            LogInfo(msg="Launching catapult_launch node..."),
+        actions=[ 
+            LogInfo(msg="Launching waypoint_nav_cpp node..."),
             Node(
                 package="robot_bringup",
-                executable="catapult_launch.py",
-                name="catapult_launch_node",
-                output="screen"
+                executable="waypoint_nav_cpp",
+                name="waypoint_nav_cpp_node",
+                output="screen",
+                parameters=[{'waypoints_file': waypoints_file}]
             )
         ]
     )
+
+    # Launch the C++ waypoint navigation node (delayed to ensure Nav2 is ready)
+    jitter_node = TimerAction(
+        period=35.0,  # delay to allow Nav2 to fully start
+        actions=[
+            LogInfo(msg="Launching waypoint_nav_cpp node..."),
+            Node(
+                package="robot_bringup",
+                executable="cat_servo_gpiofire.py",
+                name="jitter_node",
+                output="screen",
+                parameters=[{'waypoints_file': waypoints_file}]
+            )
+        ]
+    )
+
 
     return LaunchDescription([
         DeclareLaunchArgument(
@@ -66,6 +85,11 @@ def generate_launch_description():
             description='Launch tank drive control'
         ),
         DeclareLaunchArgument(
+            'launch_temp_sens',
+            default_value='false',
+            description='Launch temperature sensor node'
+        ),
+        DeclareLaunchArgument(
             'launch_slam',
             default_value='true',
             description='Launch SLAM Toolbox'
@@ -77,15 +101,20 @@ def generate_launch_description():
         ),
         DeclareLaunchArgument(
             'launch_rviz',
-            default_value='true',
+            default_value='false',
             description='Launch RViz2'
         ),
-
+        DeclareLaunchArgument(
+            'waypoints_file',
+            default_value='round1.yaml',
+            description='Waypoints file to use (round1.yaml, round2.yaml, round3.yaml)'
+        ),
         # Launch core system
         startup_launch,
 
         # Launch the mission logic
+        waypoint_nav_node,
 
-        catapult_launch_node,
+        jitter_node,
+     ])
 
-    ])

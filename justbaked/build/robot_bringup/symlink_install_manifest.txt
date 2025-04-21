@@ -1,13 +1,15 @@
 /home/ieee/justbaked/justbaked/install/robot_bringup/lib/robot_bringup/waypoint_nav_cpp
 /home/ieee/justbaked/justbaked/install/robot_bringup/lib/robot_bringup/determine_fire_location
-/home/ieee/justbaked/justbaked/install/robot_bringup/lib/robot_bringup/catapult_launch.py
 /home/ieee/justbaked/justbaked/install/robot_bringup/lib/robot_bringup/button_publisher.py
+/home/ieee/justbaked/justbaked/install/robot_bringup/lib/robot_bringup/catapult_launch.py
+/home/ieee/justbaked/justbaked/install/robot_bringup/lib/robot_bringup/cat_servo_gpiofire.py
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/launch/roundone.launch.py
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/launch/roundthree.launch.py
+/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/launch/roundtwo.launch.py
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/launch/startup.launch.py
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/waypoints/round1.yaml
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/waypoints/round2.yaml
-/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/waypoints/rvizpoints.yaml
+/home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/waypoints/round3.yaml
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/maps/.pgm
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/maps/.yaml
 /home/ieee/justbaked/justbaked/install/robot_bringup/share/robot_bringup/maps/arena_map.pgm

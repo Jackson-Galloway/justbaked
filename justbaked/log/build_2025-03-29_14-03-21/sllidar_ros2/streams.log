@@ -1,0 +1,29 @@
+[0.068s] Invoking command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/sllidar_ros2 -- -j4 -l4
+[1.017s] [ 90%] Built target sllidar_node
+[1.017s] [100%] Built target sllidar_client
+[1.060s] Invoked command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/sllidar_ros2 -- -j4 -l4
+[1.063s] Invoking command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/sllidar_ros2
+[1.135s] -- Install configuration: ""
+[1.135s] -- Execute custom install script
+[1.135s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[1.135s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[1.135s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[1.136s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[1.136s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[1.140s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[1.141s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[1.141s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[1.141s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[1.141s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[1.141s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[1.142s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[1.142s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[1.147s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[1.148s] -- Symlinking: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[1.213s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[1.216s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.217s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.217s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[1.217s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[1.217s] -- Up-to-date symlink: /home/ieee/justbaked/justbaked/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[1.325s] Invoked command in '/home/ieee/justbaked/justbaked/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy:/home/ieee/justbaked/justbaked/install/temp_sens DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/sllidar_ros2
