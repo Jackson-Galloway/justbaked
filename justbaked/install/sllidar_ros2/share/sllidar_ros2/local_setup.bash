@@ -1,1 +1,0 @@
-/home/ieee/justbaked/justbaked/build/sllidar_ros2/ament_cmake_environment_hooks/local_setup.bash

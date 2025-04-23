@@ -1,1 +1,0 @@
-/home/ieee/justbaked/justbaked/build/turtlebot4_navigation/ament_cmake_environment_hooks/local_setup.sh

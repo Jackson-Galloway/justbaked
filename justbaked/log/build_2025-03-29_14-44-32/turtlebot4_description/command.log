@@ -1,4 +1,0 @@
-Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_description -- -j4 -l4
-Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ieee/justbaked/justbaked/build/turtlebot4_description -- -j4 -l4
-Invoking command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_description
-Invoked command in '/home/ieee/justbaked/justbaked/build/turtlebot4_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ieee/justbaked/justbaked/build/turtlebot4_description
