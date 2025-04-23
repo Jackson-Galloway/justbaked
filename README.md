@@ -16,7 +16,7 @@ Robot Purpose
 
 </p>
 
-<video src="https://github.com/Jackson-Galloway/justbaked/tree/main/Pictures/Jackson/Round1.MOV" controls autoplay loop muted></video>
+<video src="https://github.com/Jackson-Galloway/justbaked/tree/main/Pictures/Jackson/Round1.mp4" controls autoplay loop muted></video>
 
 
 How it is done
