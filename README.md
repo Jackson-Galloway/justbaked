@@ -22,10 +22,10 @@ Required Packages
 
 File Structure
 ASUIEEE25/
-├── src/             ← source code
-├── docs/            ← images, design docs, screenshots
-├── examples/        ← sample usage
-├── scripts/         ← build/deploy scripts
-├── .github/         ← CI workflows, templates
-├── README.md
-└── LICENSE
+├── src/             ← source code  
+├── docs/            ← images, design docs, screenshots  
+├── examples/        ← sample usage  
+├── scripts/         ← build/deploy scripts  
+├── .github/         ← CI workflows, templates  
+├── README.md  
+└── LICENSE  
