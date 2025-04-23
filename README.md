@@ -41,6 +41,10 @@ _All fully autonomous—no human intervention._
 </p>
 
 <p align="center">
+  <img src="Pictures/Jackson/Robot.jpg" alt="Finished Robot" />
+</p>
+
+<p align="center">
   <video
     src="https://raw.githubusercontent.com/Jackson-Galloway/justbaked/main/Pictures/Jackson/Round1.mp4"
     width="600"
