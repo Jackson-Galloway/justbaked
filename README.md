@@ -41,7 +41,7 @@ _All fully autonomous—no human intervention._
 </p>
 
 <p align="center">
-  <img src="Pictures/Jackson/Robot.jpg" alt="Finished Robot" />
+  <img src="Pictures/Jackson/Round1.gif" alt="Round1" />
 </p>
 
 <p align="center">
