@@ -41,21 +41,12 @@ _All fully autonomous—no human intervention._
 </p>
 
 <p align="center">
-  <img src="Pictures/Jackson/Round1.gif" alt="Round1" />
+  <img
+    src="https://raw.githubusercontent.com/Jackson-Galloway/justbaked/main/Pictures/Jackson/Round1.gif"
+    alt="Demo"
+  />
 </p>
 
-<p align="center">
-  <video
-    src="https://raw.githubusercontent.com/Jackson-Galloway/justbaked/main/Pictures/Jackson/Round1.mp4"
-    width="600"
-    controls
-    autoplay
-    loop
-    muted
-  >
-    Your browser does not support the video tag.
-  </video>
-</p>
 
 ---
 
