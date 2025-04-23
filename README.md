@@ -44,6 +44,7 @@ _All fully autonomous—no human intervention._
   <img
     src="https://raw.githubusercontent.com/Jackson-Galloway/justbaked/main/Pictures/Jackson/Round1.gif"
     alt="Demo"
+    width="700"
   />
 </p>
 
