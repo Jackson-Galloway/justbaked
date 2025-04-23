@@ -1,35 +1,72 @@
-# justbaked
-Arkansas State University IEEE Robotics Team for the 2025 region 5 conference in Whichita Kansas
+<!-- Badges -->
+![License](https://img.shields.io/github/license/Jackson-Galloway/justbaked)
+![Issues](https://img.shields.io/github/issues-raw/Jackson-Galloway/justbaked)
 
-Team Members
-- Chase Himschoot
-- Jackson Galloway
-- Jaiden Strong
-- Josh Featherston
+# 🔥 justbaked 🔥  
+<mark>Arkansas State University IEEE Robotics Team for the 2025 Region 5 Conference in Wichita, Kansas</mark>
 
-Robot Purpose
-  The robot is intended to be a "fire fighting robot". The competition rules outline an arena in which there are dowels placed vertically in the arena to serve as trees. The robot must successfully navigate these trees to locate the fire and then return to the starting position. After this has been done the robot must    them continue to latch a "hose" which is just rope and deliver it to the fire. All of this must be done autonomously without assistance from a person.
+<details open>
+<summary>🚀 Quick Overview</summary>
+
+We’re building an **autonomous firefighting robot** that navigates a “forest” of dowels, finds the fire, latches its hose (rope), and returns—completely on its own.
+
+</details>
+
+---
+
+## 🧑‍🤝‍🧑 Team Members  
+- Chase Himschoot  
+- Jackson Galloway  
+- Jaiden Strong  
+- Josh Featherston  
+
+---
+
+## 🤖 Robot Purpose  
+The robot must:
+
+1. **SLAM & Navigate** around vertical dowels (“trees”)  
+2. **Locate the fire** (heat source)  
+3. **Return to start**, latch hose (rope)  
+4. **Deliver the hose** back to the fire  
+
+_All fully autonomous—no human intervention._
+
+---
+
+## 📸 Gallery
 
 <p align="center">
-
-![Finished Robot](Pictures/Jackson/Robot.jpg)
-
+  <img src="pictures/Jackson/Robot.jpg" alt="Finished Robot" width="600" />
 </p>
 
-<video src="https://github.com/Jackson-Galloway/justbaked/tree/main/Pictures/Jackson/Round1.mp4" controls autoplay loop muted></video>
+<p align="center">
+  <video
+    src="https://raw.githubusercontent.com/Jackson-Galloway/justbaked/main/pictures/Jackson/Round1.mp4"
+    width="600"
+    controls
+    autoplay
+    loop
+    muted
+  >
+    Your browser does not support the video tag.
+  </video>
+</p>
 
+---
 
-How it is done
-  The robot will use ROS2 Jazzy in order to utilize SLAM and NAV2 to correlate sensor data into the controller to find the fire. 
+## 🔧 How It Works  
+We leverage **ROS 2 Jazzy**, SLAM ToolBox, and Nav2:
 
-Required Packages  
-  -- ROS2 Control  
-  -- ROS2 Controllers  
-  -- Slam_Tech SLAM_TOOLBOX  
-  -- NAV2  
-  -- Joint_State_Publisher  
+- ROS2 Control  
+- ROS2 Controllers  
+- Slam_Tech SLAM_TOOLBOX  
+- NAV2  
+- Joint_State_Publisher  
 
-File Structure  
+---
+
+## 📁 File Structure
 justbaked/  
 ├── src/                        ← source code  
   ├── robot_bringup             ← robot startup  
