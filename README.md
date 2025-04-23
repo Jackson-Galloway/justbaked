@@ -10,6 +10,8 @@ Team Members
 Robot Purpose
   The robot is intended to be a "fire fighting robot". The competition rules outline an arena in which there are dowels placed vertically in the arena to serve as trees. The robot must successfully navigate these trees to locate the fire and then return to the starting position. After this has been done the robot must    them continue to latch a "hose" which is just rope and deliver it to the fire. All of this must be done autonomously without assistance from a person.
 
+![Finished Robot](Pictures/Jackson/Robot.jpg)
+
 How it is done
   The robot will use ROS2 Jazzy in order to utilize SLAM and NAV2 to correlate sensor data into the controller to find the fire. 
 
