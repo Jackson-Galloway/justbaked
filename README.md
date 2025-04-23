@@ -20,8 +20,8 @@ Required Packages
   -- NAV2
   -- Joint_State_Publisher
 
-File Structure
-justbaked/
+File Structure  
+justbaked/  
 ├── src/                        ← source code  
   ├── robot_bringup             ← robot startup  
   ├── sllidar_ros2              ← 2D lidar data interpretation  
