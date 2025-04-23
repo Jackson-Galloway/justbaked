@@ -13,12 +13,12 @@ Robot Purpose
 How it is done
   The robot will use ROS2 Jazzy in order to utilize SLAM and NAV2 to correlate sensor data into the controller to find the fire. 
 
-Required Packages
-  -- ROS2 Control
-  -- ROS2 Controllers
-  -- Slam_Tech SLAM_TOOLBOX
-  -- NAV2
-  -- Joint_State_Publisher
+Required Packages  
+  -- ROS2 Control  
+  -- ROS2 Controllers  
+  -- Slam_Tech SLAM_TOOLBOX  
+  -- NAV2  
+  -- Joint_State_Publisher  
 
 File Structure  
 justbaked/  
